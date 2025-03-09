@@ -1,15 +1,47 @@
 {
     "reading": [
-      { "id": 1, "question": "What is the capital of France?", "answer": "Paris", "time": 30 },
-      { "id": 2, "question": "Who wrote '1984'?", "answer": "George Orwell", "time": 30 }
+      { "id": 1, "question": "Is Harddisk a perfect example of ROM?", "answer": "No", "time": 30 },
+      { "id": 2, "question": "What is UEFI?", "answer": "Bios", "time": 30 },
+      { "id": 3, "question": "Ip filtering Firewall works on which layer", "answer": "4", "time": 30 },
+      { "id": 4, "question": "NGFW works on which layer?", "answer": "7", "time": 30 },
+      { "id": 5, "question": "Is redundancy same as high availability?", "answer": "NO", "time": 30 },
+      { "id": 6, "question": "What is POST?", "answer": "Power on self test", "time": 30 },
+      { "id": 7, "question": "Do we still use Hubs in Offices?", "answer": "No", "time": 30 },
+      { "id": 8, "question": "Do home routers use BGP", "answer": "No", "time": 30 },
+      { "id": 9, "question": "CSMA/CD is still used in offices or not?", "answer": "No", "time": 30 },
+      { "id": 10, "question": "Do we have other types of ports than TCP?", "answer": "Yes", "time": 30 }
+
+
+
     ],
     "listening": [
-      { "id": 1, "text": "The quick brown fox jumps over the lazy dog.", "time": 20 },
-      { "id": 2, "text": "To be or not to be, that is the question.", "time": 20 }
+      { "id": 1, "text": "The quick brown fox jumps over the lazy dog.", "time": 30 },
+      { "id": 2, "text": "To be or not to be is the question.", "time": 30 },
+      { "id": 3, "text": "The meeting has been delayed indefinitely.", "time": 30 },
+      { "id": 4, "text": "I tried to persevere but I can not sustain this anymore.", "time": 30 },
+      { "id": 5, "text": "Please bear with me I appreciate your patience.", "time": 30 },
+      { "id": 6, "text": "The baggage was reported missing in the last aisle.", "time": 30 },
+      { "id": 7, "text": "We'll not entertain any further queries.", "time": 30 },
+      { "id": 8, "text": "Please pay attention to your belongings.", "time": 30 },
+      { "id": 9, "text": "You need to maneuver around the roundabout.", "time": 30 },
+      { "id": 10, "text": "Do not leave any question pending.", "time": 30 }
     ],
     "logical": [
       { "id": 1, "question": "If all Bloops are Razzies and all Razzies are Lazzies, are all Bloops definitely Lazzies?", "answer": "Yes", "time": 45 },
-      { "id": 2, "question": "What comes next in the sequence: 2, 4, 8, 16, ___?", "answer": "32", "time": 45 }
+      { "id": 2, "question": "What is the meaning of corpulent?", "answer": "fat", "time": 45 },
+      { "id": 3, "question": "A person who thinks only of himself is egoist or eccentric", "answer": "egoist", "time": 45 },
+      { "id": 4, "question": "Ram speaks less in the forum. Ram is reticent or garrulous", "answer": "reticent", "time": 45 },
+      { "id": 5, "question": "Savitri travels by foot. She is a stickler or pedestrian", "answer": "pedestrian", "time": 45 },
+      { "id": 6, "question": "the government by a king or queen is called autocracy or monarchy", "answer": "Monarchy", "time": 45 },
+      { "id": 7, "question": "A life history written by somebody else is biography or autobiography", "answer": "Biography", "time": 45 },
+      { "id": 8, "question": "The act of murder of a human being is homicide or patricide.", "answer": "homicide", "time": 45 },
+      { "id": 9, "question": "Study of birds is called ornithology or zoology.", "answer": "Ornithology", "time": 45 },
+      { "id": 10, "question": "Rohit is greedy for money, is he avaricious or spendthrift.", "answer": "Aviricious", "time": 45 }
+     
+      
+      
+      
+      
     ],
     "extempore": [
       { "id": 1, "topic": "Climate change and its impact on global economies", "time": 60 },

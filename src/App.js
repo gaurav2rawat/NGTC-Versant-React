@@ -30,7 +30,7 @@ const App = () => {
 
   // Fetch questions from the JSON file
   useEffect(() => {
-    fetch('/questions.json')
+    fetch('./questions.json')
       .then((response) => response.json())
       .then((data) => setQuestions(data))
       .catch((error) => console.error('Error fetching questions:', error));
