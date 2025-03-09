@@ -221,3 +221,12 @@ h1 {
   font-size: 2rem;
   margin: 0; /* Remove default margin */
 }
+@media (max-width: 768px) {
+  .quiz-nav button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .quiz-content {
+    padding: 10px;
+  }
+}
