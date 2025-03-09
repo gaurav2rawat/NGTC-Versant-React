@@ -1,0 +1,18 @@
+{
+    "reading": [
+      { "id": 1, "question": "What is the capital of France?", "answer": "Paris", "time": 30 },
+      { "id": 2, "question": "Who wrote '1984'?", "answer": "George Orwell", "time": 30 }
+    ],
+    "listening": [
+      { "id": 1, "text": "The quick brown fox jumps over the lazy dog.", "time": 20 },
+      { "id": 2, "text": "To be or not to be, that is the question.", "time": 20 }
+    ],
+    "logical": [
+      { "id": 1, "question": "If all Bloops are Razzies and all Razzies are Lazzies, are all Bloops definitely Lazzies?", "answer": "Yes", "time": 45 },
+      { "id": 2, "question": "What comes next in the sequence: 2, 4, 8, 16, ___?", "answer": "32", "time": 45 }
+    ],
+    "extempore": [
+      { "id": 1, "topic": "Climate change and its impact on global economies", "time": 60 },
+      { "id": 2, "topic": "The importance of education in the 21st century", "time": 60 }
+    ]
+  }

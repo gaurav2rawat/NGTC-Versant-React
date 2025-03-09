@@ -1,38 +1,223 @@
+/* General Styles */
+:root {
+  --primary-color: #0066b2; /* Bayern Blue */
+  --secondary-color: #ffd700; /* Vibrant Yellow */
+  --background-color: #f0f0f0; /* Light Gray */
+  --text-color: #000000; /* Black */
+  --error-color: #ff0000; /* Red for End Quiz Button */
+  --border-radius: 8px;
+  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
 .App {
   text-align: center;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Welcome Screen */
+.welcome-screen {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  animation: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.welcome-screen h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: var(--primary-color);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.welcome-screen p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.welcome-screen ul {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.welcome-screen button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.welcome-screen button:hover {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+/* Quiz Navigation */
+.quiz-nav {
+  margin-bottom: 20px;
+}
+
+.quiz-nav button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  margin: 0 5px;
+  transition: background-color 0.3s ease;
+}
+
+.quiz-nav button:hover {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+/* Quiz Content */
+.quiz-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.timer {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+.result {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+.final-result {
+  text-align: left;
+}
+
+.final-result h2 {
+  color: var(--primary-color);
+}
+
+.final-result p {
+  font-size: 1.1rem;
+}
+
+.section-contributions {
+  list-style-type: none;
+  padding: 0;
+}
+
+.section-contributions li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+/* Round Section */
+.round-section {
+  margin-bottom: 20px;
+}
+
+.round-section h3 {
+  color: var(--primary-color);
+}
+
+.round-section input {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid var(--primary-color);
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+}
+
+.round-section button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.round-section button:hover {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+/* Quiz Controls */
+.quiz-controls {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.quiz-controls button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.quiz-controls button:hover {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+.quiz-controls .end-quiz-button {
+  background-color: var(--error-color);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.quiz-controls .end-quiz-button:hover {
+  background-color: #cc0000; /* Darker red on hover */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Header Container */
+.header-container {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center; /* Vertically center the logo and heading */
+  justify-content: center; /* Horizontally center the content */
+  margin-bottom: 20px;
+}
+
+/* Logo */
+.logo {
+  width: 50px; /* Adjust the size of the logo */
+  height: 50px; /* Adjust the size of the logo */
+  margin-left: 15px; /* Add spacing between the logo and heading */
+}
+
+/* Heading */
+h1 {
+  color: Black;
+  font-weight: 900;
+  font-size: 2rem;
+  margin: 0; /* Remove default margin */
 }
