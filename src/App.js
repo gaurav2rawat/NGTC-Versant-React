@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import './App.css';
 import logo from './Logo.jpg';
 import nlp from 'compromise'; // Import the compromise library
@@ -14,7 +14,7 @@ const App = () => {
   const [score, setScore] = useState(0);
   const [questions, setQuestions] = useState({});
   const [isSpeaking, setIsSpeaking] = useState(false);
-  const [extemporeTimer, setExtemporeTimer] = useState(60); // 1-minute timer for Extempore
+  const [extemporeTimer] = useState(60); // 1-minute timer for Extempore (removed unused setter)
   const [result, setResult] = useState(''); // To display results in the UI
   const [quizCompleted, setQuizCompleted] = useState(false); // Track quiz completion
   const [recognition, setRecognition] = useState(null); // Speech recognition instance
@@ -41,7 +41,69 @@ const App = () => {
   const currentQuestion = questions[currentRound]?.[currentQuestionIndex];
   const timeLimit = currentQuestion?.time || 0;
 
-  // Timer logic for rounds
+  // Grammar check using compromise
+  const checkGrammar = useCallback((text) => {
+    const doc = nlp(text);
+
+    // Example: Check for tense consistency
+    const pastTenseVerbs = doc.verbs().isPastTense().out('array');
+    const presentTenseVerbs = doc.verbs().isPresentTense().out('array');
+    const tenseError = pastTenseVerbs.length > 0 && presentTenseVerbs.length > 0 ? 1 : 0;
+
+    // Example: Check for pluralization errors
+    const nouns = doc.nouns().out('array');
+    const pluralNouns = doc.nouns().isPlural().out('array');
+    const pluralizationError = nouns.length !== pluralNouns.length ? 1 : 0;
+
+    // Total grammar errors
+    const totalErrors = tenseError + pluralizationError;
+
+    // Deduct marks based on errors (5 marks for grammar)
+    const grammarScore = Math.max(0, 5 - totalErrors); // Deduct 1 mark per error
+
+    return grammarScore;
+  }, []);
+
+  // Evaluate the Extempore round - Memoize with useCallback
+  const evaluateExtempore = useCallback((transcript) => {
+    if (!currentQuestion) return;
+    
+    const topic = currentQuestion.topic.toLowerCase();
+    const speech = transcript.toLowerCase();
+
+    // Check relevance to the topic (0 to 2 points)
+    const relevance = speech.includes(topic) ? 2 : 0; // 2 points for relevance
+
+    // Check fluency (penalize for filler words and pauses)
+    const fillerWords = ['um', 'uh', 'like', 'so'];
+    const fluencyPenalty = fillerWords.filter((word) => speech.includes(word)).length * 0.5; // Penalty for filler words
+    const fluencyScore = Math.max(0, 3 - fluencyPenalty); // 3 points for fluency (max 3, min 0)
+
+    // Check length (minimum 10 words for full marks)
+    const length = speech.split(' ').length >= 10 ? 1 : 0; // 1 point for meeting length requirement
+
+    // Grammar check using compromise
+    const grammarScore = checkGrammar(transcript); // 5 points for grammar
+
+    // Calculate total score (out of 10 points)
+    const contentScore = relevance + fluencyScore + length; // Max 6 points for content, fluency, and length
+    const finalScore = Math.min(contentScore + grammarScore, 10); // Cap the score at 10
+
+    setScore((prevScore) => prevScore + finalScore);
+    setSectionScores((prev) => ({
+      ...prev,
+      extempore: prev.extempore + finalScore,
+    }));
+    setResult(`Speech evaluated! You scored ${finalScore.toFixed(1)} points (Grammar: ${grammarScore}/5, Content/Fluency: ${contentScore}/5).`);
+    setAttemptedQuestions((prev) => ({
+      ...prev,
+      [currentRound]: [...(prev[currentRound] || []), currentQuestionIndex],
+    }));
+
+    setTranscript(''); // Reset transcript after evaluation
+  }, [currentQuestion, currentRound, currentQuestionIndex, checkGrammar]);
+
+  // Timer logic for rounds - Fixed dependency array
   useEffect(() => {
     let timer;
     if (timerActive && timeLeft > 0) {
@@ -52,13 +114,13 @@ const App = () => {
       setTimerActive(false);
       if (currentRound === 'extempore') {
         if (recognition) recognition.stop(); // Stop speech recognition
-        evaluateSpeech(transcript); // Evaluate speech after 1 minute
+        evaluateExtempore(transcript); // Evaluate speech after 1 minute
       } else {
         setResult("Time's up!"); // Display "Time's up!" in the UI
       }
     }
     return () => clearInterval(timer);
-  }, [timerActive, timeLeft, currentRound, transcript, recognition]);
+  }, [timerActive, timeLeft, currentRound, transcript, recognition, evaluateExtempore]);
 
   // Start the timer when the question changes
   useEffect(() => {
@@ -94,6 +156,12 @@ const App = () => {
 
   // Calculate final score and percentage
   const calculateFinalScore = () => {
+    // Check if questions is populated
+    if (!questions.reading || !questions.listening || !questions.logical || !questions.extempore) {
+      setResult("Unable to calculate score - questions not loaded");
+      return;
+    }
+    
     const totalPossibleMarks =
       questions.reading.length * 5 + // Reading: 10 questions × 5 points = 50
       questions.listening.length * 5 + // Listening: 10 questions × 5 points = 50
@@ -106,6 +174,11 @@ const App = () => {
 
   // Calculate section contributions to the total percentage
   const calculateSectionContributions = () => {
+    // Check if questions is populated
+    if (!questions.reading || !questions.listening || !questions.logical || !questions.extempore) {
+      return { reading: 0, listening: 0, logical: 0, extempore: 0 };
+    }
+    
     const totalPossibleMarks =
       questions.reading.length * 5 + // Reading: 10 questions × 5 points = 50
       questions.listening.length * 5 + // Listening: 10 questions × 5 points = 50
@@ -124,7 +197,7 @@ const App = () => {
 
   // Handle next question or move to the next round
   const handleNextQuestion = () => {
-    if (currentQuestionIndex < questions[currentRound].length - 1) {
+    if (currentQuestionIndex < questions[currentRound]?.length - 1) {
       setCurrentQuestionIndex((prevIndex) => prevIndex + 1); // Move to the next question
     } else {
       moveToNextRound(); // Move to the next round
@@ -183,68 +256,10 @@ const App = () => {
     setRecognition(recognitionInstance); // Store recognition instance
   };
 
-  // Grammar check using compromise
-  const checkGrammar = (text) => {
-    const doc = nlp(text);
-
-    // Example: Check for tense consistency
-    const pastTenseVerbs = doc.verbs().isPastTense().out('array');
-    const presentTenseVerbs = doc.verbs().isPresentTense().out('array');
-    const tenseError = pastTenseVerbs.length > 0 && presentTenseVerbs.length > 0 ? 1 : 0;
-
-    // Example: Check for pluralization errors
-    const nouns = doc.nouns().out('array');
-    const pluralNouns = doc.nouns().isPlural().out('array');
-    const pluralizationError = nouns.length !== pluralNouns.length ? 1 : 0;
-
-    // Total grammar errors
-    const totalErrors = tenseError + pluralizationError;
-
-    // Deduct marks based on errors (5 marks for grammar)
-    const grammarScore = Math.max(0, 5 - totalErrors); // Deduct 1 mark per error
-
-    return grammarScore;
-  };
-
-  // Evaluate the Speaking (Extempore) round
-  const evaluateSpeech = (transcript) => {
-    const topic = currentQuestion.topic.toLowerCase();
-    const speech = transcript.toLowerCase();
-
-    // Check relevance to the topic (0 to 2 points)
-    const relevance = speech.includes(topic) ? 2 : 0; // 2 points for relevance
-
-    // Check fluency (penalize for filler words and pauses)
-    const fillerWords = ['um', 'uh', 'like', 'so'];
-    const fluencyPenalty = fillerWords.filter((word) => speech.includes(word)).length * 0.5; // Penalty for filler words
-    const fluencyScore = Math.max(0, 3 - fluencyPenalty); // 3 points for fluency (max 3, min 0)
-
-    // Check length (minimum 10 words for full marks)
-    const length = speech.split(' ').length >= 10 ? 1 : 0; // 1 point for meeting length requirement
-
-    // Grammar check using compromise
-    const grammarScore = checkGrammar(transcript); // 5 points for grammar
-
-    // Calculate total score (out of 10 points)
-    const contentScore = relevance + fluencyScore + length; // Max 6 points for content, fluency, and length
-    const finalScore = Math.min(contentScore + grammarScore, 10); // Cap the score at 10
-
-    setScore((prevScore) => prevScore + finalScore);
-    setSectionScores((prev) => ({
-      ...prev,
-      extempore: prev.extempore + finalScore,
-    }));
-    setResult(`Speech evaluated! You scored ${finalScore.toFixed(1)} points (Grammar: ${grammarScore}/5, Content/Fluency: ${contentScore}/5).`);
-    setAttemptedQuestions((prev) => ({
-      ...prev,
-      [currentRound]: [...(prev[currentRound] || []), currentQuestionIndex],
-    }));
-
-    setTranscript(''); // Reset transcript after evaluation
-  };
-
   // Handle answer submission for Reading and Logical rounds
   const handleSubmitAnswer = () => {
+    if (!currentQuestion) return;
+    
     if (userAnswer.trim().toLowerCase() === currentQuestion.answer.toLowerCase()) {
       const points = 5; // 5 points for correct answer
       setScore((prevScore) => prevScore + points);
@@ -292,7 +307,7 @@ const App = () => {
               onChange={(e) => setUserAnswer(e.target.value)}
               placeholder="Type what you heard"
             />
-            <button onClick={() => evaluateListening(userAnswer)}>Submit</button>
+            <button onClick={handleSubmitAnswer}>Submit</button>
           </div>
         );
       case 'logical':
@@ -314,6 +329,7 @@ const App = () => {
             <h3>Topic: {currentQuestion.topic}</h3>
             <button onClick={startListening}>Start Speaking</button>
             <p>Transcript: {transcript}</p>
+            <button onClick={() => evaluateExtempore(transcript)}>Evaluate Speech</button>
           </div>
         );
       default:
@@ -335,6 +351,17 @@ const App = () => {
     </div>
   );
 
+  // Progress display (shows attempted questions)
+  const ProgressDisplay = () => {
+    if (!questions[currentRound]) return null;
+    
+    return (
+      <div className="progress-display">
+        <p>Progress: {attemptedQuestions[currentRound]?.length || 0} / {questions[currentRound].length} questions attempted</p>
+      </div>
+    );
+  };
+
   return (
     <div className="App">
       {!quizStarted ? (
@@ -353,6 +380,8 @@ const App = () => {
           </nav>
           <div className="quiz-content">
             {!quizCompleted && <h2 className="timer">Time Left: {timeLeft !== null ? timeLeft : '--'} seconds</h2>}
+            {/* Added ProgressDisplay component to use attemptedQuestions */}
+            {!quizCompleted && <ProgressDisplay />}
             {result && <div className="result">{result}</div>} {/* Display result in the UI */}
             {quizCompleted ? (
               <div className="final-result">

@@ -2,7 +2,7 @@
   "name": "versant-ngtc",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://gaurav2rawat.github.io/NGTC-Versant-React",
+  "homepage": "https://gaurav2rawat.github.io/NGTC-Versant-React/test",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
@@ -15,12 +15,13 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "deploy:test": "gh-pages -d build -b gh-pages-test",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
