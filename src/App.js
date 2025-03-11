@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import logo from './Logo.jpg';
+import nlp from 'compromise'; // Import the compromise library
 
 const App = () => {
   const [quizStarted, setQuizStarted] = useState(false); // Track if the quiz has started
@@ -97,7 +98,7 @@ const App = () => {
       questions.reading.length * 5 + // Reading: 10 questions × 5 points = 50
       questions.listening.length * 5 + // Listening: 10 questions × 5 points = 50
       questions.logical.length * 5 + // Logical: 10 questions × 5 points = 50
-      questions.extempore.length * 25; // Extempore: 2 questions × 25 points = 50
+      questions.extempore.length * 10; // Extempore: 2 questions × 10 points = 20
 
     const percentage = ((score / totalPossibleMarks) * 100).toFixed(2);
     setResult(`You got ${percentage}% correct!`); // Display percentage in the UI
@@ -109,7 +110,7 @@ const App = () => {
       questions.reading.length * 5 + // Reading: 10 questions × 5 points = 50
       questions.listening.length * 5 + // Listening: 10 questions × 5 points = 50
       questions.logical.length * 5 + // Logical: 10 questions × 5 points = 50
-      questions.extempore.length * 25; // Extempore: 2 questions × 25 points = 50
+      questions.extempore.length * 10; // Extempore: 2 questions × 10 points = 20
 
     const sectionContributions = {};
     Object.keys(sectionScores).forEach((section) => {
@@ -182,31 +183,27 @@ const App = () => {
     setRecognition(recognitionInstance); // Store recognition instance
   };
 
-  // Evaluate the Listening round
-  const evaluateListening = (userInput) => {
-    const correctText = currentQuestion.text.toLowerCase();
-    const userText = userInput.toLowerCase();
+  // Grammar check using compromise
+  const checkGrammar = (text) => {
+    const doc = nlp(text);
 
-    let points = 0;
-    if (userText === correctText) {
-      points = 5; // 5 points for perfect match
-      setResult('Correct! You got 5 points.');
-    } else if (correctText.includes(userText) || userText.includes(correctText)) {
-      points = 2.5; // 2.5 points for close match
-      setResult('Close! You got 2.5 points.');
-    } else {
-      setResult('Incorrect! No points.');
-    }
+    // Example: Check for tense consistency
+    const pastTenseVerbs = doc.verbs().isPastTense().out('array');
+    const presentTenseVerbs = doc.verbs().isPresentTense().out('array');
+    const tenseError = pastTenseVerbs.length > 0 && presentTenseVerbs.length > 0 ? 1 : 0;
 
-    setScore((prevScore) => prevScore + points);
-    setSectionScores((prev) => ({
-      ...prev,
-      listening: prev.listening + points,
-    }));
-    setAttemptedQuestions((prev) => ({
-      ...prev,
-      [currentRound]: [...(prev[currentRound] || []), currentQuestionIndex],
-    }));
+    // Example: Check for pluralization errors
+    const nouns = doc.nouns().out('array');
+    const pluralNouns = doc.nouns().isPlural().out('array');
+    const pluralizationError = nouns.length !== pluralNouns.length ? 1 : 0;
+
+    // Total grammar errors
+    const totalErrors = tenseError + pluralizationError;
+
+    // Deduct marks based on errors (5 marks for grammar)
+    const grammarScore = Math.max(0, 5 - totalErrors); // Deduct 1 mark per error
+
+    return grammarScore;
   };
 
   // Evaluate the Speaking (Extempore) round
@@ -214,26 +211,30 @@ const App = () => {
     const topic = currentQuestion.topic.toLowerCase();
     const speech = transcript.toLowerCase();
 
-    // Check relevance to the topic (0 or 1)
-    const relevance = speech.includes(topic) ? 1 : 0;
+    // Check relevance to the topic (0 to 2 points)
+    const relevance = speech.includes(topic) ? 2 : 0; // 2 points for relevance
 
-    // Check fluency (penalize for filler words)
+    // Check fluency (penalize for filler words and pauses)
     const fillerWords = ['um', 'uh', 'like', 'so'];
-    const fluencyPenalty = fillerWords.filter((word) => speech.includes(word)).length * 0.1;
+    const fluencyPenalty = fillerWords.filter((word) => speech.includes(word)).length * 0.5; // Penalty for filler words
+    const fluencyScore = Math.max(0, 3 - fluencyPenalty); // 3 points for fluency (max 3, min 0)
 
-    // Check length (minimum 10 words)
-    const length = speech.split(' ').length >= 10 ? 1 : 0;
+    // Check length (minimum 10 words for full marks)
+    const length = speech.split(' ').length >= 10 ? 1 : 0; // 1 point for meeting length requirement
 
-    // Calculate score (out of 25 points)
-    const speechScore = (relevance + (1 - fluencyPenalty) + length) * (25 / 3); // Adjusted to ensure max score is 25
-    const finalScore = Math.min(speechScore, 25); // Cap the score at 25
+    // Grammar check using compromise
+    const grammarScore = checkGrammar(transcript); // 5 points for grammar
+
+    // Calculate total score (out of 10 points)
+    const contentScore = relevance + fluencyScore + length; // Max 6 points for content, fluency, and length
+    const finalScore = Math.min(contentScore + grammarScore, 10); // Cap the score at 10
 
     setScore((prevScore) => prevScore + finalScore);
     setSectionScores((prev) => ({
       ...prev,
       extempore: prev.extempore + finalScore,
     }));
-    setResult(`Speech evaluated! You scored ${finalScore.toFixed(1)} points.`);
+    setResult(`Speech evaluated! You scored ${finalScore.toFixed(1)} points (Grammar: ${grammarScore}/5, Content/Fluency: ${contentScore}/5).`);
     setAttemptedQuestions((prev) => ({
       ...prev,
       [currentRound]: [...(prev[currentRound] || []), currentQuestionIndex],
@@ -340,9 +341,9 @@ const App = () => {
         <WelcomeScreen onStart={() => setQuizStarted(true)} />
       ) : (
         <>
-                  <div className="header-container"> {/* Container for logo and h1 */}
-                  <img src={logo} alt="NEW-GUIDANCE Logo" className="logo" />
-          <h1>NGTC-VERSANT</h1>
+          <div className="header-container"> {/* Container for logo and h1 */}
+            <img src={logo} alt="NEW-GUIDANCE Logo" className="logo" />
+            <h1>NGTC-VERSANT</h1>
           </div>
           <nav className="quiz-nav">
             <button onClick={() => setCurrentRound('reading')}>Reading</button>
