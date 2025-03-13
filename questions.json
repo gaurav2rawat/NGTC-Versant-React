@@ -47,27 +47,27 @@
         "questions": [
           {
             "question": "What animal jumped over the dog?",
-            "answer": "fox",
+            "answer": "The fox jumped over the dog.",
             "points": 2
           },
           {
             "question": "Where did the animals gather?",
-            "answer": "river bank",
+            "answer": "The animals gathered near the river bank",
             "points": 2
           },
           {
             "question": "How did the rabbit move?",
-            "answer": "hopped nervously",
+            "answer": "Rabbit hopped nervously",
             "points": 2
           },
           {
             "question": "What did the birds do?",
-            "answer": "chirped",
+            "answer": "The birds chirped from the nearby trees.",
             "points": 2
           },
           {
             "question": "What did the fox do after landing?",
-            "answer": "took a bow",
+            "answer": "The fox took a bow after the landing.",
             "points": 2
           }
         ]
@@ -79,27 +79,27 @@
         "questions": [
           {
             "question": "When did Sarah go to the store?",
-            "answer": "Tuesday morning",
+            "answer": "Sarah walked to the local store on Tuesday morning",
             "points": 2
           },
           {
             "question": "What was the weather like?",
-            "answer": "cloudy",
+            "answer": "The weather was cloudy.",
             "points": 2
           },
           {
             "question": "Name one item Sarah bought.",
-            "answer": ["bread", "milk", "vegetables", "fresh vegetables"],
+            "answer": ["Sarah bought bread/", "Sarah bought milk", "Sarah bought vegetables", "Sarah bought fresh vegetables"],
             "points": 2
           },
           {
             "question": "Who did Sarah meet on her way back?",
-            "answer": "David",
+            "answer": "Sarah met David on her way back.",
             "points": 2
           },
           {
             "question": "What did they talk about?",
-            "answer": "community garden project",
+            "answer": "They talked about the community garden project",
             "points": 2
           }
         ]
