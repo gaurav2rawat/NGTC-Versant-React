@@ -7,6 +7,7 @@
   --error-color: #ff0000; /* Red for End Quiz Button */
   --border-radius: 8px;
   --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --timer-color: red;  
 }
 
 body {
@@ -100,7 +101,7 @@ body {
 .timer {
   font-size: 1.2rem;
   margin-bottom: 20px;
-  color: var(--primary-color);
+  color: var(--timer-color);
 }
 
 .result {

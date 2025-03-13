@@ -1,0 +1,99 @@
+{
+    "reading": [
+      { "id": 1, "question": "Is SSD a type of non-volatile memory?", "answer": "Yes", "time": 30 },
+      { "id": 2, "question": "What does DNS stand for?", "answer": "Domain Name System", "time": 30 },
+      { "id": 3, "question": "On which layer does IPsec operate?", "answer": "3", "time": 30 },
+      { "id": 4, "question": "Which layer does a Router operate on?", "answer": "3", "time": 30 },
+      { "id": 5, "question": "Is Virtualization the same as Cloud Computing?", "answer": "No", "time": 30 },
+      { "id": 6, "question": "What does DHCP stand for?", "answer": "Dynamic Host Configuration Protocol", "time": 30 },
+      { "id": 7, "question": "Do we use Repeaters in modern networks?", "answer": "No", "time": 30 },
+      { "id": 8, "question": "Is MPLS used in WAN?", "answer": "Yes", "time": 30 },
+      { "id": 9, "question": "Is Token Ring still used in modern networks?", "answer": "No", "time": 30 },
+      { "id": 10, "question": "Do we have other types of IP addresses than IPv4?", "answer": "Yes", "time": 30 }
+    ],
+    "listening": [
+      { "id": 1, "text": "Time and tide wait for none.", "time": 30 },
+      { "id": 2, "text": "A journey of a thousand miles begins with a single step.", "time": 30 },
+      { "id": 3, "text": "Every cloud has a silver lining.", "time": 30 },
+      { "id": 4, "text": "The early bird catches the worm.", "time": 30 },
+      { "id": 5, "text": "Actions speak louder than words.", "time": 30 },
+      { "id": 6, "text": "A picture is worth a thousand words.", "time": 30 },
+      { "id": 7, "text": "When in Rome, do as the Romans do.", "time": 30 },
+      { "id": 8, "text": "A watched pot never boils.", "time": 30 },
+      { "id": 9, "text": "Necessity is the mother of invention.", "time": 30 },
+      { "id": 10, "text": "Barking up the wrong tree.", "time": 30 }
+    ],
+    "logical": [
+      { "id": 1, "question": "If all Cats are Animals and all Animals are Beings, are all Cats definitely Beings?", "answer": "Yes", "time": 45 },
+      { "id": 2, "question": "What is the meaning of loquacious?", "answer": "talkative", "time": 45 },
+      { "id": 3, "question": "A person who avoids social interactions is introvert or extrovert?", "answer": "introvert", "time": 45 },
+      { "id": 4, "question": "A person who is skilled at using both hands equally is ambidextrous or dexterous?", "answer": "ambidextrous", "time": 45 },
+      { "id": 5, "question": "The study of stars is known as astronomy or astrology?", "answer": "astronomy", "time": 45 },
+      { "id": 6, "question": "A government ruled by a small group of people is called oligarchy or democracy?", "answer": "oligarchy", "time": 45 },
+      { "id": 7, "question": "A collection of maps is called an atlas or a dictionary?", "answer": "atlas", "time": 45 },
+      { "id": 8, "question": "The scientific study of skin is dermatology or nephrology?", "answer": "dermatology", "time": 45 },
+      { "id": 9, "question": "A person who loves books is called bibliophile or bibliophobe?", "answer": "bibliophile", "time": 45 },
+      { "id": 10, "question": "A person who is excessively willing to serve others is subservient or rebellious?", "answer": "subservient", "time": 45 }
+    ],
+    "extempore": [
+      { "id": 1, "topic": "The role of technology in modern education", "time": 60 },
+      { "id": 2, "topic": "Sustainable development and its importance", "time": 60 }
+    ],
+    "diction": [
+      {
+        "id": 1,
+        "story": "John decided to take a walk through the park on a sunny afternoon. He enjoyed the chirping of birds and the rustling of leaves. As he strolled along the path, he saw children playing and families having picnics. The fresh air and the vibrant atmosphere lifted his spirits.",
+        "time": 45,
+        "questions": [
+          {
+            "question": "Where did John decide to walk?",
+            "answer": ["John decided to take a walk through the park", "John decided to take a walk through the park on a sunny afternoon"],
+            "points": 2.5
+          },
+          {
+            "question": "What did John enjoy hearing?",
+            "answer": "John enjoyed hearing chirping of birds and rustling of leaves",
+            "points": 2.5
+          },
+          {
+            "question": "Who did John see in the park?",
+            "answer": ["John saw children playing and families having picnics","John saw some children playing and families having picnics"],
+            "points": 2.5
+          },
+          {
+            "question": "How did the atmosphere affect John?",
+            "answer": ["The atmosphere lifted his spirits", "The atmosphere lifted John's spirits"],
+            "points": 2.5
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "story": "Emily spent her weekend exploring the city. She visited the Tate museum, which had fascinating exhibits about the history of the area. Later, she had lunch at a cozy café and enjoyed a delicious meal. In the evening, she went to a concert, which was the highlight of her day.",
+        "time": 45,
+        "questions": [
+          {
+            "question": "What did Emily explore?",
+            "answer": "Emily explored the city",
+            "points": 2.5
+          },
+          {
+            "question": "Where did Emily visit?",
+            "answer": "Emily visted the tate museum",
+            "points": 2.5
+          },
+          {
+            "question": "What did Emily do for lunch?",
+            "answer": "Emily had lunch at a cozy café",
+            "points": 2.5
+          },
+          {
+            "question": "What was the highlight of Emily's day?",
+            "answer": "The concert was the highlight of Emily's day",
+            "points": 2.5
+          }
+        ]
+      }
+    ]
+  }
+  

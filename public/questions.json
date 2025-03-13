@@ -10,9 +10,6 @@
       { "id": 8, "question": "Do home routers use BGP", "answer": "No", "time": 30 },
       { "id": 9, "question": "CSMA/CD is still used in offices or not?", "answer": "No", "time": 30 },
       { "id": 10, "question": "Do we have other types of ports than TCP?", "answer": "Yes", "time": 30 }
-
-
-
     ],
     "listening": [
       { "id": 1, "text": "The quick brown fox jumps over the lazy dog.", "time": 30 },
@@ -37,14 +34,75 @@
       { "id": 8, "question": "The act of murder of a human being is homicide or patricide.", "answer": "homicide", "time": 45 },
       { "id": 9, "question": "Study of birds is called ornithology or zoology.", "answer": "Ornithology", "time": 45 },
       { "id": 10, "question": "Rohit is greedy for money, is he avaricious or spendthrift.", "answer": "Aviricious", "time": 45 }
-     
-      
-      
-      
-      
     ],
     "extempore": [
       { "id": 1, "topic": "Climate change and its impact on global economies", "time": 60 },
       { "id": 2, "topic": "The importance of education in the 21st century", "time": 60 }
+    ],
+    "diction": [
+      {
+        "id": 1,
+        "story": "The quick brown fox jumps over the lazy dog. Near the river bank, several animals gathered to watch the spectacle. A rabbit hopped nervously, while birds chirped from nearby trees. The scene was quite amusing to all the forest creatures who had never seen such acrobatics before. The fox landed gracefully and took a bow as the animals applauded.",
+        "time": 45,
+        "questions": [
+          {
+            "question": "What animal jumped over the dog?",
+            "answer": "fox",
+            "points": 2
+          },
+          {
+            "question": "Where did the animals gather?",
+            "answer": "river bank",
+            "points": 2
+          },
+          {
+            "question": "How did the rabbit move?",
+            "answer": "hopped nervously",
+            "points": 2
+          },
+          {
+            "question": "What did the birds do?",
+            "answer": "chirped",
+            "points": 2
+          },
+          {
+            "question": "What did the fox do after landing?",
+            "answer": "took a bow",
+            "points": 2
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "story": "Sarah walked to the local store on Tuesday morning. The sky was cloudy and she thought it might rain. In the store, she bought bread, milk, and fresh vegetables for dinner. On her way back home, she met her neighbor David who was walking his dog. They chatted briefly about the community garden project before continuing their separate ways.",
+        "time": 45,
+        "questions": [
+          {
+            "question": "When did Sarah go to the store?",
+            "answer": "Tuesday morning",
+            "points": 2
+          },
+          {
+            "question": "What was the weather like?",
+            "answer": "cloudy",
+            "points": 2
+          },
+          {
+            "question": "Name one item Sarah bought.",
+            "answer": ["bread", "milk", "vegetables", "fresh vegetables"],
+            "points": 2
+          },
+          {
+            "question": "Who did Sarah meet on her way back?",
+            "answer": "David",
+            "points": 2
+          },
+          {
+            "question": "What did they talk about?",
+            "answer": "community garden project",
+            "points": 2
+          }
+        ]
+      }
     ]
   }
