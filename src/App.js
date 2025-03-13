@@ -29,43 +29,44 @@ const App = () => {
     extempore: 0,
     diction: 0,
   }); // Track scores for each section
+  const [currentDictionIndex, setCurrentDictionIndex] = useState(0); // Track current diction question index
 
   // Define the order of rounds
   const rounds = ['reading', 'listening', 'logical', 'extempore', 'diction'];
 
+  // Helper function to normalize answers
+  const normalizeAnswer = (answer) => {
+    return answer
+      .toLowerCase() // Convert to lowercase
+      .replace(/[.,/#!$%^&*;:{}=_`~()]/g, '') // Remove punctuation (no unnecessary escapes)
+      .replace(/\s{2,}/g, ' ') // Replace multiple spaces with a single space
+      .trim(); // Trim leading and trailing spaces
+  };
+
   // Function to select a random question file
   const selectRandomQuestionFile = useCallback(() => {
-    // Define the available question files (you'll need to create these)
     const questionFiles = [
       './questions.json',
       './questions_set2.json',
       './questions_set3.json',
       './questions_set4.json'
     ];
-    
-    // Select a random file from the list
     const randomIndex = Math.floor(Math.random() * questionFiles.length);
     return questionFiles[randomIndex];
   }, []);
 
   // Fetch questions from a random JSON file
   useEffect(() => {
-    const questionFile = selectRandomQuestionFile(); // Select a random file
-    
+    const questionFile = selectRandomQuestionFile();
     fetch(questionFile)
       .then((response) => {
-        if (!response.ok) {
-          // If the random file doesn't exist, fall back to questions.json
-          return fetch('./questions.json');
-        }
+        if (!response.ok) return fetch('./questions.json');
         return response;
       })
       .then((response) => response.json())
-      .then((data) => {
-        setQuestions(data);
-      })
+      .then((data) => setQuestions(data))
       .catch((error) => console.error('Error fetching questions:', error));
-  }, [selectRandomQuestionFile]); // Add selectRandomQuestionFile to the dependency array
+  }, [selectRandomQuestionFile]);
 
   // Get the current question and its time limit
   const currentQuestion = questions[currentRound]?.[currentQuestionIndex];
@@ -74,109 +75,67 @@ const App = () => {
   // Grammar check using compromise
   const checkGrammar = useCallback((text) => {
     const doc = nlp(text);
-
-    // Check for tense consistency
-    const pastTenseVerbs = doc.match('#PastTense').out('array'); // Match past tense verbs
-    const presentTenseVerbs = doc.match('#PresentTense').out('array'); // Match present tense verbs
+    const pastTenseVerbs = doc.match('#PastTense').out('array');
+    const presentTenseVerbs = doc.match('#PresentTense').out('array');
     const tenseError = pastTenseVerbs.length > 0 && presentTenseVerbs.length > 0 ? 1 : 0;
-
-    // Check for pluralization errors
-    const nouns = doc.match('#Noun').out('array'); // Match all nouns
-    const pluralNouns = doc.match('#Plural').out('array'); // Match plural nouns
+    const nouns = doc.match('#Noun').out('array');
+    const pluralNouns = doc.match('#Plural').out('array');
     const pluralizationError = nouns.length !== pluralNouns.length ? 1 : 0;
-
-    // Total grammar errors
     const totalErrors = tenseError + pluralizationError;
-
-    // Deduct marks based on errors (5 marks for grammar)
-    const grammarScore = Math.max(0, 5 - totalErrors); // Deduct 1 mark per error
-
+    const grammarScore = Math.max(0, 5 - totalErrors);
     return grammarScore;
   }, []);
-  
-// Evaluate the Extempore round
-const evaluateExtempore = useCallback((transcript) => {
-  if (!currentQuestion) return;
 
-  const topic = currentQuestion.topic.toLowerCase();
-  const speech = transcript.toLowerCase();
-
-  // Check relevance to the topic (0 to 2 points)
-  const relevance = speech.includes(topic) ? 2 : 0; // 2 points for relevance
-
-  // Check fluency (penalize for filler words and pauses)
-  const fillerWords = ['um', 'uh', 'like', 'so'];
-  const fluencyPenalty = fillerWords.filter((word) => speech.includes(word)).length * 0.5; // Penalty for filler words
-  const fluencyScore = Math.max(0, 3 - fluencyPenalty); // 3 points for fluency (max 3, min 0)
-
-  // Check length (minimum 10 words for full marks)
-  const length = speech.split(' ').length >= 10 ? 1 : 0; // 1 point for meeting length requirement
-
-  // Grammar check using compromise
-  const grammarScore = checkGrammar(transcript); // Up to 5 points for grammar
-
-  // Calculate score for this question (out of 10 points)
-  const contentScore = relevance + fluencyScore + length; // Max 6 points for content, fluency, and length
-  const questionScore = Math.min(contentScore + grammarScore, 10); // Cap the score at 10
-
-  // Store the raw score for this question
-  const newRawScores = { ...extemporeRawScores };
-  newRawScores[currentQuestionIndex] = questionScore;
-  setExtemporeRawScores(newRawScores);
-
-  // Update the attempted questions
-  const newAttemptedQuestions = {
-    ...attemptedQuestions,
-    extempore: [...(attemptedQuestions.extempore || []), currentQuestionIndex]
-  };
-  setAttemptedQuestions(newAttemptedQuestions);
-
-  // Calculate the total raw score
-  const totalRawScore = Object.values(newRawScores).reduce((sum, score) => sum + score, 0);
-  
-  // Calculate how many questions have been attempted
-  const totalQuestionsAttempted = Object.keys(newRawScores).length;
-  
-  // Calculate the total possible score for completed questions
-  const totalPossibleScore = totalQuestionsAttempted * 10;
-  
-  // Calculate the normalized score (out of 20)
-  const normalizedScore = (totalRawScore / totalPossibleScore) * 20;
-
-  // Update the section score
-  setSectionScores(prev => {
-    const oldExtemporeScore = prev.extempore;
-    const newExtemporeScore = Math.min(normalizedScore, 20); // Cap at 20
-    
-    // Update the total score
-    setScore(prevScore => prevScore - oldExtemporeScore + newExtemporeScore);
-    
-    return {
-      ...prev,
-      extempore: newExtemporeScore
+  // Evaluate the Extempore round
+  const evaluateExtempore = useCallback((transcript) => {
+    if (!currentQuestion) return;
+    const topic = currentQuestion.topic.toLowerCase();
+    const speech = transcript.toLowerCase();
+    const relevance = speech.includes(topic) ? 2 : 0;
+    const fillerWords = ['um', 'uh', 'like', 'so'];
+    const fluencyPenalty = fillerWords.filter((word) => speech.includes(word)).length * 0.5;
+    const fluencyScore = Math.max(0, 3 - fluencyPenalty);
+    const length = speech.split(' ').length >= 10 ? 1 : 0;
+    const grammarScore = checkGrammar(transcript);
+    const contentScore = relevance + fluencyScore + length;
+    const questionScore = Math.min(contentScore + grammarScore, 10);
+    const newRawScores = { ...extemporeRawScores };
+    newRawScores[currentQuestionIndex] = questionScore;
+    setExtemporeRawScores(newRawScores);
+    const newAttemptedQuestions = {
+      ...attemptedQuestions,
+      extempore: [...(attemptedQuestions.extempore || []), currentQuestionIndex]
     };
-  });
+    setAttemptedQuestions(newAttemptedQuestions);
+    const totalRawScore = Object.values(newRawScores).reduce((sum, score) => sum + score, 0);
+    const totalQuestionsAttempted = Object.keys(newRawScores).length;
+    const totalPossibleScore = totalQuestionsAttempted * 10;
+    const normalizedScore = (totalRawScore / totalPossibleScore) * 20;
+    setSectionScores(prev => {
+      const oldExtemporeScore = prev.extempore;
+      const newExtemporeScore = Math.min(normalizedScore, 20);
+      setScore(prevScore => prevScore - oldExtemporeScore + newExtemporeScore);
+      return { ...prev, extempore: newExtemporeScore };
+    });
+    setResult(`Speech evaluated! You scored ${questionScore.toFixed(1)} out of 10 points (Grammar: ${grammarScore}/5, Content/Fluency: ${contentScore}/5).`);
+    setTranscript('');
+  }, [currentQuestion, currentQuestionIndex, checkGrammar, extemporeRawScores, attemptedQuestions]);
 
-  setResult(`Speech evaluated! You scored ${questionScore.toFixed(1)} out of 10 points (Grammar: ${grammarScore}/5, Content/Fluency: ${contentScore}/5).`);
-  setTranscript(''); // Reset transcript after evaluation
-}, [currentQuestion, currentQuestionIndex, checkGrammar, extemporeRawScores, attemptedQuestions]);// Timer logic for rounds
+  // Timer logic for rounds
   useEffect(() => {
     let timer;
     if (timerActive && timeLeft > 0) {
-      timer = setInterval(() => {
-        setTimeLeft((prevTime) => prevTime - 1);
-      }, 1000);
+      timer = setInterval(() => setTimeLeft((prevTime) => prevTime - 1), 1000);
     } else if (timeLeft === 0) {
       setTimerActive(false);
       if (currentRound === 'extempore') {
-        if (recognition) recognition.stop(); // Stop speech recognition
-        evaluateExtempore(transcript); // Evaluate speech after 1 minute
+        if (recognition) recognition.stop();
+        evaluateExtempore(transcript);
       } else if (currentRound === 'diction' && dictionStoryActive) {
-        // When the story time ends, show the questions
         setDictionStoryActive(false);
         setResult("Story playback complete. Please answer the questions below.");
       } else {
-        setResult("Time's up!"); // Display "Time's up!" in the UI
+        setResult("Time's up!");
       }
     }
     return () => clearInterval(timer);
@@ -186,7 +145,6 @@ const evaluateExtempore = useCallback((transcript) => {
   useEffect(() => {
     if (currentQuestion) {
       if (currentRound === 'diction' && !dictionStoryActive && currentDictionStory === null) {
-        // Initialize diction story
         setCurrentDictionStory(currentQuestion);
         setDictionStoryActive(true);
         setTimeLeft(currentQuestion.time || 45);
@@ -202,18 +160,18 @@ const evaluateExtempore = useCallback((transcript) => {
   const moveToNextRound = () => {
     const currentRoundIndex = rounds.indexOf(currentRound);
     if (currentRoundIndex < rounds.length - 1) {
-      setCurrentRound(rounds[currentRoundIndex + 1]); // Move to the next round
-      setCurrentQuestionIndex(0); // Reset question index for the new round
-      setCurrentDictionStory(null); // Reset diction story
+      setCurrentRound(rounds[currentRoundIndex + 1]);
+      setCurrentQuestionIndex(0);
+      setCurrentDictionStory(null);
     } else {
-      endQuiz(); // End the quiz
+      endQuiz();
     }
   };
 
   // End the quiz and calculate the final score
   const endQuiz = () => {
-    setQuizCompleted(true); // Mark quiz as completed
-    calculateFinalScore(); // Calculate and display final score
+    setQuizCompleted(true);
+    calculateFinalScore();
   };
 
   // Confirm before ending the quiz
@@ -225,88 +183,71 @@ const evaluateExtempore = useCallback((transcript) => {
 
   // Calculate final score and percentage
   const calculateFinalScore = () => {
-    // Check if questions is populated
     if (!questions.reading || !questions.listening || !questions.logical || !questions.extempore || !questions.diction) {
       setResult("Unable to calculate score - questions not loaded");
       return;
     }
-
-    // Calculate total possible marks - each section worth 20 points
-    const totalPossibleMarks = 100; // 5 sections × 20 points each = 100
-
+    const totalPossibleMarks = 100;
     const percentage = ((score / totalPossibleMarks) * 100).toFixed(2);
     setResult(`You got ${score} out of ${totalPossibleMarks} points (${percentage}%)`);
   };
 
   // Calculate section contributions to the total percentage
   const calculateSectionContributions = () => {
-    // Check if questions is populated
     if (!questions.reading || !questions.listening || !questions.logical || !questions.extempore || !questions.diction) {
       return { reading: 0, listening: 0, logical: 0, extempore: 0, diction: 0 };
     }
-
-    // Each section contributes 20 points to a total of 100
     const totalPossibleMarks = 100;
-
     const sectionContributions = {};
     Object.keys(sectionScores).forEach((section) => {
       const sectionMarks = sectionScores[section];
-      const sectionPercentage = ((sectionMarks / 20) * 100).toFixed(2); // Each section worth 20 points
+      const sectionPercentage = ((sectionMarks / 20) * 100).toFixed(2);
       const overallContribution = ((sectionMarks / totalPossibleMarks) * 100).toFixed(2);
       sectionContributions[section] = {
         score: sectionMarks,
-        sectionPercentage, // Percentage of available points in this section
-        overallContribution, // Contribution to overall score (out of 100)
+        sectionPercentage,
+        overallContribution,
       };
     });
-
     return sectionContributions;
   };
 
   // Handle next question or move to the next round
   const handleNextQuestion = () => {
     if (currentRound === 'diction') {
-      // For diction, we need to handle the story and its questions
       if (dictionStoryActive) {
-        // If story is active, skip to questions
         setDictionStoryActive(false);
         setTimerActive(false);
       } else if (currentQuestionIndex < questions[currentRound].length - 1) {
-        // Move to next story
         setCurrentQuestionIndex((prevIndex) => prevIndex + 1);
-        setCurrentDictionStory(null); // Reset current story to trigger new one
+        setCurrentDictionStory(null);
       } else {
         moveToNextRound();
       }
     } else if (currentQuestionIndex < questions[currentRound]?.length - 1) {
-      setCurrentQuestionIndex((prevIndex) => prevIndex + 1); // Move to the next question
+      setCurrentQuestionIndex((prevIndex) => prevIndex + 1);
     } else {
-      moveToNextRound(); // Move to the next round
+      moveToNextRound();
     }
     setUserAnswer('');
     setTranscript('');
-    setResult(''); // Clear the result message
+    setResult('');
   };
 
   // Text-to-Speech with improved handling
   const speakText = (text) => {
     if (!text) return;
-
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.lang = 'en-US';
-    utterance.rate = 1; // Speed of speech (0.1 to 10)
-    utterance.pitch = 1; // Pitch of speech (0 to 2)
-    utterance.volume = 1; // Volume (0 to 1)
-
-    // Event listeners for better control
+    utterance.rate = 1;
+    utterance.pitch = 1;
+    utterance.volume = 1;
     utterance.onstart = () => setIsSpeaking(true);
     utterance.onend = () => setIsSpeaking(false);
     utterance.onerror = (event) => {
       console.error('Speech synthesis error:', event.error);
       setIsSpeaking(false);
     };
-
-    // Stop any ongoing speech before starting new one
     window.speechSynthesis.cancel();
     window.speechSynthesis.speak(utterance);
   };
@@ -315,10 +256,9 @@ const evaluateExtempore = useCallback((transcript) => {
   const startListening = () => {
     const recognitionInstance = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
     recognitionInstance.lang = 'en-US';
-    recognitionInstance.interimResults = true; // Enable interim results
-    recognitionInstance.continuous = true; // Continue listening even after pauses
+    recognitionInstance.interimResults = true;
+    recognitionInstance.continuous = true;
     recognitionInstance.maxAlternatives = 1;
-
     recognitionInstance.onresult = (event) => {
       let finalTranscript = '';
       for (let i = event.resultIndex; i < event.results.length; i++) {
@@ -326,140 +266,109 @@ const evaluateExtempore = useCallback((transcript) => {
           finalTranscript += event.results[i][0].transcript + ' ';
         }
       }
-      setTranscript((prev) => prev + finalTranscript); // Append only final results
+      setTranscript((prev) => prev + finalTranscript);
     };
-
     recognitionInstance.onerror = (event) => {
       console.error('Speech recognition error:', event.error);
     };
-
     recognitionInstance.start();
-    setRecognition(recognitionInstance); // Store recognition instance
+    setRecognition(recognitionInstance);
   };
 
   // Handle answer submission for Reading, Listening, and Logical rounds
-  // Handle answer submission for Reading, Listening, and Logical rounds
-// Handle answer submission for Reading, Listening, and Logical rounds
-const handleSubmitAnswer = () => {
-  if (!currentQuestion) return;
-
-  // For diction section
-  if (currentRound === 'diction') {
-    handleDictionAnswer();
-    return;
-  }
-
-  // Calculate points per question for this section
-  const questionsInSection = questions[currentRound]?.length || 5;
-  const pointsPerQuestion = 20 / questionsInSection; // Normalize to 20 points total
-
-  // Special handling for listening round
-  if (currentRound === 'listening') {
-    // Compare with the text property (since that's what's being spoken)
-    if (userAnswer.trim().toLowerCase() === currentQuestion.text.toLowerCase()) {
-      // Calculate the new section score
-      const newSectionScore = sectionScores[currentRound] + pointsPerQuestion;
-      // Cap the section score at 20
-      const cappedSectionScore = Math.min(newSectionScore, 20);
-      // Calculate the increment to add to the total score
-      const scoreIncrement = cappedSectionScore - sectionScores[currentRound];
-      
-      setScore(prevScore => prevScore + scoreIncrement);
-      setResult(`Correct! You got ${pointsPerQuestion.toFixed(1)} points.`);
-      
-      setSectionScores(prev => ({
-        ...prev,
-        [currentRound]: cappedSectionScore,
-      }));
-    } else {
-      setResult('Incorrect! No points.');
-    }
-  } else {
-    // For reading and logical rounds
-    if (userAnswer.trim().toLowerCase() === currentQuestion.answer.toLowerCase()) {
-      // Calculate the new section score
-      const newSectionScore = sectionScores[currentRound] + pointsPerQuestion;
-      // Cap the section score at 20
-      const cappedSectionScore = Math.min(newSectionScore, 20);
-      // Calculate the increment to add to the total score
-      const scoreIncrement = cappedSectionScore - sectionScores[currentRound];
-      
-      setScore(prevScore => prevScore + scoreIncrement);
-      setResult(`Correct! You got ${pointsPerQuestion.toFixed(1)} points.`);
-      
-      setSectionScores(prev => ({
-        ...prev,
-        [currentRound]: cappedSectionScore,
-      }));
-    } else {
-      setResult('Incorrect! No points.');
-    }
-  }
-
-  setAttemptedQuestions(prev => ({
-    ...prev,
-    [currentRound]: [...(prev[currentRound] || []), currentQuestionIndex],
-  }));
-};
-// Handle diction answer submissions
-const handleDictionAnswer = () => {
-  if (!currentQuestion || !userAnswer.trim()) return;
-
-  const currentDictionQuestion = currentQuestion.questions[currentDictionIndex];
-  if (!currentDictionQuestion) return;
-
-  // Calculate total questions in the diction section
-  const totalDictionQuestions = questions.diction?.reduce(
-    (sum, story) => sum + (story.questions?.length || 0), 
-    0
-  ) || 10;
+  const handleSubmitAnswer = () => {
+    if (!currentQuestion) return;
   
-  // Calculate points per question to normalize to 20 points total
-  const pointsPerQuestion = 20 / totalDictionQuestions;
-
-  // Check if answer is correct (handle array of possible answers)
-  const correctAnswer = Array.isArray(currentDictionQuestion.answer)
-    ? currentDictionQuestion.answer.some(ans => userAnswer.trim().toLowerCase() === ans.toLowerCase())
-    : userAnswer.trim().toLowerCase() === currentDictionQuestion.answer.toLowerCase();
-
-  if (correctAnswer) {
-    // Calculate the new section score
-    const newSectionScore = sectionScores.diction + pointsPerQuestion;
-    // Cap the section score at 20
-    const cappedSectionScore = Math.min(newSectionScore, 20);
-    // Calculate the increment to add to the total score
-    const scoreIncrement = cappedSectionScore - sectionScores.diction;
-    
-    setScore(prevScore => prevScore + scoreIncrement);
-    setResult(`Correct! You got ${pointsPerQuestion.toFixed(1)} points.`);
-    
-    setSectionScores(prev => ({
+    if (currentRound === 'diction') {
+      handleDictionAnswer();
+      return;
+    }
+  
+    const questionsInSection = questions[currentRound]?.length || 5;
+    const pointsPerQuestion = 20 / questionsInSection;
+  
+    // Normalize user's answer and correct answer
+    const normalizedUserAnswer = normalizeAnswer(userAnswer);
+    const normalizedCorrectAnswer = normalizeAnswer(
+      currentRound === 'listening' ? currentQuestion.text : currentQuestion.answer
+    );
+  
+    // Compare normalized answers
+    if (normalizedUserAnswer === normalizedCorrectAnswer) {
+      const newSectionScore = sectionScores[currentRound] + pointsPerQuestion;
+      const cappedSectionScore = Math.min(newSectionScore, 20);
+      const scoreIncrement = cappedSectionScore - sectionScores[currentRound];
+      setScore((prevScore) => prevScore + scoreIncrement);
+      setResult(`Correct! You got ${pointsPerQuestion.toFixed(1)} points.`);
+      setSectionScores((prev) => ({
+        ...prev,
+        [currentRound]: cappedSectionScore,
+      }));
+    } else {
+      setResult(
+        `Incorrect! The correct answer is: ${
+          currentRound === 'listening' ? currentQuestion.text : currentQuestion.answer
+        }`
+      );
+    }
+  
+    setAttemptedQuestions((prev) => ({
       ...prev,
-      diction: cappedSectionScore,
+      [currentRound]: [...(prev[currentRound] || []), currentQuestionIndex],
     }));
-  } else {
-    setResult('Incorrect! No points.');
-  }
+  };
 
-  // Move to next diction question or reset
-  if (currentDictionIndex < currentQuestion.questions.length - 1) {
-    setCurrentDictionIndex(currentDictionIndex + 1);
-  } else {
-    setCurrentDictionIndex(0);
-    handleNextQuestion(); // Move to next story or section
-  }
-
-  setUserAnswer('');
-};
-
-  // Track the current diction question index
-  const [currentDictionIndex, setCurrentDictionIndex] = useState(0);
-
+  // Handle diction answer submissions
+  const handleDictionAnswer = () => {
+    if (!currentQuestion || !userAnswer.trim()) return;
+  
+    const currentDictionQuestion = currentQuestion.questions[currentDictionIndex];
+    if (!currentDictionQuestion) return;
+  
+    const totalDictionQuestions = questions.diction?.reduce(
+      (sum, story) => sum + (story.questions?.length || 0),
+      0
+    ) || 10;
+    const pointsPerQuestion = 20 / totalDictionQuestions;
+  
+    // Normalize user's answer
+    const normalizedUserAnswer = normalizeAnswer(userAnswer);
+  
+    // Check if answer is correct (handle array of possible answers)
+    const correctAnswer = Array.isArray(currentDictionQuestion.answer)
+      ? currentDictionQuestion.answer.some((ans) => normalizedUserAnswer === normalizeAnswer(ans))
+      : normalizedUserAnswer === normalizeAnswer(currentDictionQuestion.answer);
+  
+    if (correctAnswer) {
+      const newSectionScore = sectionScores.diction + pointsPerQuestion;
+      const cappedSectionScore = Math.min(newSectionScore, 20);
+      const scoreIncrement = cappedSectionScore - sectionScores.diction;
+      setScore((prevScore) => prevScore + scoreIncrement);
+      setResult(`Correct! You got ${pointsPerQuestion.toFixed(1)} points.`);
+      setSectionScores((prev) => ({
+        ...prev,
+        diction: cappedSectionScore,
+      }));
+    } else {
+      setResult(`Incorrect! The correct answer is: ${currentDictionQuestion.answer}`);
+    }
+  
+    // Move to next diction question or reset
+    if (currentDictionIndex < currentQuestion.questions.length - 1) {
+      setCurrentDictionIndex(currentDictionIndex + 1);
+    } else {
+      setCurrentDictionIndex(0);
+      handleNextQuestion(); // Move to next story or section
+    }
+  
+    setUserAnswer('');
+  };
   // Get the current diction question
   const currentDictionQuestion = currentRound === 'diction' && currentQuestion?.questions
     ? currentQuestion.questions[currentDictionIndex]
     : null;
 
+  // Render round content
   const renderRoundContent = () => {
     if (!currentQuestion) return null;
 
@@ -566,7 +475,6 @@ const handleDictionAnswer = () => {
   const ProgressDisplay = () => {
     if (!questions[currentRound]) return null;
 
-    // For diction, show different progress info
     if (currentRound === 'diction' && !dictionStoryActive && currentQuestion) {
       return (
         <div className="progress-display">
