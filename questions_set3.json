@@ -47,7 +47,7 @@
         "questions": [
           {
             "question": "When did Tom decide to run?",
-            "answer": ["Tom decided to go for a run in themorning.", "Tom went for a run in the morning."],
+            "answer": ["Tom decided to go for a run in the morning./", "Tom went for a run in the morning."],
             "points": 2.5
           },
           {
@@ -57,12 +57,12 @@
           },
           {
             "question": "What did Tom enjoy during his run?",
-            "answer": ["Tom enjoyed the solitude and the sound of his footsteps.", "Tom enjoyed the solitude and sound of his footsteps"],
+            "answer": ["Tom enjoyed the solitude and the sound of his footsteps./", "Tom enjoyed the solitude and sound of his footsteps"],
             "points": 2.5
           },
           {
             "question": "How did Tom feel after his run?",
-            "answer": ["Tom felt refreshed after his run.", "Tom felt refreshed after the run."],
+            "answer": ["Tom felt refreshed after his run./", "Tom felt refreshed after the run."],
             "points": 2.5
           }
         ]
@@ -74,7 +74,7 @@
         "questions": [
           {
             "question": "What did Lisa do in the afternoon?",
-            "answer": ["Lisa did some gardening.","Lisa did gardening."],
+            "answer": ["Lisa did some gardening/.","Lisa did gardening."],
             "points": 2.5
           },
           {
@@ -84,12 +84,12 @@
           },
           {
             "question": "What was the weather like?",
-            "answer": ["The weather was perfect with a gentle breeze and clear skies.", "The weather was perfect with a gentle breeze and clear skies."],
+            "answer": ["The weather was perfect with a gentle breeze and clear skies./", "The weather was perfect with a gentle breeze and clear skies."],
             "points": 2.5
           },
           {
             "question": "How did Lisa feel after gardening?",
-            "answer": ["Lisa felt accomplished.", "Lisa felt accomplished after gardening."],
+            "answer": ["Lisa felt accomplished./", "Lisa felt accomplished after gardening."],
             "points": 2.5
           }
         ]
