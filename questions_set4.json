@@ -62,7 +62,7 @@
           },
           {
             "question": "How did Michael feel by the end of the hike?",
-            "answer": ["Michael felt invigorated and happy.", "Michael felt happy and invigorated."],
+            "answer": ["Michael felt invigorated and happy/.", "Michael felt happy and invigorated."],
             "points": 2.5
           }
         ]
@@ -74,7 +74,7 @@
         "questions": [
           {
             "question": "What did Sophia do on Sunday afternoon?",
-            "answer": ["Sophia did painting on the sunday afternoon.", "Sophia painted on the sunday afternoon."],
+            "answer": ["Sophia did painting on the Sunday afternoon./", "Sophia painted on the sunday afternoon."],
             "points": 2.5
           },
           {
