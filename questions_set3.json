@@ -84,7 +84,7 @@
           },
           {
             "question": "What was the weather like?",
-            "answer": ["The weather was perfect with a gentle breeze and clear skies./", "The weather was perfect with a gentle breeze and clear skies."],
+            "answer": ["The weather was perfect with a gentle breeze and clear skies./", "The weather was perfect with gentle breeze and clear skies."],
             "points": 2.5
           },
           {
