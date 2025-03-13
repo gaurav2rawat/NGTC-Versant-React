@@ -1,0 +1,99 @@
+{
+    "reading": [
+      { "id": 1, "question": "Is RAM volatile memory?", "answer": "Yes", "time": 30 },
+      { "id": 2, "question": "What does HTTP stand for?", "answer": "Hypertext Transfer Protocol", "time": 30 },
+      { "id": 3, "question": "On which layer does the Transport layer operate?", "answer": "4", "time": 30 },
+      { "id": 4, "question": "Which layer does an Ethernet switch operate on?", "answer": "2", "time": 30 },
+      { "id": 5, "question": "Is a Virtual Machine the same as a Container?", "answer": "No", "time": 30 },
+      { "id": 6, "question": "What does SSH stand for?", "answer": "Secure Shell", "time": 30 },
+      { "id": 7, "question": "Do we use FDDI in modern networks?", "answer": "No", "time": 30 },
+      { "id": 8, "question": "Is IPv6 used in modern networks?", "answer": "Yes", "time": 30 },
+      { "id": 9, "question": "Is Token Ring a modern networking protocol?", "answer": "No", "time": 30 },
+      { "id": 10, "question": "Do we have other types of IP addresses than IPv6?", "answer": "Yes", "time": 30 }
+    ],
+    "listening": [
+      { "id": 1, "text": "Honesty is the best policy.", "time": 30 },
+      { "id": 2, "text": "A stitch in time saves nine.", "time": 30 },
+      { "id": 3, "text": "An apple a day keeps the doctor away.", "time": 30 },
+      { "id": 4, "text": "Absence makes the heart grow fonder.", "time": 30 },
+      { "id": 5, "text": "Birds of a feather flock together.", "time": 30 },
+      { "id": 6, "text": "Better late than never.", "time": 30 },
+      { "id": 7, "text": "The pen is mightier than the sword.", "time": 30 },
+      { "id": 8, "text": "Rome wasn't built in a day.", "time": 30 },
+      { "id": 9, "text": "A penny saved is a penny earned.", "time": 30 },
+      { "id": 10, "text": "When the going gets tough, the tough get going.", "time": 30 }
+    ],
+    "logical": [
+      { "id": 1, "question": "If all Elephants are Mammals and all Mammals are Animals, are all Elephants definitely Animals?", "answer": "Yes", "time": 45 },
+      { "id": 2, "question": "What is the meaning of verbose?", "answer": "wordy", "time": 45 },
+      { "id": 3, "question": "A person who saves money is frugal or extravagant?", "answer": "frugal", "time": 45 },
+      { "id": 4, "question": "A person who has a fear of heights is acrophobic or claustrophobic?", "answer": "acrophobic", "time": 45 },
+      { "id": 5, "question": "The study of the human mind is known as psychology or physiology?", "answer": "psychology", "time": 45 },
+      { "id": 6, "question": "A government ruled by a single person is called autocracy or democracy?", "answer": "autocracy", "time": 45 },
+      { "id": 7, "question": "A collection of poems is called an anthology or a thesaurus?", "answer": "anthology", "time": 45 },
+      { "id": 8, "question": "The scientific study of insects is entomology or ichthyology?", "answer": "entomology", "time": 45 },
+      { "id": 9, "question": "A person who loves to eat is called gourmand or ascetic?", "answer": "gourmand", "time": 45 },
+      { "id": 10, "question": "A person who is known for telling lies is dishonest or truthful?", "answer": "dishonest", "time": 45 }
+    ],
+    "extempore": [
+      { "id": 1, "topic": "The impact of social media on mental health", "time": 60 },
+      { "id": 2, "topic": "The future of renewable energy", "time": 60 }
+    ],
+    "diction": [
+      {
+        "id": 1,
+        "story": "Tom decided to go for a run in the morning. The sun was just rising, casting a golden glow over the landscape. He enjoyed the solitude and the sound of his footsteps on the path. After his run, he felt refreshed and ready to tackle the day's challenges.",
+        "time": 45,
+        "questions": [
+          {
+            "question": "When did Tom decide to run?",
+            "answer": ["Tom decided to go for a run in themorning.", "Tom went for a run in the morning."],
+            "points": 2.5
+          },
+          {
+            "question": "What was the sun doing?",
+            "answer": "The sun was rising.",
+            "points": 2.5
+          },
+          {
+            "question": "What did Tom enjoy during his run?",
+            "answer": ["Tom enjoyed the solitude and the sound of his footsteps.", "Tom enjoyed the solitude and sound of his footsteps"],
+            "points": 2.5
+          },
+          {
+            "question": "How did Tom feel after his run?",
+            "answer": ["Tom felt refreshed after his run.", "Tom felt refreshed after the run."],
+            "points": 2.5
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "story": "Lisa spent her afternoon gardening in her backyard. She planted new flowers and watered her plants. The weather was perfect, with a gentle breeze and clear skies. After finishing her gardening, she sat on her porch with a cup of tea, feeling accomplished.",
+        "time": 45,
+        "questions": [
+          {
+            "question": "What did Lisa do in the afternoon?",
+            "answer": ["Lisa did some gardening.","Lisa did gardening."],
+            "points": 2.5
+          },
+          {
+            "question": "What did Lisa plant?",
+            "answer": "Lisa planted new flowers.",
+            "points": 2.5
+          },
+          {
+            "question": "What was the weather like?",
+            "answer": ["The weather was perfect with a gentle breeze and clear skies.", "The weather was perfect with a gentle breeze and clear skies."],
+            "points": 2.5
+          },
+          {
+            "question": "How did Lisa feel after gardening?",
+            "answer": ["Lisa felt accomplished.", "Lisa felt accomplished after gardening."],
+            "points": 2.5
+          }
+        ]
+      }
+    ]
+  }
+  

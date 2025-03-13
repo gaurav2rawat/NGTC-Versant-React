@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/NGTC-Versant-React/static/css/main.19a54834.css",
-    "main.js": "/NGTC-Versant-React/static/js/main.379ba5b5.js",
+    "main.css": "/NGTC-Versant-React/static/css/main.7745591f.css",
+    "main.js": "/NGTC-Versant-React/static/js/main.dbeb9f4b.js",
     "static/js/453.65e17ded.chunk.js": "/NGTC-Versant-React/static/js/453.65e17ded.chunk.js",
     "index.html": "/NGTC-Versant-React/index.html",
-    "main.19a54834.css.map": "/NGTC-Versant-React/static/css/main.19a54834.css.map",
-    "main.379ba5b5.js.map": "/NGTC-Versant-React/static/js/main.379ba5b5.js.map",
+    "main.7745591f.css.map": "/NGTC-Versant-React/static/css/main.7745591f.css.map",
+    "main.dbeb9f4b.js.map": "/NGTC-Versant-React/static/js/main.dbeb9f4b.js.map",
     "453.65e17ded.chunk.js.map": "/NGTC-Versant-React/static/js/453.65e17ded.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.19a54834.css",
-    "static/js/main.379ba5b5.js"
+    "static/css/main.7745591f.css",
+    "static/js/main.dbeb9f4b.js"
   ]
 }
