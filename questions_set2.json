@@ -47,22 +47,22 @@
         "questions": [
           {
             "question": "Where did John decide to walk?",
-            "answer": ["John decided to take a walk through the park", "John decided to take a walk through the park on a sunny afternoon"],
+            "answer": ["John decided to take a walk through the park./", "John decided to take a walk through the park on a sunny afternoon."],
             "points": 2.5
           },
           {
             "question": "What did John enjoy hearing?",
-            "answer": "John enjoyed hearing chirping of birds and rustling of leaves",
+            "answer": ["John enjoyed hearing chirping of birds and rustling of leaves./", "John enjoyed the chirping of birds and rustling of leaves."],
             "points": 2.5
           },
           {
             "question": "Who did John see in the park?",
-            "answer": ["John saw children playing and families having picnics","John saw some children playing and families having picnics"],
+            "answer": ["John saw children playing and families having picnics./", "John saw some children playing and families having picnics."],
             "points": 2.5
           },
           {
             "question": "How did the atmosphere affect John?",
-            "answer": ["The atmosphere lifted his spirits", "The atmosphere lifted John's spirits"],
+            "answer": ["The atmosphere lifted his spirits./", "The atmosphere lifted John's spirits."],
             "points": 2.5
           }
         ]
@@ -74,22 +74,22 @@
         "questions": [
           {
             "question": "What did Emily explore?",
-            "answer": "Emily explored the city",
+            "answer": "Emily explored the city.",
             "points": 2.5
           },
           {
             "question": "Where did Emily visit?",
-            "answer": "Emily visted the tate museum",
+            "answer": "Emily visted the Tate museum.",
             "points": 2.5
           },
           {
             "question": "What did Emily do for lunch?",
-            "answer": "Emily had lunch at a cozy café",
+            "answer": "Emily had lunch at a cozy café.",
             "points": 2.5
           },
           {
             "question": "What was the highlight of Emily's day?",
-            "answer": "The concert was the highlight of Emily's day",
+            "answer": "The concert was the highlight of Emily's day.",
             "points": 2.5
           }
         ]
