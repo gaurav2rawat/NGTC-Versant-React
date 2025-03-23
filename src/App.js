@@ -1048,7 +1048,7 @@ useEffect(() => {
   };
 
   return (
-    <Router>
+    <Router basename="/NGTC-Versant-React">
       <div className="App">
         <Routes>
           <Route
