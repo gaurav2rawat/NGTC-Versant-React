@@ -23,6 +23,29 @@ body {
   padding: 20px;
 }
 
+
+
+.login-screen button{
+  margin-top: 40 px;
+  color: white;
+  font-weight: bold;
+  background-color: var(--primary-color);
+  
+
+}
+
+
+.login-screen h1{
+  color: var(--primary-color);
+}
+
+.login-screen h2{
+  margin-top: 20px;
+  color: #000000;
+  font-weight: bold;
+}
+
+
 /* Welcome Screen */
 .welcome-screen {
   max-width: 600px;
@@ -47,7 +70,7 @@ body {
 
 .welcome-screen ul {
   text-align: left;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .welcome-screen button {
@@ -222,6 +245,40 @@ h1 {
   font-size: 2rem;
   margin: 0; /* Remove default margin */
 }
+
+/* Navigation Bar */
+nav {
+  /*background-color: #333; /* Dark background */
+  padding: 10px 20px; /* Add some padding */
+  display: flex; /* Align links horizontally */
+  justify-content: center; /* Align links to the left */
+  align-items: center; /* Center links vertically */
+}
+
+.login-screen {
+  color: #0066b2;
+}
+
+/* Navigation Links */
+nav a {
+  color: #0066b2; /* White text */
+  text-decoration: none; /* Remove underline */
+  margin-right: 20px; /* Space between links */
+  font-size: 20px; /* Font size */
+  font-weight: bold; /* Bold text */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Hover Effect for Links */
+nav a:hover {
+  color: #ffcc00; /* Change color on hover */
+}
+
+/* Active Link Style */
+nav a.active {
+  color: #ffcc00; /* Highlight active link */
+}
+
 @media (max-width: 768px) {
   .quiz-nav button {
     width: 100%;
@@ -229,5 +286,32 @@ h1 {
   }
   .quiz-content {
     padding: 10px;
+  }
+
+  .round-section input {
+    width: 100%;
+  }
+
+  .quiz-controls {
+    flex-direction: column;
+  }
+
+  .quiz-controls button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .quiz-nav{
+    flex-direction: column;
+
+  }
+
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    margin-left: 0;
+    margin-bottom: 10px;
   }
 }
