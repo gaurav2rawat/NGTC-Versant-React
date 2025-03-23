@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/NGTC-Versant-React/static/css/main.7745591f.css",
-    "main.js": "/NGTC-Versant-React/static/js/main.899b63e4.js",
+    "main.css": "/NGTC-Versant-React/static/css/main.a4ad6f4a.css",
+    "main.js": "/NGTC-Versant-React/static/js/main.b1d96e7b.js",
     "static/js/453.65e17ded.chunk.js": "/NGTC-Versant-React/static/js/453.65e17ded.chunk.js",
     "index.html": "/NGTC-Versant-React/index.html",
-    "main.7745591f.css.map": "/NGTC-Versant-React/static/css/main.7745591f.css.map",
-    "main.899b63e4.js.map": "/NGTC-Versant-React/static/js/main.899b63e4.js.map",
+    "main.a4ad6f4a.css.map": "/NGTC-Versant-React/static/css/main.a4ad6f4a.css.map",
+    "main.b1d96e7b.js.map": "/NGTC-Versant-React/static/js/main.b1d96e7b.js.map",
     "453.65e17ded.chunk.js.map": "/NGTC-Versant-React/static/js/453.65e17ded.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7745591f.css",
-    "static/js/main.899b63e4.js"
+    "static/css/main.a4ad6f4a.css",
+    "static/js/main.b1d96e7b.js"
   ]
 }

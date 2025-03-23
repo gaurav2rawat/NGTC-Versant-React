@@ -1,108 +1,391 @@
 {
-    "reading": [
-      { "id": 1, "question": "Is Harddisk a perfect example of ROM?", "answer": "No", "time": 30 },
-      { "id": 2, "question": "What is UEFI?", "answer": "Bios", "time": 30 },
-      { "id": 3, "question": "Ip filtering Firewall works on which layer", "answer": "4", "time": 30 },
-      { "id": 4, "question": "NGFW works on which layer?", "answer": "7", "time": 30 },
-      { "id": 5, "question": "Is redundancy same as high availability?", "answer": "NO", "time": 30 },
-      { "id": 6, "question": "What is POST?", "answer": "Power on self test", "time": 30 },
-      { "id": 7, "question": "Do we still use Hubs in Offices?", "answer": "No", "time": 30 },
-      { "id": 8, "question": "Do home routers use BGP", "answer": "No", "time": 30 },
-      { "id": 9, "question": "CSMA/CD is still used in offices or not?", "answer": "No", "time": 30 },
-      { "id": 10, "question": "Do we have other types of ports than TCP?", "answer": "Yes", "time": 30 }
-    ],
-    "listening": [
-      { "id": 1, "text": "The quick brown fox jumps over the lazy dog.", "time": 30 },
-      { "id": 2, "text": "To be or not to be is the question.", "time": 30 },
-      { "id": 3, "text": "The meeting has been delayed indefinitely.", "time": 30 },
-      { "id": 4, "text": "I tried to persevere but I can not sustain this anymore.", "time": 30 },
-      { "id": 5, "text": "Please bear with me I appreciate your patience.", "time": 30 },
-      { "id": 6, "text": "The baggage was reported missing in the last aisle.", "time": 30 },
-      { "id": 7, "text": "We'll not entertain any further queries.", "time": 30 },
-      { "id": 8, "text": "Please pay attention to your belongings.", "time": 30 },
-      { "id": 9, "text": "You need to maneuver around the roundabout.", "time": 30 },
-      { "id": 10, "text": "Do not leave any question pending.", "time": 30 }
-    ],
-    "logical": [
-      { "id": 1, "question": "If all Bloops are Razzies and all Razzies are Lazzies, are all Bloops definitely Lazzies?", "answer": "Yes", "time": 45 },
-      { "id": 2, "question": "What is the meaning of corpulent?", "answer": "fat", "time": 45 },
-      { "id": 3, "question": "A person who thinks only of himself is egoist or eccentric", "answer": "egoist", "time": 45 },
-      { "id": 4, "question": "Ram speaks less in the forum. Ram is reticent or garrulous", "answer": "reticent", "time": 45 },
-      { "id": 5, "question": "Savitri travels by foot. She is a stickler or pedestrian", "answer": "pedestrian", "time": 45 },
-      { "id": 6, "question": "the government by a king or queen is called autocracy or monarchy", "answer": "Monarchy", "time": 45 },
-      { "id": 7, "question": "A life history written by somebody else is biography or autobiography", "answer": "Biography", "time": 45 },
-      { "id": 8, "question": "The act of murder of a human being is homicide or patricide.", "answer": "homicide", "time": 45 },
-      { "id": 9, "question": "Study of birds is called ornithology or zoology.", "answer": "Ornithology", "time": 45 },
-      { "id": 10, "question": "Rohit is greedy for money, is he avaricious or spendthrift.", "answer": "Aviricious", "time": 45 }
-    ],
-    "extempore": [
-      { "id": 1, "topic": "Climate change and its impact on global economies", "time": 60 },
-      { "id": 2, "topic": "The importance of education in the 21st century", "time": 60 }
-    ],
-    "diction": [
+  "reading": [
+    {
+      "id": 1,
+      "question": "Is Harddisk a perfect example of ROM?",
+      "answer": "No, a hard disk is not a perfect example of ROM.",
+      "alternativeAnswers": [
+        "A hard disk is not an example of ROM.",
+        "It is not true that a hard disk is a perfect example of ROM."
+      ],
+      "time": 30
+    },
+    {
+      "id": 2,
+      "question": "What is UEFI?",
+      "answer": "UEFI is a type of BIOS.",
+      "alternativeAnswers": [
+        "UEFI refers to BIOS.",
+        "It is a form of BIOS."
+      ],
+      "time": 30
+    },
+    {
+      "id": 3,
+      "question": "IP filtering Firewall works on which layer?",
+      "answer": "An IP filtering Firewall works on layer 4.",
+      "alternativeAnswers": [
+        "It operates on layer 4.",
+        "Layer 4 is the operational layer."
+      ],
+      "time": 30
+    },
+    {
+      "id": 4,
+      "question": "NGFW works on which layer?",
+      "answer": "NGFW works on layer 7.",
+      "alternativeAnswers": [
+        "It operates on layer 7.",
+        "Layer 7 is where NGFW operates."
+      ],
+      "time": 30
+    },
+    {
+      "id": 5,
+      "question": "Is redundancy same as high availability?",
+      "answer": "No, redundancy is not the same as high availability.",
+      "alternativeAnswers": [
+        "Redundancy and high availability are not identical.",
+        "They are not the same thing."
+      ],
+      "time": 30
+    },
+    {
+      "id": 6,
+      "question": "What is POST?",
+      "answer": "POST stands for Power on self test.",
+      "alternativeAnswers": [
+        "It is Power on self test.",
+        "Power on self test is what POST means."
+      ],
+      "time": 30
+    },
+    {
+      "id": 7,
+      "question": "Do we still use Hubs in Offices?",
+      "answer": "No, we do not still use Hubs in Offices.",
+      "alternativeAnswers": [
+        "Hubs are not used in offices anymore.",
+        "It is not common to use hubs in offices."
+      ],
+      "time": 30
+    },
+    {
+      "id": 8,
+      "question": "Do home routers use BGP?",
+      "answer": "No, home routers do not use BGP.",
+      "alternativeAnswers": [
+        "BGP is not used by home routers.",
+        "It is not true that home routers utilize BGP."
+      ],
+      "time": 30
+    },
+    {
+      "id": 9,
+      "question": "CSMA/CD is still used in offices or not?",
+      "answer": "No, CSMA/CD is not still used in offices.",
+      "alternativeAnswers": [
+        "CSMA/CD is no longer used in offices.",
+        "It is not common for offices to use CSMA/CD."
+      ],
+      "time": 30
+    },
+    {
+      "id": 10,
+      "question": "Do we have other types of ports than TCP?",
+      "answer": "Yes, we have other types of ports than TCP.",
+      "alternativeAnswers": [
+        "There are other ports besides TCP.",
+        "It is true that there are ports other than TCP."
+      ],
+      "time": 30
+    }
+  ],
+  "listening": [
+    { "id": 1, "text": "The quick brown fox jumps over the lazy dog.", "time": 30 },
+    { "id": 2, "text": "To be or not to be is the question.", "time": 30 },
+    { "id": 3, "text": "The meeting has been delayed indefinitely.", "time": 30 },
+    { "id": 4, "text": "I tried to persevere but I can not sustain this anymore.", "time": 30 },
+    { "id": 5, "text": "Please bear with me I appreciate your patience.", "time": 30 },
+    { "id": 6, "text": "The baggage was reported missing in the last aisle.", "time": 30 },
+    { "id": 7, "text": "We'll not entertain any further queries.", "time": 30 },
+    { "id": 8, "text": "Please pay attention to your belongings.", "time": 30 },
+    { "id": 9, "text": "You need to maneuver around the roundabout.", "time": 30 },
+    { "id": 10, "text": "Do not leave any question pending.", "time": 30 }
+  ],
+  "logical": [
+    { "id": 1, "question": "If all Bloops are Razzies and all Razzies are Lazzies, are all Bloops definitely Lazzies?", "answer": "Yes", "time": 45 },
+    { "id": 2, "question": "What is the meaning of corpulent?", "answer": "fat", "time": 45 },
+    { "id": 3, "question": "A person who thinks only of himself is egoist or eccentric", "answer": "egoist", "time": 45 },
+    { "id": 4, "question": "Ram speaks less in the forum. Ram is reticent or garrulous", "answer": "reticent", "time": 45 },
+    { "id": 5, "question": "Savitri travels by foot. She is a stickler or pedestrian", "answer": "pedestrian", "time": 45 },
+    { "id": 6, "question": "the government by a king or queen is called autocracy or monarchy", "answer": "Monarchy", "time": 45 },
+    { "id": 7, "question": "A life history written by somebody else is biography or autobiography", "answer": "Biography", "time": 45 },
+    { "id": 8, "question": "The act of murder of a human being is homicide or patricide.", "answer": "homicide", "time": 45 },
+    { "id": 9, "question": "Study of birds is called ornithology or zoology.", "answer": "Ornithology", "time": 45 },
+    { "id": 10, "question": "Rohit is greedy for money, is he avaricious or spendthrift.", "answer": "Aviricious", "time": 45 }
+  ],
+
+  
+    "grammar": [
+      
       {
         "id": 1,
-        "story": "The quick brown fox jumps over the lazy dog. Near the river bank, several animals gathered to watch the spectacle. A rabbit hopped nervously, while birds chirped from nearby trees. The scene was quite amusing to all the forest creatures who had never seen such acrobatics before. The fox landed gracefully and took a bow as the animals applauded.",
-        "time": 45,
-        "questions": [
-          {
-            "question": "What animal jumped over the dog?",
-            "answer": "The fox jumped over the dog.",
-            "points": 2
-          },
-          {
-            "question": "Where did the animals gather?",
-            "answer": "The animals gathered near the river bank",
-            "points": 2
-          },
-          {
-            "question": "How did the rabbit move?",
-            "answer": "Rabbit hopped nervously",
-            "points": 2
-          },
-          {
-            "question": "What did the birds do?",
-            "answer": "The birds chirped from the nearby trees.",
-            "points": 2
-          },
-          {
-            "question": "What did the fox do after landing?",
-            "answer": "The fox took a bow after the landing.",
-            "points": 2
-          }
-        ]
+        "question": "Rearrange the words to form a correct sentence: 'only after the meeting started she realized had forgotten her notes.'",
+        "answer": "Only after the meeting started did she realize she had forgotten her notes.",
+        "alternativeAnswers": [
+          "She realized she had forgotten her notes only after the meeting started.",
+          "Only after the meeting started did she realize that she had forgotten her notes."
+        ],
+        "time": 60
       },
       {
         "id": 2,
-        "story": "Sarah walked to the local store on Tuesday morning. The sky was cloudy and she thought it might rain. In the store, she bought bread, milk, and fresh vegetables for dinner. On her way back home, she met her neighbor David who was walking his dog. They chatted briefly about the community garden project before continuing their separate ways.",
-        "time": 45,
-        "questions": [
-          {
-            "question": "When did Sarah go to the store?",
-            "answer": "Sarah walked to the local store on Tuesday morning",
-            "points": 2
-          },
-          {
-            "question": "What was the weather like?",
-            "answer": "The weather was cloudy.",
-            "points": 2
-          },
-          {
-            "question": "Name one item Sarah bought.",
-            "answer": ["Sarah bought bread/", "Sarah bought milk", "Sarah bought vegetables", "Sarah bought fresh vegetables"],
-            "points": 2
-          },
-          {
-            "question": "Who did Sarah meet on her way back?",
-            "answer": "Sarah met David on her way back.",
-            "points": 2
-          },
-          {
-            "question": "What did they talk about?",
-            "answer": "They talked about the community garden project",
-            "points": 2
-          }
-        ]
+        "question": "Rearrange the words to form a correct sentence: 'rarely have I seen such a breathtaking view.'",
+        "answer": "Rarely have I seen such a breathtaking view.",
+        "alternativeAnswers": [
+          "I have rarely seen such a breathtaking view.",
+          "Such a breathtaking view I have rarely seen."
+        ],
+        "time": 60
+      },
+      {
+        "id": 3,
+        "question": "Rearrange the words to form a correct sentence: 'not until the end of the movie we understood the twist.'",
+        "answer": "Not until the end of the movie did we understand the twist.",
+        "alternativeAnswers": [
+          "We did not understand the twist until the end of the movie.",
+          "Only at the end of the movie did we understand the twist."
+        ],
+        "time": 60
+      },
+  
+     
+      {
+        "id": 4,
+        "question": "Correct the subject-verb agreement in this sentence: 'Neither of the candidates have submitted their proposals.'",
+        "answer": "Neither of the candidates has submitted their proposals.",
+        "alternativeAnswers": [
+          "Neither candidate has submitted their proposals.",
+          "Neither of the candidates has submitted his or her proposals."
+        ],
+        "time": 60
+      },
+      {
+        "id": 5,
+        "question": "Correct the subject-verb agreement in this sentence: 'The committee are divided in their opinions.'",
+        "answer": "The committee is divided in its opinions.",
+        "alternativeAnswers": [
+          "The committee is divided in their opinions.",
+          "The committee members are divided in their opinions."
+        ],
+        "time": 60
+      },
+      {
+        "id": 6,
+        "question": "Correct the subject-verb agreement in this sentence: 'Each of the students were given a certificate.'",
+        "answer": "Each of the students was given a certificate.",
+        "alternativeAnswers": [
+          "Every student was given a certificate.",
+          "Each student was given a certificate."
+        ],
+        "time": 60
+      },
+      {
+        "id": 7,
+        "question": "Correct the subject-verb agreement in this sentence: 'The number of participants have increased this year.'",
+        "answer": "The number of participants has increased this year.",
+        "alternativeAnswers": [
+          "The number of participants has grown this year.",
+          "The number of participants has risen this year."
+        ],
+        "time": 60
+      },
+  
+      
+      {
+        "id": 8,
+        "question": "Replace the incorrect word in this sentence: 'His explanation was hardly comprehensible due to the technical jargons.'",
+        "answer": "His explanation was hardly comprehensible due to the technical jargon.",
+        "alternativeAnswers": [
+          "His explanation was hardly understandable due to the technical jargon.",
+          "His explanation was barely comprehensible due to the technical jargon."
+        ],
+        "time": 60
+      },
+      {
+        "id": 9,
+        "question": "Replace the incorrect word in this sentence: 'The criteria for selection is very strict.'",
+        "answer": "The criteria for selection are very strict.",
+        "alternativeAnswers": [
+          "The criterion for selection is very strict.",
+          "The standards for selection are very strict."
+        ],
+        "time": 60
+      },
+      {
+        "id": 10,
+        "question": "Replace the incorrect word in this sentence: 'She was completely unbeknownst to the plans.'",
+        "answer": "She was completely unaware of the plans.",
+        "alternativeAnswers": [
+          "She was completely ignorant of the plans.",
+          "She had no knowledge of the plans."
+        ],
+        "time": 60
       }
-    ]
-  }
+    ],
+  
+
+  "extempore": [
+    { "id": 1, "topic": "Climate change and its impact on global economies", "time": 60 },
+    { "id": 2, "topic": "The importance of education in the 21st century", "time": 60 }
+  ],
+  
+  
+    "diction": [
+    {
+      "id": 1,
+      "story": "The quick brown fox jumps over the lazy dog. Near the river bank, several animals gathered to watch the spectacle. A rabbit hopped nervously, while birds chirped from nearby trees. The scene was quite amusing to all the forest creatures who had never seen such acrobatics before. The fox landed gracefully and took a bow as the animals applauded.",
+      "time": 45,
+      "questions": [
+        {
+          "question": "What animal jumped over the dog?",
+          "answer": "The fox jumped over the dog.",
+          "alternativeAnswers": [
+            "A fox jumped over the dog.",
+            "That fox jumped over the dog.",
+            "A brown fox jumped over the dog.",
+            "The quick fox jumped over the dog.",
+            "The brown fox leapt over the dog.",
+            "It was the fox that jumped over the dog."
+          ],
+          "points": 2
+        },
+        {
+          "question": "Where did the animals gather?",
+          "answer": "The animals gathered at the river bank.",
+          "alternativeAnswers": [
+            "The animals gathered near the river.",
+            "They gathered at the river bank.",
+            "The animals assembled by the river.",
+            "They were gathering at the river's edge.",
+            "The animals met near the river.",
+            "They congregated at the bank of the river."
+          ],
+          "points": 2
+        },
+        {
+          "question": "How did the rabbit move?",
+          "answer": "The rabbit hopped nervously.",
+          "alternativeAnswers": [
+            "The rabbit nervously hopped.",
+            "It moved nervously.",
+            "The rabbit jumped about nervously.",
+            "It nervously jumped.",
+            "The rabbit hopped in a nervous manner.",
+            "Nervously the rabbit hopped."
+          ],
+          "points": 2
+        },
+        {
+          "question": "What did the birds do?",
+          "answer": "The birds chirped.",
+          "alternativeAnswers": [
+            "They chirped.",
+            "The birds made chirping sounds.",
+            "The birds were chirping.",
+            "They were making chirping noises.",
+            "The birds produced chirps.",
+            "Chirping was done by the birds."
+          ],
+          "points": 2
+        },
+        {
+          "question": "What did the fox do after landing?",
+          "answer": "The fox took a bow.",
+          "alternativeAnswers": [
+            "It took a bow.",
+            "The fox gave a bow.",
+            "The fox bowed.",
+            "It made a bow.",
+            "The fox performed a bow.",
+            "A bow was taken by the fox."
+          ],
+          "points": 2
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "story": "Emily visited a bustling market on a sunny morning. She browsed through the stalls filled with colorful fruits, fresh vegetables, and handmade crafts. The lively atmosphere was filled with the sounds of vendors calling out their wares and customers chatting. Emily bought a basket of strawberries and a unique piece of pottery before heading home.",
+      "time": 45,
+      "questions": [
+        {
+          "question": "Where did Emily visit?",
+          "answer": "Emily visited a bustling market.",
+          "alternativeAnswers": [
+            "She visited a market.",
+            "A bustling market was visited by Emily.",
+            "Emily went to a busy market.",
+            "A lively market was where she went.",
+            "She paid a visit to the market.",
+            "The bustling marketplace was visited by her."
+          ],
+          "points": 2
+        },
+        {
+          "question": "What did she browse through?",
+          "answer": "She browsed through the stalls.",
+          "alternativeAnswers": [
+            "Emily browsed through the stalls.",
+            "The stalls were browsed by her.",
+            "She looked through the stalls.",
+            "Emily went through the stalls.",
+            "The stalls were what she browsed.",
+            "She checked out the market stalls."
+          ],
+          "points": 2
+        },
+        {
+          "question": "What filled the atmosphere?",
+          "answer": "The lively atmosphere was filled with the sounds.",
+          "alternativeAnswers": [
+            "The sounds filled the atmosphere.",
+            "Sounds filled the lively atmosphere.",
+            "Sounds were filling the atmosphere.",
+            "The atmosphere was filled with sounds.",
+            "Market sounds filled the air.",
+            "Sounds of the market filled the atmosphere."
+          ],
+          "points": 2
+        },
+        {
+          "question": "What did Emily buy?",
+          "answer": "Emily bought a basket of strawberries and a unique piece of pottery.",
+          "alternativeAnswers": [
+            "She bought strawberries and pottery.",
+            "Strawberries and pottery were bought by Emily.",
+            "A strawberry basket and pottery were bought.",
+            "She purchased strawberries and pottery.",
+            "Emily purchased a basket and pottery.",
+            "Pottery and strawberries were her purchases."
+          ],
+          "points": 2
+        },
+        {
+          "question": "Where did Emily go after her visit?",
+          "answer": "Emily went home.",
+          "alternativeAnswers": [
+            "She headed home.",
+            "Home was where Emily went.",
+            "She went back home.",
+            "Emily returned home.",
+            "Her destination was home.",
+            "She made her way home."
+          ],
+          "points": 2
+        }
+      ]
+    }
+  ]
+}

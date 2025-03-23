@@ -1,99 +1,359 @@
 {
-    "reading": [
-      { "id": 1, "question": "Is SSD a type of non-volatile memory?", "answer": "Yes", "time": 30 },
-      { "id": 2, "question": "What does DNS stand for?", "answer": "Domain Name System", "time": 30 },
-      { "id": 3, "question": "On which layer does IPsec operate?", "answer": "3", "time": 30 },
-      { "id": 4, "question": "Which layer does a Router operate on?", "answer": "3", "time": 30 },
-      { "id": 5, "question": "Is Virtualization the same as Cloud Computing?", "answer": "No", "time": 30 },
-      { "id": 6, "question": "What does DHCP stand for?", "answer": "Dynamic Host Configuration Protocol", "time": 30 },
-      { "id": 7, "question": "Do we use Repeaters in modern networks?", "answer": "No", "time": 30 },
-      { "id": 8, "question": "Is MPLS used in WAN?", "answer": "Yes", "time": 30 },
-      { "id": 9, "question": "Is Token Ring still used in modern networks?", "answer": "No", "time": 30 },
-      { "id": 10, "question": "Do we have other types of IP addresses than IPv4?", "answer": "Yes", "time": 30 }
-    ],
-    "listening": [
-      { "id": 1, "text": "Time and tide wait for none.", "time": 30 },
-      { "id": 2, "text": "A journey of a thousand miles begins with a single step.", "time": 30 },
-      { "id": 3, "text": "Every cloud has a silver lining.", "time": 30 },
-      { "id": 4, "text": "The early bird catches the worm.", "time": 30 },
-      { "id": 5, "text": "Actions speak louder than words.", "time": 30 },
-      { "id": 6, "text": "A picture is worth a thousand words.", "time": 30 },
-      { "id": 7, "text": "When in Rome, do as the Romans do.", "time": 30 },
-      { "id": 8, "text": "A watched pot never boils.", "time": 30 },
-      { "id": 9, "text": "Necessity is the mother of invention.", "time": 30 },
-      { "id": 10, "text": "Barking up the wrong tree.", "time": 30 }
-    ],
-    "logical": [
-      { "id": 1, "question": "If all Cats are Animals and all Animals are Beings, are all Cats definitely Beings?", "answer": "Yes", "time": 45 },
-      { "id": 2, "question": "What is the meaning of loquacious?", "answer": "talkative", "time": 45 },
-      { "id": 3, "question": "A person who avoids social interactions is introvert or extrovert?", "answer": "introvert", "time": 45 },
-      { "id": 4, "question": "A person who is skilled at using both hands equally is ambidextrous or dexterous?", "answer": "ambidextrous", "time": 45 },
-      { "id": 5, "question": "The study of stars is known as astronomy or astrology?", "answer": "astronomy", "time": 45 },
-      { "id": 6, "question": "A government ruled by a small group of people is called oligarchy or democracy?", "answer": "oligarchy", "time": 45 },
-      { "id": 7, "question": "A collection of maps is called an atlas or a dictionary?", "answer": "atlas", "time": 45 },
-      { "id": 8, "question": "The scientific study of skin is dermatology or nephrology?", "answer": "dermatology", "time": 45 },
-      { "id": 9, "question": "A person who loves books is called bibliophile or bibliophobe?", "answer": "bibliophile", "time": 45 },
-      { "id": 10, "question": "A person who is excessively willing to serve others is subservient or rebellious?", "answer": "subservient", "time": 45 }
-    ],
-    "extempore": [
-      { "id": 1, "topic": "The role of technology in modern education", "time": 60 },
-      { "id": 2, "topic": "Sustainable development and its importance", "time": 60 }
-    ],
-    "diction": [
+  "reading": [
+    {
+      "id": 1,
+      "question": "Is RAM a type of non-volatile memory?",
+      "answer": "Yes, RAM is a type of non-volatile memory.",
+      "alternativeAnswers": [
+        "It is true that Ram is non-volatile.",
+        "Rams are indeed non-volatile memory."
+      ],
+      "time": 30
+    },
+    {
+      "id": 2,
+      "question": "What does DNS stand for?",
+      "answer": "DNS stands for Domain Name System.",
+      "alternativeAnswers": [
+        "It is Domain Name System.",
+        "Domain Name System is what DNS means."
+      ],
+      "time": 30
+    },
+    {
+      "id": 3,
+      "question": "On which layer does IPsec operate?",
+      "answer": "IPsec operates on layer 3.",
+      "alternativeAnswers": [
+        "It works on layer 3.",
+        "Layer 3 is where IPsec operates."
+      ],
+      "time": 30
+    },
+    {
+      "id": 4,
+      "question": "Which layer does a Router operate on?",
+      "answer": "A Router operates on layer 3.",
+      "alternativeAnswers": [
+        "It operates on layer 3.",
+        "Layer 3 is where a Router operates."
+      ],
+      "time": 30
+    },
+    {
+      "id": 5,
+      "question": "Is Virtualization the same as Cloud Computing?",
+      "answer": "No, Virtualization is not the same as Cloud Computing.",
+      "alternativeAnswers": [
+        "They are not the same.",
+        "Virtualization and Cloud Computing are different."
+      ],
+      "time": 30
+    },
+    {
+      "id": 6,
+      "question": "What does DHCP stand for?",
+      "answer": "DHCP stands for Dynamic Host Configuration Protocol.",
+      "alternativeAnswers": [
+        "It is Dynamic Host Configuration Protocol.",
+        "Dynamic Host Configuration Protocol is what DHCP means."
+      ],
+      "time": 30
+    },
+    {
+      "id": 7,
+      "question": "Do we use Repeaters in modern networks?",
+      "answer": "No, we do not use Repeaters in modern networks.",
+      "alternativeAnswers": [
+        "Repeaters are not used in modern networks.",
+        "Repeaters are no longer used in modern networks."
+      ],
+      "time": 30
+    },
+    {
+      "id": 8,
+      "question": "Is MPLS used in WAN?",
+      "answer": "Yes, MPLS is used in WAN.",
+      "alternativeAnswers": [
+        "It is true that MPLS is used in WAN.",
+        "MPLS is indeed used in WAN."
+      ],
+      "time": 30
+    },
+    {
+      "id": 9,
+      "question": "Is Token Ring still used in modern networks?",
+      "answer": "No, Token Ring is not still used in modern networks.",
+      "alternativeAnswers": [
+        "Token Ring is not used in modern networks.",
+        "Token Ring is no longer used in modern networks."
+      ],
+      "time": 30
+    },
+    {
+      "id": 10,
+      "question": "Do we have other types of IP addresses than IPv4?",
+      "answer": "Yes, we have other types of IP addresses than IPv4.",
+      "alternativeAnswers": [
+        "There are other IP addresses besides IPv4.",
+        "It is true that there are IP addresses other than IPv4."
+      ],
+      "time": 30
+    }
+  ],
+  "listening": [
+    { "id": 1, "text": "Time and tide wait for none.", "time": 30 },
+    { "id": 2, "text": "A journey of a thousand miles begins with a single step.", "time": 30 },
+    { "id": 3, "text": "Every cloud has a silver lining.", "time": 30 },
+    { "id": 4, "text": "The early bird catches the worm.", "time": 30 },
+    { "id": 5, "text": "Actions speak louder than words.", "time": 30 },
+    { "id": 6, "text": "A picture is worth a thousand words.", "time": 30 },
+    { "id": 7, "text": "When in Rome, do as the Romans do.", "time": 30 },
+    { "id": 8, "text": "A watched pot never boils.", "time": 30 },
+    { "id": 9, "text": "Necessity is the mother of invention.", "time": 30 },
+    { "id": 10, "text": "Barking up the wrong tree.", "time": 30 }
+  ],
+  "logical": [
+    { "id": 1, "question": "If all Cats are Animals and all Animals are Beings, are all Cats definitely Beings?", "answer": "Yes", "time": 45 },
+    { "id": 2, "question": "What is the meaning of loquacious?", "answer": "talkative", "time": 45 },
+    { "id": 3, "question": "A person who avoids social interactions is introvert or extrovert?", "answer": "introvert", "time": 45 },
+    { "id": 4, "question": "A person who is skilled at using both hands equally is ambidextrous or dexterous?", "answer": "ambidextrous", "time": 45 },
+    { "id": 5, "question": "The study of stars is known as astronomy or astrology?", "answer": "astronomy", "time": 45 },
+    { "id": 6, "question": "A government ruled by a small group of people is called oligarchy or democracy?", "answer": "oligarchy", "time": 45 },
+    { "id": 7, "question": "A collection of maps is called an atlas or a dictionary?", "answer": "atlas", "time": 45 },
+    { "id": 8, "question": "The scientific study of skin is dermatology or nephrology?", "answer": "dermatology", "time": 45 },
+    { "id": 9, "question": "A person who loves books is called bibliophile or bibliophobe?", "answer": "bibliophile", "time": 45 },
+    { "id": 10, "question": "A person who is excessively willing to serve others is subservient or rebellious?", "answer": "subservient", "time": 45 }
+  ],
+  
+    "grammar": [
       {
         "id": 1,
-        "story": "John decided to take a walk through the park on a sunny afternoon. He enjoyed the chirping of birds and the rustling of leaves. As he strolled along the path, he saw children playing and families having picnics. The fresh air and the vibrant atmosphere lifted his spirits.",
-        "time": 45,
-        "questions": [
-          {
-            "question": "Where did John decide to walk?",
-            "answer": ["John decided to take a walk through the park./", "John decided to take a walk through the park on a sunny afternoon."],
-            "points": 2.5
-          },
-          {
-            "question": "What did John enjoy hearing?",
-            "answer": ["John enjoyed hearing chirping of birds and rustling of leaves./", "John enjoyed the chirping of birds and rustling of leaves."],
-            "points": 2.5
-          },
-          {
-            "question": "Who did John see in the park?",
-            "answer": ["John saw children playing and families having picnics./", "John saw some children playing and families having picnics."],
-            "points": 2.5
-          },
-          {
-            "question": "How did the atmosphere affect John?",
-            "answer": ["The atmosphere lifted his spirits./", "The atmosphere lifted John's spirits."],
-            "points": 2.5
-          }
-        ]
+        "question": "Rearrange the words to form a correct sentence: 'so delicious was the cake that everyone asked for seconds.'",
+        "answer": "The cake was so delicious that everyone asked for seconds.",
+        "alternativeAnswers": [
+          "So delicious was the cake that everyone asked for seconds.",
+          "Everyone asked for seconds because the cake was so delicious."
+        ],
+        "time": 60
       },
       {
         "id": 2,
-        "story": "Emily spent her weekend exploring the city. She visited the Tate museum, which had fascinating exhibits about the history of the area. Later, she had lunch at a cozy café and enjoyed a delicious meal. In the evening, she went to a concert, which was the highlight of her day.",
-        "time": 45,
-        "questions": [
-          {
-            "question": "What did Emily explore?",
-            "answer": "Emily explored the city.",
-            "points": 2.5
-          },
-          {
-            "question": "Where did Emily visit?",
-            "answer": "Emily visted the Tate museum.",
-            "points": 2.5
-          },
-          {
-            "question": "What did Emily do for lunch?",
-            "answer": "Emily had lunch at a cozy café.",
-            "points": 2.5
-          },
-          {
-            "question": "What was the highlight of Emily's day?",
-            "answer": "The concert was the highlight of Emily's day.",
-            "points": 2.5
-          }
-        ]
+        "question": "Rearrange the words to form a correct sentence: 'on no account should you share your password with anyone.'",
+        "answer": "On no account should you share your password with anyone.",
+        "alternativeAnswers": [
+          "You should not share your password with anyone under any circumstances.",
+          "Your password should not be shared with anyone under any circumstances."
+        ],
+        "time": 60
+      },
+      {
+        "id": 3,
+        "question": "Rearrange the words to form a correct sentence: 'not only did she win the competition, but she also set a new record.'",
+        "answer": "Not only did she win the competition, but she also set a new record.",
+        "alternativeAnswers": [
+          "She not only won the competition but also set a new record.",
+          "In addition to winning the competition, she set a new record."
+        ],
+        "time": 60
+      },
+  
+            {
+        "id": 4,
+        "question": "Correct the subject-verb agreement in this sentence: 'The collection of rare coins are displayed in the museum.'",
+        "answer": "The collection of rare coins is displayed in the museum.",
+        "alternativeAnswers": [
+          "The collection of rare coins is exhibited in the museum.",
+          "The rare coins in the collection are displayed in the museum."
+        ],
+        "time": 60
+      },
+      {
+        "id": 5,
+        "question": "Correct the subject-verb agreement in this sentence: 'None of the information provided are accurate.'",
+        "answer": "None of the information provided is accurate.",
+        "alternativeAnswers": [
+          "None of the information is accurate.",
+          "The information provided is not accurate."
+        ],
+        "time": 60
+      },
+      {
+        "id": 6,
+        "question": "Correct the subject-verb agreement in this sentence: 'The team of scientists are working on a groundbreaking project.'",
+        "answer": "The team of scientists is working on a groundbreaking project.",
+        "alternativeAnswers": [
+          "The team of scientists is developing a groundbreaking project.",
+          "The scientists on the team are working on a groundbreaking project."
+        ],
+        "time": 60
+      },
+      {
+        "id": 7,
+        "question": "Correct the subject-verb agreement in this sentence: 'Either the director or the actors has to attend the press conference.'",
+        "answer": "Either the director or the actors have to attend the press conference.",
+        "alternativeAnswers": [
+          "Either the actors or the director has to attend the press conference.",
+          "Both the director and the actors have to attend the press conference."
+        ],
+        "time": 60
+      },
+  
+      {
+        "id": 8,
+        "question": "Replace the incorrect word in this sentence: 'The furniture in the room are arranged beautifully.'",
+        "answer": "The furniture in the room is arranged beautifully.",
+        "alternativeAnswers": [
+          "The furniture in the room is beautifully arranged.",
+          "The arrangement of the furniture in the room is beautiful."
+        ],
+        "time": 60
+      },
+      {
+        "id": 9,
+        "question": "Replace the incorrect word in this sentence: 'She was very sensible to the criticism she received.'",
+        "answer": "She was very sensitive to the criticism she received.",
+        "alternativeAnswers": [
+          "She was very responsive to the criticism she received.",
+          "She was very affected by the criticism she received."
+        ],
+        "time": 60
+      },
+      {
+        "id": 10,
+        "question": "Replace the incorrect word in this sentence: 'The teacher gave us an advice about the upcoming exam.'",
+        "answer": "The teacher gave us advice about the upcoming exam.",
+        "alternativeAnswers": [
+          "The teacher provided us with advice about the upcoming exam.",
+          "The teacher gave us some advice about the upcoming exam."
+        ],
+        "time": 60
       }
     ]
-  }
-  
+  ,
+
+  "extempore": [
+    { "id": 1, "topic": "The role of technology in modern education", "time": 60 },
+    { "id": 2, "topic": "Sustainable development and its importance", "time": 60 }
+  ],
+  "diction": [
+    {
+      "id": 1,
+      "story": "John decided to take a walk through the park on a sunny afternoon. He enjoyed the chirping of birds and the rustling of leaves. As he strolled along the path, he saw children playing and families having picnics. The fresh air and the vibrant atmosphere lifted his spirits.",
+      "time": 45,
+      "questions": [
+        {
+          "question": "Where did John decide to walk?",
+          "answer": "John decided to take a walk through the park.",
+          "alternativeAnswers": [
+            "He decided to take a walk through the park.",
+            "A walk through the park was his decision.",
+            "John chose to walk in the park.",
+            "His decision was a park walk.",
+            "He opted for a walk in the park.",
+            "The park was John's chosen walking location."
+          ],
+          "points": 2.5
+        },
+        {
+          "question": "What did John enjoy hearing?",
+          "answer": "John enjoyed hearing the chirping of birds and the rustling of leaves.",
+          "alternativeAnswers": [
+            "He enjoyed hearing the chirping of birds and the rustling leaves.",
+            "The sounds of birds chirping and leaves rustling were pleasing to him.",
+            "He liked the sounds of birds and leaves.",
+            "The bird chirps and leaf rustles were enjoyed by him.",
+            "John relished the birds' chirps and leaves' rustling.",
+            "The rustling leaves and chirping birds were what he enjoyed."
+          ],
+          "points": 2.5
+        },
+        {
+          "question": "Who did John see in the park?",
+          "answer": "John saw children playing and families having picnics.",
+          "alternativeAnswers": [
+            "He saw children playing and families having picnics.",
+            "Children at play and picnicking families were what he saw.",
+            "He saw playing children and picnic families.",
+            "John observed families picnicking and children playing.",
+            "Picnicking families and playing children were seen by him.",
+            "He noticed children playing and families having a picnic."
+          ],
+          "points": 2.5
+        },
+        {
+          "question": "How did the atmosphere affect John?",
+          "answer": "The atmosphere lifted his spirits.",
+          "alternativeAnswers": [
+            "His spirits were lifted by the atmosphere.",
+            "He felt uplifted by the atmosphere.",
+            "The atmosphere made him feel better.",
+            "He was uplifted by the park's atmosphere.",
+            "John felt a lift in his spirits due to the atmosphere.",
+            "The park's ambiance improved his mood."
+          ],
+          "points": 2.5
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "story": "Emily spent her weekend exploring the city. She visited the Tate museum, which had fascinating exhibits about the history of the area. Later, she had lunch at a cozy café and enjoyed a delicious meal. In the evening, she went to a concert, which was the highlight of her day.",
+      "time": 45,
+      "questions": [
+        {
+          "question": "What did Emily explore?",
+          "answer": "Emily explored the city.",
+          "alternativeAnswers": [
+            "She explored the city.",
+            "The city was explored by her.",
+            "Emily went exploring the city.",
+            "She did city exploration.",
+            "Emily did some city exploring.",
+            "The urban area was explored by Emily."
+          ],
+          "points": 2.5
+        },
+        {
+          "question": "Where did Emily visit?",
+          "answer": "Emily visited the Tate museum.",
+          "alternativeAnswers": [
+            "She visited the Tate museum.",
+            "The Tate museum was where she visited.",
+            "Emily went to the Tate museum.",
+            "She made a visit to the Tate museum.",
+            "The Tate museum was her destination.",
+            "Her visit was to the Tate museum."
+          ],
+          "points": 2.5
+        },
+        {
+          "question": "What did Emily do for lunch?",
+          "answer": "Emily had lunch at a cozy café.",
+          "alternativeAnswers": [
+            "She had lunch at a cozy café.",
+            "Lunch at a cozy café was what she did.",
+            "She ate lunch at a cozy café.",
+            "Emily lunched at a cozy café.",
+            "Her lunch was at a cozy café.",
+            "A cozy café was where she ate lunch."
+          ],
+          "points": 2.5
+        },
+        {
+          "question": "What was the highlight of Emily's day?",
+          "answer": "The concert was the highlight of Emily's day.",
+          "alternativeAnswers": [
+            "The concert was the highlight of her day.",
+            "Her day's highlight was the concert.",
+            "Emily's day was highlighted by the concert.",
+            "The concert was her day's best part.",
+            "The concert was the best part of her day.",
+            "Her day peaked with the concert."
+          ],
+          "points": 2.5
+        }
+      ]
+    }
+  ]
+}

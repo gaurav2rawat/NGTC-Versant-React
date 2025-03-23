@@ -1,99 +1,306 @@
 {
-    "reading": [
-      { "id": 1, "question": "Is RAM volatile memory?", "answer": "Yes", "time": 30 },
-      { "id": 2, "question": "What does HTTP stand for?", "answer": "Hypertext Transfer Protocol", "time": 30 },
-      { "id": 3, "question": "On which layer does the Transport layer operate?", "answer": "4", "time": 30 },
-      { "id": 4, "question": "Which layer does an Ethernet switch operate on?", "answer": "2", "time": 30 },
-      { "id": 5, "question": "Is a Virtual Machine the same as a Container?", "answer": "No", "time": 30 },
-      { "id": 6, "question": "What does SSH stand for?", "answer": "Secure Shell", "time": 30 },
-      { "id": 7, "question": "Do we use FDDI in modern networks?", "answer": "No", "time": 30 },
-      { "id": 8, "question": "Is IPv6 used in modern networks?", "answer": "Yes", "time": 30 },
-      { "id": 9, "question": "Is Token Ring a modern networking protocol?", "answer": "No", "time": 30 },
-      { "id": 10, "question": "Do we have other types of IP addresses than IPv6?", "answer": "Yes", "time": 30 }
-    ],
-    "listening": [
-      { "id": 1, "text": "Honesty is the best policy.", "time": 30 },
-      { "id": 2, "text": "A stitch in time saves nine.", "time": 30 },
-      { "id": 3, "text": "An apple a day keeps the doctor away.", "time": 30 },
-      { "id": 4, "text": "Absence makes the heart grow fonder.", "time": 30 },
-      { "id": 5, "text": "Birds of a feather flock together.", "time": 30 },
-      { "id": 6, "text": "Better late than never.", "time": 30 },
-      { "id": 7, "text": "The pen is mightier than the sword.", "time": 30 },
-      { "id": 8, "text": "Rome wasn't built in a day.", "time": 30 },
-      { "id": 9, "text": "A penny saved is a penny earned.", "time": 30 },
-      { "id": 10, "text": "When the going gets tough, the tough get going.", "time": 30 }
-    ],
-    "logical": [
-      { "id": 1, "question": "If all Elephants are Mammals and all Mammals are Animals, are all Elephants definitely Animals?", "answer": "Yes", "time": 45 },
-      { "id": 2, "question": "What is the meaning of verbose?", "answer": "wordy", "time": 45 },
-      { "id": 3, "question": "A person who saves money is frugal or extravagant?", "answer": "frugal", "time": 45 },
-      { "id": 4, "question": "A person who has a fear of heights is acrophobic or claustrophobic?", "answer": "acrophobic", "time": 45 },
-      { "id": 5, "question": "The study of the human mind is known as psychology or physiology?", "answer": "psychology", "time": 45 },
-      { "id": 6, "question": "A government ruled by a single person is called autocracy or democracy?", "answer": "autocracy", "time": 45 },
-      { "id": 7, "question": "A collection of poems is called an anthology or a thesaurus?", "answer": "anthology", "time": 45 },
-      { "id": 8, "question": "The scientific study of insects is entomology or ichthyology?", "answer": "entomology", "time": 45 },
-      { "id": 9, "question": "A person who loves to eat is called gourmand or ascetic?", "answer": "gourmand", "time": 45 },
-      { "id": 10, "question": "A person who is known for telling lies is dishonest or truthful?", "answer": "dishonest", "time": 45 }
-    ],
-    "extempore": [
-      { "id": 1, "topic": "The impact of social media on mental health", "time": 60 },
-      { "id": 2, "topic": "The future of renewable energy", "time": 60 }
-    ],
-    "diction": [
-      {
+  "reading": [
+    {
+      "id": 1,
+      "question": "Is RAM volatile memory?",
+      "answer": "Yes, RAM is volatile memory.",
+      "alternativeAnswers": [
+        "It is true that RAM is volatile.",
+        "RAM is a volatile memory."
+      ],
+      "time": 30
+    },
+    {
+      "id": 2,
+      "question": "What does HTTP stand for?",
+      "answer": "HTTP stands for Hypertext Transfer Protocol.",
+      "alternativeAnswers": [
+        "It is Hypertext Transfer Protocol.",
+        "Hypertext Transfer Protocol is what HTTP stands for."
+      ],
+      "time": 30
+    },
+    {
+      "id": 3,
+      "question": "On which layer does the Transport layer operate?",
+      "answer": "The Transport layer operates on layer 4.",
+      "alternativeAnswers": [
+        "It operates on layer 4.",
+        "Layer 4 is where the Transport layer operates."
+      ],
+      "time": 30
+    },
+    {
+      "id": 4,
+      "question": "Which layer does an Ethernet switch operate on?",
+      "answer": "An Ethernet switch operates on layer 2.",
+      "alternativeAnswers": [
+        "It operates on layer 2.",
+        "Layer 2 is where an Ethernet switch operates."
+      ],
+      "time": 30
+    },
+    {
+      "id": 5,
+      "question": "Is a Virtual Machine the same as a Container?",
+      "answer": "No, a Virtual Machine is not the same as a Container.",
+      "alternativeAnswers": [
+        "They are not the same.",
+        "Virtual Machines and Containers are different."
+      ],
+      "time": 30
+    },
+    {
+      "id": 6,
+      "question": "What does SSH stand for?",
+      "answer": "SSH stands for Secure Shell.",
+      "alternativeAnswers": [
+        "It is Secure Shell.",
+        "Secure Shell is what SSH means."
+      ],
+      "time": 30
+    },
+    {
+      "id": 7,
+      "question": "Do we use FDDI in modern networks?",
+      "answer": "No, we do not use FDDI in modern networks.",
+      "alternativeAnswers": [
+        "FDDI is not used in modern networks.",
+        "FDDI is no longer used in modern networks."
+      ],
+      "time": 30
+    },
+    {
+      "id": 8,
+      "question": "Is IPv6 used in modern networks?",
+      "answer": "Yes, IPv6 is used in modern networks.",
+      "alternativeAnswers": [
+        "It is true that IPv6 is used.",
+        "IPv6 is indeed used in modern networks."
+      ],
+      "time": 30
+    },
+    {
+      "id": 9,
+      "question": "Is Token Ring a modern networking protocol?",
+      "answer": "No, Token Ring is not a modern networking protocol.",
+      "alternativeAnswers": [
+        "It is not modern.",
+        "Token Ring is no longer a modern networking protocol."
+      ],
+      "time": 30
+    },
+    {
+      "id": 10,
+      "question": "Do we have other types of IP addresses than IPv6?",
+      "answer": "Yes, we have other types of IP addresses than IPv6.",
+      "alternativeAnswers": [
+        "There are other IP addresses besides IPv6.",
+        "It is true that there are IP addresses other than IPv6."
+      ],
+      "time": 30
+    }
+  ],
+  "listening": [
+    { "id": 1, "text": "Honesty is the best policy.", "time": 30 },
+    { "id": 2, "text": "A stitch in time saves nine.", "time": 30 },
+    { "id": 3, "text": "An apple a day keeps the doctor away.", "time": 30 },
+    { "id": 4, "text": "Absence makes the heart grow fonder.", "time": 30 },
+    { "id": 5, "text": "Birds of a feather flock together.", "time": 30 },
+    { "id": 6, "text": "Better late than never.", "time": 30 },
+    { "id": 7, "text": "The pen is mightier than the sword.", "time": 30 },
+    { "id": 8, "text": "Rome wasn't built in a day.", "time": 30 },
+    { "id": 9, "text": "A penny saved is a penny earned.", "time": 30 },
+    { "id": 10, "text": "When the going gets tough, the tough get going.", "time": 30 }
+  ],
+  "logical": [
+    { "id": 1, "question": "If all Elephants are Mammals and all Mammals are Animals, are all Elephants definitely Animals?", "answer": "Yes", "time": 45 },
+    { "id": 2, "question": "What is the meaning of verbose?", "answer": "wordy", "time": 45 },
+    { "id": 3, "question": "A person who saves money is frugal or extravagant?", "answer": "frugal", "time": 45 },
+    { "id": 4, "question": "A person who has a fear of heights is acrophobic or claustrophobic?", "answer": "acrophobic", "time": 45 },
+    { "id": 5, "question": "The study of the human mind is known as psychology or physiology?", "answer": "psychology", "time": 45 },
+    { "id": 6, "question": "A government ruled by a single person is called autocracy or democracy?", "answer": "autocracy", "time": 45 },
+    { "id": 7, "question": "A collection of poems is called an anthology or a thesaurus?", "answer": "anthology", "time": 45 },
+    { "id": 8, "question": "The scientific study of insects is entomology or ichthyology?", "answer": "entomology", "time": 45 },
+    { "id": 9, "question": "A person who loves to eat is called gourmand or ascetic?", "answer": "gourmand", "time": 45 },
+    { "id": 10, "question": "A person who is known for telling lies is dishonest or truthful?", "answer": "dishonest", "time": 45 }
+  ],
+
+  
+    "grammar": [
+            {
         "id": 1,
-        "story": "Tom decided to go for a run in the morning. The sun was just rising, casting a golden glow over the landscape. He enjoyed the solitude and the sound of his footsteps on the path. After his run, he felt refreshed and ready to tackle the day's challenges.",
-        "time": 45,
-        "questions": [
-          {
-            "question": "When did Tom decide to run?",
-            "answer": ["Tom decided to go for a run in the morning./", "Tom went for a run in the morning."],
-            "points": 2.5
-          },
-          {
-            "question": "What was the sun doing?",
-            "answer": "The sun was rising.",
-            "points": 2.5
-          },
-          {
-            "question": "What did Tom enjoy during his run?",
-            "answer": ["Tom enjoyed the solitude and the sound of his footsteps./", "Tom enjoyed the solitude and sound of his footsteps"],
-            "points": 2.5
-          },
-          {
-            "question": "How did Tom feel after his run?",
-            "answer": ["Tom felt refreshed after his run./", "Tom felt refreshed after the run."],
-            "points": 2.5
-          }
-        ]
+        "question": "Rearrange the words to form a correct sentence: 'so tired was he that he fell asleep immediately.'",
+        "answer": "He was so tired that he fell asleep immediately.",
+        "alternativeAnswers": [
+          "So tired was he that he fell asleep immediately.",
+          "So tired he was that he fell asleep immediately."
+        ],
+        "time": 60
       },
       {
         "id": 2,
-        "story": "Lisa spent her afternoon gardening in her backyard. She planted new flowers and watered her plants. The weather was perfect, with a gentle breeze and clear skies. After finishing her gardening, she sat on her porch with a cup of tea, feeling accomplished.",
-        "time": 45,
-        "questions": [
-          {
-            "question": "What did Lisa do in the afternoon?",
-            "answer": ["Lisa did some gardening/.","Lisa did gardening."],
-            "points": 2.5
-          },
-          {
-            "question": "What did Lisa plant?",
-            "answer": "Lisa planted new flowers.",
-            "points": 2.5
-          },
-          {
-            "question": "What was the weather like?",
-            "answer": ["The weather was perfect with a gentle breeze and clear skies./", "The weather was perfect with gentle breeze and clear skies."],
-            "points": 2.5
-          },
-          {
-            "question": "How did Lisa feel after gardening?",
-            "answer": ["Lisa felt accomplished./", "Lisa felt accomplished after gardening."],
-            "points": 2.5
-          }
-        ]
-      }
-    ]
-  }
+        "question": "Rearrange the words to form a correct sentence: 'at no time did she reveal her true feelings.'",
+        "answer": "At no time did she reveal her true feelings.",
+        "alternativeAnswers": [
+          "She did not reveal her true feelings at any time.",
+          "Her true feelings were not revealed at any time."
+        ],
+        "time": 60
+      },
+      {
+        "id": 3,
+        "question": "Rearrange the words to form a correct sentence: 'not only did he finish the race, but he also broke the record.'",
+        "answer": "Not only did he finish the race, but he also broke the record.",
+        "alternativeAnswers": [
+          "He not only finished the race but also broke the record.",
+          "In addition to finishing the race, he broke the record."
+        ],
+        "time": 60
+      },
   
+      {
+        "id": 4,
+        "question": "Correct the subject-verb agreement in this sentence: 'The group of tourists are visiting the museum today.'",
+        "answer": "The group of tourists is visiting the museum today.",
+        "alternativeAnswers": [
+          "The group of tourists is going to visit the museum today.",
+          "The tourist group is visiting the museum today."
+        ],
+        "time": 60
+      },
+      {
+        "id": 5,
+        "question": "Correct the subject-verb agreement in this sentence: 'None of the books on the shelf belongs to me.'",
+        "answer": "None of the books on the shelf belong to me.",
+        "alternativeAnswers": [
+          "None of the books belong to me.",
+          "The books on the shelf do not belong to me."
+        ],
+        "time": 60
+      },
+      {
+        "id": 6,
+        "question": "Correct the subject-verb agreement in this sentence: 'The pair of shoes are on sale.'",
+        "answer": "The pair of shoes is on sale.",
+        "alternativeAnswers": [
+          "The pair of shoes is available at a discounted price.",
+          "The shoes are on sale."
+        ],
+        "time": 60
+      },
+      {
+        "id": 7,
+        "question": "Correct the subject-verb agreement in this sentence: 'Either the manager or the employees has to attend the meeting.'",
+        "answer": "Either the manager or the employees have to attend the meeting.",
+        "alternativeAnswers": [
+          "Either the employees or the manager has to attend the meeting.",
+          "Both the manager and the employees have to attend the meeting."
+        ],
+        "time": 60
+      },
+  
+      {
+        "id": 8,
+        "question": "Replace the incorrect word in this sentence: 'The news about the accident were shocking.'",
+        "answer": "The news about the accident was shocking.",
+        "alternativeAnswers": [
+          "The news about the accident was distressing.",
+          "The news of the accident was shocking."
+        ],
+        "time": 60
+      },
+      {
+        "id": 9,
+        "question": "Replace the incorrect word in this sentence: 'She was very economic with her words during the interview.'",
+        "answer": "She was very economical with her words during the interview.",
+        "alternativeAnswers": [
+          "She was very concise with her words during the interview.",
+          "She was very sparing with her words during the interview."
+        ],
+        "time": 60
+      },
+      {
+        "id": 10,
+        "question": "Replace the incorrect word in this sentence: 'The teacher gave us a feedback on our assignments.'",
+        "answer": "The teacher gave us feedback on our assignments.",
+        "alternativeAnswers": [
+          "The teacher provided us with feedback on our assignments.",
+          "The teacher gave us some feedback on our assignments."
+        ],
+        "time": 60
+      }
+    ],
+  
+
+
+
+  "extempore": [
+    { "id": 1, "topic": "The impact of social media on mental health", "time": 60 },
+    { "id": 2, "topic": "The future of renewable energy", "time": 60 }
+  ],  
+    "diction": [
+    {
+      "id": 1,
+      "story": "Tom decided to go for a run in the morning. The sun was just rising, casting a golden glow over the landscape. He enjoyed the solitude and the sound of his footsteps on the path. After his run, he felt refreshed and ready to tackle the day's challenges.",
+      "time": 45,
+      "questions": [
+        {
+          "question": "When did Tom decide to run?",
+          "answer": "Tom decided to go for a run in the morning.",
+          "alternativeAnswers": ["He decided to run in the morning.", "A morning run was his decision.", "Tom opted for a morning run.", "His choice was a morning jog.", "He made the decision to run in the morning.", "The morning was when he chose to run."],
+          "points": 2.5
+        },
+        {
+          "question": "What was the sun doing?",
+          "answer": "The sun was rising.",
+          "alternativeAnswers": ["It was rising.", "Rising was what the sun was doing.", "The sun was coming up.", "It was climbing into the sky.", "The sun began to ascend.", "Ascending was the sun's action."],
+          "points": 2.5
+        },
+        {
+          "question": "What did Tom enjoy during his run?",
+          "answer": "Tom enjoyed the solitude and the sound of his footsteps.",
+          "alternativeAnswers": ["He enjoyed the solitude and the sound of his footsteps.", "The quiet and the sound of his steps were enjoyable to him.", "He liked the quiet and the sound of his feet.", "The sound of his steps and the quiet were enjoyed by him.", "Tom relished the solitude and his footstep sounds.", "His footsteps and the quiet were what he enjoyed."],
+          "points": 2.5
+        },
+        {
+          "question": "How did Tom feel after his run?",
+          "answer": "Tom felt refreshed after his run.",
+          "alternativeAnswers": ["He felt refreshed after his run.", "A feeling of refreshment came over him after his run.", "He felt invigorated after running.", "Tom was refreshed after the run.", "He ended his run feeling refreshed.", "Refreshment was felt by Tom after running."],
+          "points": 2.5
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "story": "Lisa spent her afternoon gardening in her backyard. She planted new flowers and watered her plants. The weather was perfect, with a gentle breeze and clear skies. After finishing her gardening, she sat on her porch with a cup of tea, feeling accomplished.",
+      "time": 45,
+      "questions": [
+        {
+          "question": "What did Lisa do in the afternoon?",
+          "answer": "Lisa did some gardening.",
+          "alternativeAnswers": ["Lisa did gardening.", "She engaged in gardening activities.", "Gardening was what she did.", "She spent her afternoon gardening.", "Lisa gardened in her backyard.", "Her afternoon activity was gardening."],
+          "points": 2.5
+        },
+        {
+          "question": "What did Lisa plant?",
+          "answer": "Lisa planted new flowers.",
+          "alternativeAnswers": ["She planted new flowers.", "New flowers were planted by her.", "She put in new flowers.", "Lisa added new flowers to her garden.", "New blossoms were planted by Lisa.", "She planted fresh flowers."],
+          "points": 2.5
+        },
+        {
+          "question": "What was the weather like?",
+          "answer": "The weather was perfect with a gentle breeze and clear skies.",
+          "alternativeAnswers": ["It was perfect with a gentle breeze and clear skies.", "A gentle breeze and clear skies made the weather perfect.", "The weather was ideal with a light breeze and clear skies.", "It was a perfect day with a breeze and clear skies.", "The skies were clear and there was a gentle breeze.", "Clear skies and a light breeze made it perfect weather."],
+          "points": 2.5
+        },
+        {
+          "question": "How did Lisa feel after gardening?",
+          "answer": "Lisa felt accomplished.",
+          "alternativeAnswers": ["She felt accomplished.", "An accomplishment was felt by her.", "She felt a sense of accomplishment.", "Lisa was feeling accomplished.", "She felt a feeling of achievement.", "Accomplishment was her feeling."],
+          "points": 2.5
+        }
+      ]
+    }
+  ]
+}

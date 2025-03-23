@@ -1,104 +1,363 @@
 {
-    "reading": [
-      { "id": 1, "question": "Is a Solid State Drive (SSD) faster than a Hard Disk Drive (HDD)?", "answer": "Yes", "time": 30 },
-      { "id": 2, "question": "What does SMTP stand for?", "answer": "Simple Mail Transfer Protocol", "time": 30 },
-      { "id": 3, "question": "On which layer does HTTP operate?", "answer": "7", "time": 30 },
-      { "id": 4, "question": "Which layer does an Access Point operate on?", "answer": "2", "time": 30 },
-      { "id": 5, "question": "Is 192.168.1.1 a public IP address?", "answer": "No", "time": 30 },
-      { "id": 6, "question": "What does HTTPS stand for?", "answer": "Hypertext Transfer Protocol Secure", "time": 30 },
-      { "id": 7, "question": "Is Fiber Optic faster than Copper Cable?", "answer": "Yes", "time": 30 },
-      { "id": 8, "question": "Is VLAN used in LAN networks?", "answer": "Yes", "time": 30 },
-      { "id": 9, "question": "Is Frame Relay still widely used in modern networks?", "answer": "No", "time": 30 },
-      { "id": 10, "question": "Do modern devices support both IPv4 and IPv6?", "answer": "Yes", "time": 30 }
-    ],
+  "reading": [
+    {
+      "id": 1,
+      "question": "Is a Solid State Drive (SSD) faster than a Hard Disk Drive (HDD)?",
+      "answer": "Yes, an SSD is faster than an HDD.",
+      "alternativeAnswers": [
+        "It is true that SSDs are faster than HDDs.",
+        "SSDs are indeed faster than HDDs."
+      ],
+      "time": 30
+    },
+    {
+      "id": 2,
+      "question": "What does SMTP stand for?",
+      "answer": "SMTP stands for Simple Mail Transfer Protocol.",
+      "alternativeAnswers": [
+        "It is Simple Mail Transfer Protocol.",
+        "Simple Mail Transfer Protocol is what SMTP means."
+      ],
+      "time": 30
+    },
+    {
+      "id": 3,
+      "question": "On which layer does HTTP operate?",
+      "answer": "HTTP operates on layer 7.",
+      "alternativeAnswers": [
+        "It works on layer 7.",
+        "Layer 7 is where HTTP operates."
+      ],
+      "time": 30
+    },
+    {
+      "id": 4,
+      "question": "Which layer does an Access Point operate on?",
+      "answer": "An Access Point operates on layer 2.",
+      "alternativeAnswers": [
+        "It operates on layer 2.",
+        "Layer 2 is where an Access Point operates."
+      ],
+      "time": 30
+    },
+    {
+      "id": 5,
+      "question": "Is 192.168.1.1 a public IP address?",
+      "answer": "No, 192.168.1.1 is not a public IP address.",
+      "alternativeAnswers": [
+        "It is not a public IP address.",
+        "192.168.1.1 is a private IP address."
+      ],
+      "time": 30
+    },
+    {
+      "id": 6,
+      "question": "What does HTTPS stand for?",
+      "answer": "HTTPS stands for Hypertext Transfer Protocol Secure.",
+      "alternativeAnswers": [
+        "It is Hypertext Transfer Protocol Secure.",
+        "Hypertext Transfer Protocol Secure is what HTTPS means."
+      ],
+      "time": 30
+    },
+    {
+      "id": 7,
+      "question": "Is Fiber Optic faster than Copper Cable?",
+      "answer": "Yes, Fiber Optic is faster than Copper Cable.",
+      "alternativeAnswers": [
+        "It is true that Fiber Optic is faster.",
+        "Fiber Optic is indeed faster than Copper Cable."
+      ],
+      "time": 30
+    },
+    {
+      "id": 8,
+      "question": "Is VLAN used in LAN networks?",
+      "answer": "Yes, VLAN is used in LAN networks.",
+      "alternativeAnswers": [
+        "It is true that VLAN is used in LANs.",
+        "VLANs are indeed used in LAN networks."
+      ],
+      "time": 30
+    },
+    {
+      "id": 9,
+      "question": "Is Frame Relay still widely used in modern networks?",
+      "answer": "No, Frame Relay is not widely used in modern networks.",
+      "alternativeAnswers": [
+        "It is not widely used anymore.",
+        "Frame Relay is no longer common in modern networks."
+      ],
+      "time": 30
+    },
+    {
+      "id": 10,
+      "question": "Do modern devices support both IPv4 and IPv6?",
+      "answer": "Yes, modern devices support both IPv4 and IPv6.",
+      "alternativeAnswers": [
+        "It is true that they support both.",
+        "Modern devices indeed support both IPv4 and IPv6."
+      ],
+      "time": 30
+    }
+  ],
     "listening": [
-      { "id": 1, "text": "You can lead a horse to water, but you can't make it drink.", "time": 30 },
-      { "id": 2, "text": "The grass is always greener on the other side.", "time": 30 },
-      { "id": 3, "text": "Don't count your chickens before they hatch.", "time": 30 },
-      { "id": 4, "text": "A bird in the hand is worth two in the bush.", "time": 30 },
-      { "id": 5, "text": "Every rose has its thorn.", "time": 30 },
-      { "id": 6, "text": "Hope for the best, but prepare for the worst.", "time": 30 },
-      { "id": 7, "text": "All that glitters is not gold.", "time": 30 },
-      { "id": 8, "text": "Actions speak louder than words.", "time": 30 },
-      { "id": 9, "text": "When life gives you lemons, make lemonade.", "time": 30 },
-      { "id": 10, "text": "A rolling stone gathers no moss.", "time": 30 }
-    ],
-    "logical": [
-      { "id": 1, "question": "If all Dogs are Mammals and all Mammals are Animals, are all Dogs definitely Animals?", "answer": "Yes", "time": 45 },
-      { "id": 2, "question": "What is the meaning of omniscient?", "answer": "all-knowing", "time": 45 },
-      { "id": 3, "question": "A person who donates generously is philanthropic or misanthropic?", "answer": "philanthropic", "time": 45 },
-      { "id": 4, "question": "A person who cannot make up their mind is indecisive or decisive?", "answer": "indecisive", "time": 45 },
-      { "id": 5, "question": "The study of the universe is known as astronomy or geology?", "answer": "astronomy", "time": 45 },
-      { "id": 6, "question": "A government ruled by the people is called democracy or monarchy?", "answer": "democracy", "time": 45 },
-      { "id": 7, "question": "A collection of stamps is called a collection or anthology?", "answer": "collection", "time": 45 },
-      { "id": 8, "question": "The scientific study of the mind is psychology or physiology?", "answer": "psychology", "time": 45 },
-      { "id": 9, "question": "A person who has a fear of confined spaces is claustrophobic or agoraphobic?", "answer": "claustrophobic", "time": 45 },
-      { "id": 10, "question": "A person who excels in mathematics is called a mathematician or historian?", "answer": "mathematician", "time": 45 }
-    ],
-    "extempore": [
-      { "id": 1, "topic": "The benefits and challenges of remote work", "time": 60 },
-      { "id": 2, "topic": "The role of artificial intelligence in healthcare.", "time": 60 }
-    ],
-    "diction": [
-      {
-        "id": 1,
-        "story": "Michael decided to go hiking in the mountains on Saturday. The weather was clear, and he enjoyed the fresh air and beautiful scenery. Along the way, he encountered a group of fellow hikers and joined them. By the end of the hike, Michael felt invigorated and happy to have made new friends.",
-        "time": 45,
-        "questions": [
-          {
-            "question": "Where did Michael decide to go hiking?",
-            "answer": "Michael decided to go hiking in the mountains.",
-            "points": 2.5
-          },
-          {
-            "question": "What was the weather like?",
-            "answer": "The weather was clear.",
-            "points": 2.5
-          },
-          {
-            "question": "Who did Michael encounter along the way?",
-            "answer": "Michael encountered a group of fellow hikers along the way.",
-            "points": 2.5
-          },
-          {
-            "question": "How did Michael feel by the end of the hike?",
-            "answer": ["Michael felt invigorated and happy/.", "Michael felt happy and invigorated."],
-            "points": 2.5
-          }
-        ]
-      },
-      {
-        "id": 2,
-        "story": "Sophia spent her Sunday afternoon painting in her art studio. She loved experimenting with colors and textures. As she worked on her latest piece, she felt a sense of accomplishment and joy. By the end of the day, she had created a beautiful painting that she couldn't wait to show her friends.",
-        "time": 45,
-        "questions": [
-          {
-            "question": "What did Sophia do on Sunday afternoon?",
-            "answer": ["Sophia did painting on the Sunday afternoon./", "Sophia painted on the sunday afternoon."],
-            "points": 2.5
-          },
-          {
-            "question": "Where was Sophia painting?",
-            "answer": "Sophia painted in her art studio.",
-            "points": 2.5
-          },
-          {
-            "question": "What did Sophia love experimenting with?",
-            "answer": "Sophia loved experimenting with colors and textures.",
-            "points": 2.5
-          },
-          {
-            "question": "How did Sophia feel as she worked on her latest piece?",
-            "answer": "Sophia felt a sense of accomplishment and joy.",
-            "points": 2.5
-          },
-          {
-            "question": "What did Sophia create by the end of the day?",
-            "answer": "Sophia created a beautiful painting.",
-            "points": 2.5
-          }
-        ]
-      }
-    ]
-  }
+    { "id": 1, "text": "You can lead a horse to water, but you can't make it drink.", "time": 30 },
+    { "id": 2, "text": "The grass is always greener on the other side.", "time": 30 },
+    { "id": 3, "text": "Don't count your chickens before they hatch.", "time": 30 },
+    { "id": 4, "text": "A bird in the hand is worth two in the bush.", "time": 30 },
+    { "id": 5, "text": "Every rose has its thorn.", "time": 30 },
+    { "id": 6, "text": "Hope for the best, but prepare for the worst.", "time": 30 },
+    { "id": 7, "text": "All that glitters is not gold.", "time": 30 },
+    { "id": 8, "text": "Actions speak louder than words.", "time": 30 },
+    { "id": 9, "text": "When life gives you lemons, make lemonade.", "time": 30 },
+    { "id": 10, "text": "A rolling stone gathers no moss.", "time": 30 }
+  ],
+  "logical": [
+    { "id": 1, "question": "If all Dogs are Mammals and all Mammals are Animals, are all Dogs definitely Animals?", "answer": "Yes", "time": 45 },
+    { "id": 2, "question": "What is the meaning of omniscient?", "answer": "all-knowing", "time": 45 },
+    { "id": 3, "question": "A person who donates generously is philanthropic or misanthropic?", "answer": "philanthropic", "time": 45 },
+    { "id": 4, "question": "A person who cannot make up their mind is indecisive or decisive?", "answer": "indecisive", "time": 45 },
+    { "id": 5, "question": "The study of the universe is known as astronomy or geology?", "answer": "astronomy", "time": 45 },
+    { "id": 6, "question": "A government ruled by the people is called democracy or monarchy?", "answer": "democracy", "time": 45 },
+    { "id": 7, "question": "A collection of stamps is called a collection or anthology?", "answer": "collection", "time": 45 },
+    { "id": 8, "question": "The scientific study of the mind is psychology or physiology?", "answer": "psychology", "time": 45 },
+    { "id": 9, "question": "A person who has a fear of confined spaces is claustrophobic or agoraphobic?", "answer": "claustrophobic", "time": 45 },
+    { "id": 10, "question": "A person who excels in mathematics is called a mathematician or historian?", "answer": "mathematician", "time": 45 }
+  ],
+  "grammar": [
+    {
+      "id": 1,
+      "question": "Rearrange the words to form a correct sentence: 'so beautiful was the sunset that we stopped to take pictures.'",
+      "answer": "The sunset was so beautiful that we stopped to take pictures.",
+      "alternativeAnswers": [
+        "So beautiful was the sunset that we stopped to take pictures.",
+        "We stopped to take pictures because the sunset was so beautiful."
+      ],
+      "time": 60
+    },
+    {
+      "id": 2,
+      "question": "Rearrange the words to form a correct sentence: 'under no circumstances should you reveal the secret.'",
+      "answer": "Under no circumstances should you reveal the secret.",
+      "alternativeAnswers": [
+        "You should not reveal the secret under any circumstances.",
+        "The secret should not be revealed under any circumstances."
+      ],
+      "time": 60
+    },
+    {
+      "id": 3,
+      "question": "Rearrange the words to form a correct sentence: 'not only did she complete the project, but she also helped her teammates.'",
+      "answer": "Not only did she complete the project, but she also helped her teammates.",
+      "alternativeAnswers": [
+        "She not only completed the project but also helped her teammates.",
+        "In addition to completing the project, she helped her teammates."
+      ],
+      "time": 60
+    },
+
+    {
+      "id": 4,
+      "question": "Correct the subject-verb agreement in this sentence: 'The list of items are on the table.'",
+      "answer": "The list of items is on the table.",
+      "alternativeAnswers": [
+        "The list of items is placed on the table.",
+        "The items on the list are on the table."
+      ],
+      "time": 60
+    },
+    {
+      "id": 5,
+      "question": "Correct the subject-verb agreement in this sentence: 'One of the students were absent yesterday.'",
+      "answer": "One of the students was absent yesterday.",
+      "alternativeAnswers": [
+        "One student was absent yesterday.",
+        "A student from the class was absent yesterday."
+      ],
+      "time": 60
+    },
+    {
+      "id": 6,
+      "question": "Correct the subject-verb agreement in this sentence: 'The majority of the team disagree with the decision.'",
+      "answer": "The majority of the team disagrees with the decision.",
+      "alternativeAnswers": [
+        "Most of the team disagrees with the decision.",
+        "The team majority disagrees with the decision."
+      ],
+      "time": 60
+    },
+    {
+      "id": 7,
+      "question": "Correct the subject-verb agreement in this sentence: 'Neither the teacher nor the students was prepared for the surprise test.'",
+      "answer": "Neither the teacher nor the students were prepared for the surprise test.",
+      "alternativeAnswers": [
+        "Neither the students nor the teacher was prepared for the surprise test.",
+        "Both the teacher and the students were unprepared for the surprise test."
+      ],
+      "time": 60
+    },
+
+    {
+      "id": 8,
+      "question": "Replace the incorrect word in this sentence: 'The data suggests that the economy are improving.'",
+      "answer": "The data suggests that the economy is improving.",
+      "alternativeAnswers": [
+        "The data suggest that the economy is improving.",
+        "The data indicates that the economy is improving."
+      ],
+      "time": 60
+    },
+    {
+      "id": 9,
+      "question": "Replace the incorrect word in this sentence: 'She was very sensible to the needs of her team.'",
+      "answer": "She was very sensitive to the needs of her team.",
+      "alternativeAnswers": [
+        "She was very attentive to the needs of her team.",
+        "She was very responsive to the needs of her team."
+      ],
+      "time": 60
+    },
+    {
+      "id": 10,
+      "question": "Replace the incorrect word in this sentence: 'The teacher gave us an advice about the exam.'",
+      "answer": "The teacher gave us some advice about the exam.",
+      "alternativeAnswers": [
+        "The teacher gave us advice about the exam.",
+        "The teacher provided us with advice about the exam."
+      ],
+      "time": 60
+    }
+  ],
+
+
+
+
+
+
+  "extempore": [
+    { "id": 1, "topic": "The benefits and challenges of remote work", "time": 60 },
+    { "id": 2, "topic": "The role of artificial intelligence in healthcare.", "time": 60 }
+  ],
   
+  "diction": [
+    {
+      "id": 1,
+      "story": "Michael decided to go hiking in the mountains on Saturday. The weather was clear, and he enjoyed the fresh air and beautiful scenery. Along the way, he encountered a group of fellow hikers and joined them. By the end of the hike, Michael felt invigorated and happy to have made new friends.",
+      "time": 45,
+      "questions": [
+        {
+          "question": "Where did Michael decide to go hiking?",
+          "answer": "Michael decided to go hiking in the mountains.",
+          "alternativeAnswers": [
+            "He decided to hike in the mountains.",
+            "The mountains were his hiking destination.",
+            "Michael chose to hike in the mountains.",
+            "His choice was to hike the mountains.",
+            "He went hiking to the mountains.",
+            "The mountain range was where he hiked."
+          ],
+          "points": 2.5
+        },
+        {
+          "question": "What was the weather like?",
+          "answer": "The weather was clear.",
+          "alternativeAnswers": [
+            "It was clear.",
+            "Clear skies were present.",
+            "The weather was sunny and clear.",
+            "It was a clear day.",
+            "The sky was clear.",
+            "There were clear weather conditions."
+          ],
+          "points": 2.5
+        },
+        {
+          "question": "Who did Michael encounter along the way?",
+          "answer": "Michael encountered a group of fellow hikers along the way.",
+          "alternativeAnswers": [
+            "He encountered a group of fellow hikers.",
+            "Fellow hikers were encountered by him.",
+            "He met a group of hikers.",
+            "A hiking group was met by Michael.",
+            "Michael came across some hikers.",
+            "A group of people hiking were met by him."
+          ],
+          "points": 2.5
+        },
+        {
+          "question": "How did Michael feel by the end of the hike?",
+          "answer": "Michael felt invigorated and happy.",
+          "alternativeAnswers": [
+            "He felt invigorated and happy.",
+            "Invigoration and happiness were his feelings.",
+            "He felt happy and full of energy.",
+            "Michael was happy and invigorated.",
+            "He ended the hike feeling happy and refreshed.",
+            "Happiness and refreshment were felt by him."
+          ],
+          "points": 2.5
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "story": "Sarah, a talented artist, spent her afternoon painting in her garden. She captured the beauty of the blooming flowers and the vibrant colors of the butterflies fluttering around. As the sun began to set, she stepped back to admire her work, feeling a sense of peace and accomplishment.",
+      "time": 45,
+      "questions": [
+        {
+          "question": "What did Sarah spend her afternoon doing?",
+          "answer": "Sarah spent her afternoon painting.",
+          "alternativeAnswers": [
+            "She spent her afternoon painting.",
+            "Painting was how Sarah spent her afternoon.",
+            "Sarah was painting in the afternoon.",
+            "Her afternoon was spent painting.",
+            "She painted during the afternoon.",
+            "Sarah spent the afternoon painting pictures."
+          ],
+          "points": 2.5
+        },
+        {
+          "question": "Where did Sarah paint?",
+          "answer": "Sarah painted in her garden.",
+          "alternativeAnswers": [
+            "She painted in the garden.",
+            "Her garden was where Sarah painted.",
+            "The garden was her painting location.",
+            "She was painting in her own garden.",
+            "Sarah did her painting in a garden.",
+            "Her garden was the place she painted."
+          ],
+          "points": 2.5
+        },
+        {
+          "question": "What did Sarah capture in her painting?",
+          "answer": "Sarah captured the beauty of the blooming flowers and the vibrant colors of the butterflies.",
+          "alternativeAnswers": [
+            "She captured the flowers and butterflies.",
+            "The flowers and butterflies were captured by Sarah.",
+            "She painted flowers and butterflies.",
+            "Blooming flowers and butterflies' colors were her subject.",
+            "Sarah painted the beauty of the garden.",
+            "The beauty of the garden was captured in her painting."
+          ],
+          "points": 2.5
+        },
+        {
+          "question": "How did Sarah feel as the sun set?",
+          "answer": "Sarah felt a sense of peace and accomplishment.",
+          "alternativeAnswers": [
+            "She felt peace and accomplishment.",
+            "Peace and accomplishment were felt by Sarah.",
+            "She was feeling peaceful and accomplished.",
+            "Sarah felt accomplished and at peace.",
+            "She had a feeling of peace and accomplishment.",
+            "A sense of accomplishment and peace came over her."
+          ],
+          "points": 2.5
+        }
+      ]
+    }
+  ]
+}
