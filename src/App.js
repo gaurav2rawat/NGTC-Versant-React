@@ -1055,15 +1055,104 @@ useEffect(() => {
             path="/"
             element={
               !user ? (
-                <div className="login-screen">
-                  <div className="header-container">
-                    <img src={logo} alt="NEW-GUIDANCE Logo" className="logo" />
-                    <h1>NGTC-VERSANT</h1>
+                <div style={{
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  minHeight: '100vh',
+                  background: 'linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)',
+                  padding: '2rem',
+                  textAlign: 'center',
+                  fontFamily: 'Arial, sans-serif'
+                }}>
+                  <div style={{
+                    background: 'white',
+                    borderRadius: '15px',
+                    padding: '2rem',
+                    boxShadow: '0 10px 30px rgba(0,0,0,0.1)',
+                    maxWidth: '600px',
+                    animation: 'fadeIn 0.5s ease-out'
+                  }}>
+                    <div style={{
+                      display: 'flex',
+                      flexDirection: 'column',
+                      alignItems: 'center',
+                      marginBottom: '2rem'
+                    }}>
+                      <img 
+                        src={logo} 
+                        alt="NEW-GUIDANCE Logo" 
+                        style={{
+                          width: '120px',
+                          height: '120px',
+                          objectFit: 'contain',
+                          marginBottom: '1rem',
+                          animation: 'pulse 2s infinite'
+                        }} 
+                      />
+                      <h1 style={{
+                        color: '#2c3e50',
+                        margin: '0',
+                        fontSize: '2rem'
+                      }}>NGTC-VERSANT</h1>
+                    </div>
+                    
+                    <h2 style={{
+                      color: '#2c3e50',
+                      marginBottom: '1.5rem',
+                      fontSize: '1.5rem'
+                    }}>
+                      Welcome to the New Guidance Versant Test
+                    </h2>
+                    
+                    <button 
+                      onClick={handleLogin}
+                      style={{
+                        background: '#4285F4',
+                        color: 'white',
+                        border: 'none',
+                        padding: '12px 24px',
+                        borderRadius: '4px',
+                        fontSize: '1rem',
+                        fontWeight: 'bold',
+                        cursor: 'pointer',
+                        transition: 'all 0.3s ease',
+                        boxShadow: '0 4px 6px rgba(0,0,0,0.1)',
+                        ':hover': {
+                          background: '#3367D6',
+                          transform: 'translateY(-2px)',
+                          boxShadow: '0 6px 8px rgba(0,0,0,0.15)'
+                        }
+                      }}
+                    >
+                      Login with Google
+                    </button>
+                    
+                    <p style={{
+                      color: '#7f8c8d',
+                      marginTop: '1.5rem',
+                      lineHeight: '1.6'
+                    }}>
+                      Unfortunately, this test can only be used by registered users. 
+                      Therefore, please log in with your Google account to measure your progress.
+                    </p>
                   </div>
-                  <h1>Welcome to the New Guidance Versant Test</h1>
-                  <button onClick={handleLogin}>Login with Google</button>
-                  <h2>Unfortunately, this test can only be used by registered users. Therefore, please log in and register with your Google account to measure your progress.</h2>
+                  
+                  {/* Animation styles */}
+                  <style>{`
+                    @keyframes fadeIn {
+                      from { opacity: 0; transform: translateY(80px); }
+                      to { opacity: 1; transform: translateY(0); }
+                    }
+                    @keyframes pulse {
+                      0% { transform: scale(1); }
+                      50% { transform: scale(1.05); }
+                      100% { transform: scale(1); }
+                    }
+                  `}</style>
                 </div>
+  
               ) : !quizStarted ? (
                 <WelcomeScreen onStart={() => setQuizStarted(true)} user={user}  />
               ) : (
