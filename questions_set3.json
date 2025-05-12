@@ -114,16 +114,16 @@
     { "id": 10, "text": "When the going gets tough, the tough get going.", "time": 30 }
   ],
   "logical": [
-    { "id": 1, "question": "If all Elephants are Mammals and all Mammals are Animals, are all Elephants definitely Animals?", "answer": "Yes", "time": 45 },
+    { "id": 1, "question": "If all Elephants are Mammals and all Mammals are Animals, are all Elephants definitely Invertebrates?", "answer": "No", "time": 45 },
     { "id": 2, "question": "What is the meaning of verbose?", "answer": "wordy", "time": 45 },
     { "id": 3, "question": "A person who saves money is frugal or extravagant?", "answer": "frugal", "time": 45 },
-    { "id": 4, "question": "A person who has a fear of heights is acrophobic or claustrophobic?", "answer": "acrophobic", "time": 45 },
-    { "id": 5, "question": "The study of the human mind is known as psychology or physiology?", "answer": "psychology", "time": 45 },
-    { "id": 6, "question": "A government ruled by a single person is called autocracy or democracy?", "answer": "autocracy", "time": 45 },
+    { "id": 4, "question": "A person who has a fear of heights is claustrophobic or acrophobic?", "answer": "acrophobic", "time": 45 },
+    { "id": 5, "question": "The study of the human mind is known as psychology or neurosis?", "answer": "psychology", "time": 45 },
+    { "id": 6, "question": "A government ruled by a single person is called democracy or autocracy?", "answer": "autocracy", "time": 45 },
     { "id": 7, "question": "A collection of poems is called an anthology or a thesaurus?", "answer": "anthology", "time": 45 },
     { "id": 8, "question": "The scientific study of insects is entomology or ichthyology?", "answer": "entomology", "time": 45 },
     { "id": 9, "question": "A person who loves to eat is called gourmand or ascetic?", "answer": "gourmand", "time": 45 },
-    { "id": 10, "question": "A person who is known for telling lies is dishonest or truthful?", "answer": "dishonest", "time": 45 }
+    { "id": 10, "question": "A person who is known for telling lies is truthful or decietful?", "answer": "decietful", "time": 45 }
   ],
 
   
