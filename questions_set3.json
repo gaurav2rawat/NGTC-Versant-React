@@ -123,7 +123,7 @@
     { "id": 7, "question": "A collection of poems is called an anthology or a thesaurus?", "answer": "anthology", "time": 45 },
     { "id": 8, "question": "The scientific study of insects is entomology or ichthyology?", "answer": "entomology", "time": 45 },
     { "id": 9, "question": "A person who loves to eat is called gourmand or ascetic?", "answer": "gourmand", "time": 45 },
-    { "id": 10, "question": "A person who is known for telling lies is truthful or decietful?", "answer": "decietful", "time": 45 }
+    { "id": 10, "question": "A person who is known for telling lies is truthful or deceitful?", "answer": "deceitful", "time": 45 }
   ],
 
   
