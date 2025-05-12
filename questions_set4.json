@@ -116,14 +116,14 @@
   "logical": [
     { "id": 1, "question": "If all Dogs are Mammals and all Mammals are Animals, are all Dogs definitely Animals?", "answer": "Yes", "time": 45 },
     { "id": 2, "question": "What is the meaning of omniscient?", "answer": "all-knowing", "time": 45 },
-    { "id": 3, "question": "A person who donates generously is philanthropic or misanthropic?", "answer": "philanthropic", "time": 45 },
+    { "id": 3, "question": "A person who donates generously is  misanthropic or philanthropic?", "answer": "philanthropic", "time": 45 },
     { "id": 4, "question": "A person who cannot make up their mind is indecisive or decisive?", "answer": "indecisive", "time": 45 },
-    { "id": 5, "question": "The study of the universe is known as astronomy or geology?", "answer": "astronomy", "time": 45 },
+    { "id": 5, "question": "The study of the universe is known as geology or astronomy?", "answer": "astronomy", "time": 45 },
     { "id": 6, "question": "A government ruled by the people is called democracy or monarchy?", "answer": "democracy", "time": 45 },
     { "id": 7, "question": "A collection of stamps is called a collection or anthology?", "answer": "collection", "time": 45 },
     { "id": 8, "question": "The scientific study of the mind is psychology or physiology?", "answer": "psychology", "time": 45 },
-    { "id": 9, "question": "A person who has a fear of confined spaces is claustrophobic or agoraphobic?", "answer": "claustrophobic", "time": 45 },
-    { "id": 10, "question": "A person who excels in mathematics is called a mathematician or historian?", "answer": "mathematician", "time": 45 }
+    { "id": 9, "question": "A person who has a fear of confined spaces is agoraphobic or claustrophobic?", "answer": "claustrophobic", "time": 45 },
+    { "id": 10, "question": "A person who excels in mathematics is called a mathematician or Statistician?", "answer": "mathematician", "time": 45 }
   ],
   "grammar": [
     {
