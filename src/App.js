@@ -9,7 +9,7 @@ import ResultsPage from './ResultsPage';
 
 const App = () => {
   const [quizStarted, setQuizStarted] = useState(false);
-  const [currentRound, setCurrentRound] = useState('reading');
+  const [currentRound, setCurrentRound] = useState('technical');
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [userAnswer, setUserAnswer] = useState('');
   const [transcript, setTranscript] = useState('');
@@ -28,7 +28,7 @@ const App = () => {
   const [recognition, setRecognition] = useState(null);
   const [attemptedQuestions, setAttemptedQuestions] = useState({});
   const [sectionScores, setSectionScores] = useState({
-    reading: 0,
+    technical: 0,
     listening: 0,
     logical: 0,
     grammar: 0,
@@ -38,7 +38,7 @@ const App = () => {
   const [currentDictionIndex, setCurrentDictionIndex] = useState(0);
   const [user, setUser] = useState(null);
 
-  const rounds = ['reading', 'listening', 'logical', 'grammar', 'extempore', 'diction'];
+  const rounds = ['technical', 'listening', 'logical', 'grammar', 'extempore', 'diction'];
 
   // Helper function to normalize answers
   const normalizeAnswer = (answer) => {
@@ -425,7 +425,7 @@ const evaluateExtempore = useCallback(
 
   // Calculate final score and percentage
   const calculateFinalScore = () => {
-    if (!questions.reading || !questions.listening || !questions.logical || !questions.grammar || !questions.extempore || !questions.diction) {
+    if (!questions.technical || !questions.listening || !questions.logical || !questions.grammar || !questions.extempore || !questions.diction) {
       setResult("Unable to calculate score - questions not loaded");
       return;
     }
@@ -437,8 +437,8 @@ const evaluateExtempore = useCallback(
 
   // Calculate section contributions to the total percentage
   const calculateSectionContributions = () => {
-    if (!questions.reading || !questions.listening || !questions.logical || !questions.grammar || !questions.extempore || !questions.diction) {
-      return { reading: 0, listening: 0, logical: 0, grammar: 0, extempore: 0, diction: 0 };
+    if (!questions.technical || !questions.listening || !questions.logical || !questions.grammar || !questions.extempore || !questions.diction) {
+      return { technical: 0, listening: 0, logical: 0, grammar: 0, extempore: 0, diction: 0 };
     }
     const totalPossibleMarks = 120;
     const sectionContributions = {};
@@ -711,7 +711,7 @@ const evaluateExtempore = useCallback(
     setRecognition(recognitionInstance);
   };
 
-  // Handle answer submission for Reading, Listening, and Logical rounds
+  // Handle answer submission for Technical, Listening, and Logical rounds
   const handleSubmitAnswer = () => {
     if (!currentQuestion) return;
   
@@ -737,8 +737,8 @@ const evaluateExtempore = useCallback(
     // Check if user answer matches any acceptable answer
     let isCorrect = false;
     
-    if (currentRound === 'reading' || currentRound === 'diction') {
-      // For reading and diction, use similarity checking
+    if (currentRound === 'technical' || currentRound === 'diction') {
+      // For Technical and diction, use similarity checking
       isCorrect = checkAnswerSimilarity(normalizedUserAnswer, normalizedMainAnswer);
       
       // If not similar to main answer, check alternative answers
@@ -858,10 +858,10 @@ const evaluateExtempore = useCallback(
     if (!currentQuestion) return null;
   
     switch (currentRound) {
-      case 'reading':
+      case 'technical':
         return (
           <div className="round-section">
-            <h3>For this reading section, please structure your answers as complete sentences (subject + verb + object).</h3>
+            <h3>For this Technical section, please structure your answers as complete sentences (subject + verb + object).</h3>
             <h3>{currentQuestion.question}</h3>
             <input
               type="text"
@@ -964,7 +964,7 @@ const evaluateExtempore = useCallback(
 useEffect(() => {
   if (user && !quizStarted) {
     // Only speak when user is logged in and quiz hasn't started
-    const welcomeMessage = `Welcome to the New Guidance Versant Test. Hi ${user.displayName || user.email}! We're going to assess your English language skills today. This test comprises of six sections: Reading, Listening, Logical, Grammar, Extempore, and Diction. Each section contributes 20 points to your total score of 120. Relax and do your best, for this helps us find the right learning path for you!`;
+    const welcomeMessage = `Welcome to the New Guidance Versant Test. Hi ${user.displayName || user.email}! We're going to assess your English language skills today. This test comprises of six sections: Technical, Listening, Logical, Grammar, Extempore, and Diction. Each section contributes 20 points to your total score of 120. Relax and do your best, for this helps us find the right learning path for you!`;
     speakImportantMessage(welcomeMessage);
   }
 }, [user, quizStarted]);
@@ -977,7 +977,7 @@ useEffect(() => {
         <h1>Welcome to the New Guidance Versant Test</h1>
         <p>Hi {user?.displayName || user?.email}! We're going to assess your English language skills today.</p>
         <ul>
-          <li>This test comprises of five sections: Reading, Listening, Logical, Grammar, Extempore, & Diction.</li>
+          <li>This test comprises of five sections: Technical, Listening, Logical, Grammar, Extempore, & Diction.</li>
           <li>Each section contributes 20 points to your total score of 120.</li>
           <li>Don't worry about the timer - it's just there to keep things interesting.</li>
           <li>Relax and do your best - this helps us find the right learning path for you!</li>
@@ -1055,104 +1055,104 @@ useEffect(() => {
             path="/"
             element={
               !user ? (
+ <div style={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                justifyContent: 'center',
+                minHeight: '100vh',
+                background: 'linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)',
+                padding: '2rem',
+                textAlign: 'center',
+                fontFamily: 'Arial, sans-serif'
+              }}>
                 <div style={{
-                  display: 'flex',
-                  flexDirection: 'column',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  minHeight: '100vh',
-                  background: 'linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)',
+                  background: 'white',
+                  borderRadius: '15px',
                   padding: '2rem',
-                  textAlign: 'center',
-                  fontFamily: 'Arial, sans-serif'
+                  boxShadow: '0 10px 30px rgba(0,0,0,0.1)',
+                  maxWidth: '600px',
+                  animation: 'fadeIn 0.5s ease-out'
                 }}>
                   <div style={{
-                    background: 'white',
-                    borderRadius: '15px',
-                    padding: '2rem',
-                    boxShadow: '0 10px 30px rgba(0,0,0,0.1)',
-                    maxWidth: '600px',
-                    animation: 'fadeIn 0.5s ease-out'
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    marginBottom: '2rem'
                   }}>
-                    <div style={{
-                      display: 'flex',
-                      flexDirection: 'column',
-                      alignItems: 'center',
-                      marginBottom: '2rem'
-                    }}>
-                      <img 
-                        src={logo} 
-                        alt="NEW-GUIDANCE Logo" 
-                        style={{
-                          width: '120px',
-                          height: '120px',
-                          objectFit: 'contain',
-                          marginBottom: '1rem',
-                          animation: 'pulse 2s infinite'
-                        }} 
-                      />
-                      <h1 style={{
-                        color: '#2c3e50',
-                        margin: '0',
-                        fontSize: '2rem'
-                      }}>NGTC-VERSANT</h1>
-                    </div>
-                    
-                    <h2 style={{
-                      color: '#2c3e50',
-                      marginBottom: '1.5rem',
-                      fontSize: '1.5rem'
-                    }}>
-                      Welcome to the New Guidance Versant Test
-                    </h2>
-                    
-                    <button 
-                      onClick={handleLogin}
+                    <img 
+                      src={logo} 
+                      alt="NEW-GUIDANCE Logo" 
                       style={{
-                        background: '#4285F4',
-                        color: 'white',
-                        border: 'none',
-                        padding: '12px 24px',
-                        borderRadius: '4px',
-                        fontSize: '1rem',
-                        fontWeight: 'bold',
-                        cursor: 'pointer',
-                        transition: 'all 0.3s ease',
-                        boxShadow: '0 4px 6px rgba(0,0,0,0.1)',
-                        ':hover': {
-                          background: '#3367D6',
-                          transform: 'translateY(-2px)',
-                          boxShadow: '0 6px 8px rgba(0,0,0,0.15)'
-                        }
-                      }}
-                    >
-                      Login with Google
-                    </button>
-                    
-                    <p style={{
-                      color: '#7f8c8d',
-                      marginTop: '1.5rem',
-                      lineHeight: '1.6'
-                    }}>
-                      Unfortunately, this test can only be used by registered users. 
-                      Therefore, please log in with your Google account to measure your progress.
-                    </p>
+                        width: '120px',
+                        height: '120px',
+                        objectFit: 'contain',
+                        marginBottom: '1rem',
+                        animation: 'pulse 2s infinite'
+                      }} 
+                    />
+                    <h1 style={{
+                      color: '#2c3e50',
+                      margin: '0',
+                      fontSize: '2rem'
+                    }}>NGTC-VERSANT</h1>
                   </div>
                   
-                  {/* Animation styles */}
-                  <style>{`
-                    @keyframes fadeIn {
-                      from { opacity: 0; transform: translateY(80px); }
-                      to { opacity: 1; transform: translateY(0); }
-                    }
-                    @keyframes pulse {
-                      0% { transform: scale(1); }
-                      50% { transform: scale(1.05); }
-                      100% { transform: scale(1); }
-                    }
-                  `}</style>
+                  <h2 style={{
+                    color: '#2c3e50',
+                    marginBottom: '1.5rem',
+                    fontSize: '1.5rem'
+                  }}>
+                    Welcome to the New Guidance Versant Test
+                  </h2>
+                  
+                  <button 
+                    onClick={handleLogin}
+                    style={{
+                      background: '#4285F4',
+                      color: 'white',
+                      border: 'none',
+                      padding: '12px 24px',
+                      borderRadius: '4px',
+                      fontSize: '1rem',
+                      fontWeight: 'bold',
+                      cursor: 'pointer',
+                      transition: 'all 0.3s ease',
+                      boxShadow: '0 4px 6px rgba(0,0,0,0.1)',
+                      ':hover': {
+                        background: '#3367D6',
+                        transform: 'translateY(-2px)',
+                        boxShadow: '0 6px 8px rgba(0,0,0,0.15)'
+                      }
+                    }}
+                  >
+                    Login with Google
+                  </button>
+                  
+                  <p style={{
+                    color: '#7f8c8d',
+                    marginTop: '1.5rem',
+                    lineHeight: '1.6'
+                  }}>
+                    Unfortunately, this test can only be used by registered users. 
+                    Therefore, please log in with your Google account to measure your progress.
+                  </p>
                 </div>
-  
+                
+                {/* Animation styles */}
+                <style>{`
+                  @keyframes fadeIn {
+                    from { opacity: 0; transform: translateY(80px); }
+                    to { opacity: 1; transform: translateY(0); }
+                  }
+                  @keyframes pulse {
+                    0% { transform: scale(1); }
+                    50% { transform: scale(1.05); }
+                    100% { transform: scale(1); }
+                  }
+                `}</style>
+              </div>
+
               ) : !quizStarted ? (
                 <WelcomeScreen onStart={() => setQuizStarted(true)} user={user}  />
               ) : (
