@@ -1,5 +1,5 @@
 {
-  "technical": [
+  "reading": [
     {
       "id": 1,
       "question": "Is Harddisk a perfect example of ROM?",
@@ -116,13 +116,13 @@
   "logical": [
     { "id": 1, "question": "If all Bloops are Razzies and all Razzies are Lazzies, are all Bloops definitely Lazzies?", "answer": "Yes", "time": 45 },
     { "id": 2, "question": "What is the meaning of corpulent?", "answer": "fat", "time": 45 },
-    { "id": 3, "question": "A person who thinks only of himself is eccentric or egoist", "answer": "egoist", "time": 45 },
+    { "id": 3, "question": "A person who thinks only of himself is egoist or eccentric", "answer": "egoist", "time": 45 },
     { "id": 4, "question": "Ram speaks less in the forum. Ram is reticent or garrulous", "answer": "reticent", "time": 45 },
     { "id": 5, "question": "Savitri travels by foot. She is a stickler or pedestrian", "answer": "pedestrian", "time": 45 },
-    { "id": 6, "question": "the government by a king or queen is called monarchy or theocracy", "answer": "monarchy", "time": 45 },
+    { "id": 6, "question": "the government by a king or queen is called autocracy or monarchy", "answer": "Monarchy", "time": 45 },
     { "id": 7, "question": "A life history written by somebody else is biography or autobiography", "answer": "Biography", "time": 45 },
     { "id": 8, "question": "The act of murder of a human being is homicide or patricide.", "answer": "homicide", "time": 45 },
-    { "id": 9, "question": "Study of birds is called zoology or Ornithology.", "answer": "Ornithology", "time": 45 },
+    { "id": 9, "question": "Study of birds is called ornithology or zoology.", "answer": "Ornithology", "time": 45 },
     { "id": 10, "question": "Rohit is greedy for money, is he avaricious or spendthrift.", "answer": "Aviricious", "time": 45 }
   ],
 

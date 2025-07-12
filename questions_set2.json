@@ -114,15 +114,15 @@
     { "id": 10, "text": "Barking up the wrong tree.", "time": 30 }
   ],
   "logical": [
-    { "id": 1, "question": "If all Cats are Animals and all Animals are Beings, are all Cats definitely sentient?", "answer": "Yes", "time": 45 },
+    { "id": 1, "question": "If all Cats are Animals and all Animals are Beings, are all Cats definitely Beings?", "answer": "Yes", "time": 45 },
     { "id": 2, "question": "What is the meaning of loquacious?", "answer": "talkative", "time": 45 },
     { "id": 3, "question": "A person who avoids social interactions is introvert or extrovert?", "answer": "introvert", "time": 45 },
-    { "id": 4, "question": "A person who is skilled at using both hands equally is dexterous or ambidextrous?", "answer": "ambidextrous", "time": 45 },
+    { "id": 4, "question": "A person who is skilled at using both hands equally is ambidextrous or dexterous?", "answer": "ambidextrous", "time": 45 },
     { "id": 5, "question": "The study of stars is known as astronomy or astrology?", "answer": "astronomy", "time": 45 },
-    { "id": 6, "question": "A government ruled by a small group of people is called technocracy or oligarchy?", "answer": "oligarchy", "time": 45 },
+    { "id": 6, "question": "A government ruled by a small group of people is called oligarchy or democracy?", "answer": "oligarchy", "time": 45 },
     { "id": 7, "question": "A collection of maps is called an atlas or a dictionary?", "answer": "atlas", "time": 45 },
-    { "id": 8, "question": "The scientific study of skin is nephrology or dermatology?", "answer": "dermatology", "time": 45 },
-    { "id": 9, "question": "A person who loves books is called bibliophile or didacte?", "answer": "bibliophile", "time": 45 },
+    { "id": 8, "question": "The scientific study of skin is dermatology or nephrology?", "answer": "dermatology", "time": 45 },
+    { "id": 9, "question": "A person who loves books is called bibliophile or bibliophobe?", "answer": "bibliophile", "time": 45 },
     { "id": 10, "question": "A person who is excessively willing to serve others is subservient or rebellious?", "answer": "subservient", "time": 45 }
   ],
   
