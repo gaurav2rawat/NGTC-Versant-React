@@ -269,6 +269,16 @@ const handleGrammarAnswer = () => {
 const evaluateExtempore = useCallback(
   (transcript) => {
     if (!currentQuestion) return;
+
+    //checking transscript length
+    const trimmedTranscript = transcript.trim();
+    if (!trimmedTranscript || trimmedTranscript.split(/\s+/).length < 18) {
+      setResult("Please speak more to be evaluated. Your response was too short.");
+      setTranscript('');
+      return;
+    }
+
+
     const topic = currentQuestion.topic.toLowerCase();
     const speech = transcript.toLowerCase();
     
@@ -361,35 +371,78 @@ const evaluateExtempore = useCallback(
 
 
   // Timer logic for rounds
-  useEffect(() => {
-    let timer;
-    if (timerActive && timeLeft > 0) {
-      timer = setInterval(() => setTimeLeft((prevTime) => prevTime - 1), 1000);
-    } else if (timeLeft === 0) {
-      setTimerActive(false);
-      if (currentRound === 'extempore') {
-        if (recognition) recognition.stop();
-        evaluateExtempore(transcript);
-      } else if (currentRound === 'diction' && dictionStoryActive) {
-        setDictionStoryActive(false);
-        setResult("Story playback complete. Please answer the questions below.");
-        setTimeLeft(30); // Set timer for questions
-        setTimerActive(true);
-      } else {
-        setResult("Time's up!");
-      }
-    }
-    return () => clearInterval(timer);
-  }, [timerActive, timeLeft, currentRound, transcript, recognition, evaluateExtempore, dictionStoryActive]);
+useEffect(() => {
+  let timer;
+  let silenceTimer;
 
+  if (timerActive && timeLeft > 0) {
+    timer = setInterval(() => setTimeLeft((prevTime) => prevTime - 1), 1000);
+    
+    // Add this block to handle speech recognition in extempore round
+    if (currentRound === 'extempore' && !recognition) {
+      const recognitionInstance = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+      recognitionInstance.lang = 'en-US';
+      recognitionInstance.interimResults = true;
+      recognitionInstance.continuous = true;
+      recognitionInstance.maxAlternatives = 1;
+
+      recognitionInstance.onresult = (event) => {
+        clearTimeout(silenceTimer);
+        silenceTimer = setTimeout(() => {
+          if (recognitionInstance === recognition) { // Only stop if it's the current instance
+            recognitionInstance.stop();
+          }
+        }, 3000);
+      };
+
+      recognitionInstance.start();
+      setRecognition(recognitionInstance);
+    }
+  } else if (timeLeft === 0) {
+    setTimerActive(false);
+    if (currentRound === 'extempore') {
+      if (recognition) {
+        recognition.stop();
+        // Clear any pending silence timer
+        if (silenceTimer) clearTimeout(silenceTimer);
+      }
+      evaluateExtempore(transcript);
+    } else if (currentRound === 'diction' && dictionStoryActive) {
+      setDictionStoryActive(false);
+      setResult("Story playback complete. Please answer the questions below.");
+      setTimeLeft(45);
+      setTimerActive(true);
+    } else {
+      setResult("Time's up!");
+    }
+  }
+
+  // Cleanup function
+  return () => {
+    clearInterval(timer);
+    if (silenceTimer) clearTimeout(silenceTimer);
+    
+    // Additional cleanup when dependencies change
+    if (currentRound !== 'extempore' && recognition) {
+      recognition.stop();
+      setRecognition(null);
+    }
+  };
+}, [timerActive, timeLeft, currentRound, recognition, evaluateExtempore, dictionStoryActive, transcript]);
   // Start the timer when the question changes
   useEffect(() => {
     if (currentQuestion) {
       if (currentRound === 'diction' && !dictionStoryActive && currentDictionStory === null) {
         setCurrentDictionStory(currentQuestion);
         setDictionStoryActive(true);
-        setTimeLeft(currentQuestion.time || 60); // Set timer for story
+        setTimeLeft(currentQuestion.time || 90); // Set timer for story
         setTimerActive(true);
+         } 
+      else if (currentRound === 'diction' && !dictionStoryActive) {
+      // Increased answer time from 30 to 45 seconds
+      setTimeLeft(45); // Was 30
+      setTimerActive(true);
+
       } else if (currentRound !== 'diction') {
         setTimeLeft(currentRound === 'extempore' ? extemporeTimer : timeLimit);
         setTimerActive(true);
@@ -478,55 +531,63 @@ const evaluateExtempore = useCallback(
   };
 
   // Text-to-Speech with slower pace for diction story
-  const speakText = (text) => {
-    if (!text) return;
+const speakText = (text) => {
+  if (!text) return;
 
-    // Cancel any ongoing speech
-    window.speechSynthesis.cancel();
+  // Cancel any ongoing speech
+  window.speechSynthesis.cancel();
 
-    // For diction stories, use the chunking approach
-    if (text.length > 200) {
-      const chunks = splitTextIntoChunks(text);
-      speakTextChunks(chunks);
-      return; // Return early - we're handling this with the chunk method
-    }
+  // For diction stories, use the chunking approach
+  if (text.length > 200) {
+    const chunks = splitTextIntoChunks(text);
+    speakTextChunks(chunks);
+    return; // Return early - we're handling this with the chunk method
+  }
 
-    // For shorter text, use the standard approach
-    const utterance = new SpeechSynthesisUtterance(text);
+  // For shorter text, use the standard approach
+  const utterance = new SpeechSynthesisUtterance(text);
 
-    // Select a more natural voice (will fall back to default if not available)
-    let voices = window.speechSynthesis.getVoices();
+  // Store the voice changed handler reference
+  let voicesChangedHandler = null;
+
+  // Keep your original findBestVoice function
+  const findBestVoice = (voices) => {
     const preferredVoices = ['Google US English', 'Microsoft Zira', 'Samantha', 'Alex'];
-
-    // Function to find best available voice
-    const findBestVoice = () => {
-      // Try to find one of our preferred voices
-      for (const preferredVoice of preferredVoices) {
-        const foundVoice = voices.find(voice => 
-          voice.name.includes(preferredVoice) && voice.lang.includes('en')
-        );
-        if (foundVoice) return foundVoice;
-      }
-
-      // Fall back to any English voice
-      const englishVoice = voices.find(voice => voice.lang.includes('en'));
-      return englishVoice || null;
-    };
-
-    // If voices aren't loaded yet, wait for them
-    if (voices.length === 0) {
-      window.speechSynthesis.onvoiceschanged = () => {
-        voices = window.speechSynthesis.getVoices();
-        utterance.voice = findBestVoice();
-        configureUtterance(utterance);
-        window.speechSynthesis.speak(utterance);
-      };
-    } else {
-      utterance.voice = findBestVoice();
-      configureUtterance(utterance);
-      window.speechSynthesis.speak(utterance);
+    
+    // Try to find one of our preferred voices
+    for (const preferredVoice of preferredVoices) {
+      const foundVoice = voices.find(voice => 
+        voice.name.includes(preferredVoice) && voice.lang.includes('en')
+      );
+      if (foundVoice) return foundVoice;
     }
+
+    // Fall back to any English voice
+    return voices.find(voice => voice.lang.includes('en')) || null;
   };
+
+  const handleVoicesLoaded = () => {
+    const voices = window.speechSynthesis.getVoices();
+    utterance.voice = findBestVoice(voices);
+    configureUtterance(utterance);
+    window.speechSynthesis.speak(utterance);
+    
+    // Clean up the handler
+    window.speechSynthesis.onvoiceschanged = null;
+  };
+
+  // Initial voice check
+  const voices = window.speechSynthesis.getVoices();
+  
+  if (voices.length === 0) {
+    voicesChangedHandler = () => handleVoicesLoaded();
+    window.speechSynthesis.onvoiceschanged = voicesChangedHandler;
+  } else {
+    utterance.voice = findBestVoice(voices);
+    configureUtterance(utterance);
+    window.speechSynthesis.speak(utterance);
+  }
+};
 
   
   // Configure utterance with appropriate parameters
@@ -541,8 +602,9 @@ const evaluateExtempore = useCallback(
       utterance.pitch = 1.0;
     } else if (currentRound === 'diction') {
       // Storytelling style for diction
-      utterance.rate = 0.75 + (Math.random() * 0.2); // Slight variation 0.75-0.95
+      utterance.rate = 0.60 + (Math.random() * 0.2); // Slight variation 0.75-0.95
       utterance.pitch = 1.05;
+      utterance.pause = 0.3;
     }
     
     // Add slight natural variations
@@ -606,7 +668,7 @@ const evaluateExtempore = useCallback(
         setTimeout(() => {
           setDictionStoryActive(false);
           setResult("Story playback complete. Please answer the questions below.");
-          setTimeLeft(30); // Set timer for questions
+          setTimeLeft(45); // Set timer for questions
           setTimerActive(true);
         }, 1500);
       }
@@ -618,7 +680,7 @@ const evaluateExtempore = useCallback(
     
     const utterance = new SpeechSynthesisUtterance(chunk);
     utterance.lang = 'en-US';
-    utterance.rate = currentRound === 'diction' ? 0.75 : 0.85; // Slower for diction
+    utterance.rate = currentRound === 'diction' ? 0.60 : 0.85; // Slower for diction
     utterance.pitch = 1.0 + (Math.random() * 0.1); // Slight variation
     
     // Select a good voice
@@ -631,7 +693,7 @@ const evaluateExtempore = useCallback(
       setTimeout(() => {
         // Move to the next chunk
         speakTextChunks(chunks, index + 1);
-      }, 300); // 300ms pause between chunks
+      },currentRound === 'diction' ? 700 : 300);; // 300ms pause between chunks
     };
     
     utterance.onerror = (event) => {
@@ -654,63 +716,81 @@ const evaluateExtempore = useCallback(
 
   // Speech-to-Text
   const startListening = () => {
-    // Clear previous transcript when starting new recognition
-    setTranscript('');
-    
-    const recognitionInstance = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
-    recognitionInstance.lang = 'en-US';
-    recognitionInstance.interimResults = true;
-    recognitionInstance.continuous = true;
-    recognitionInstance.maxAlternatives = 1;
-    
-    // Transcript handling with both interim and final results
-    let finalTranscript = '';
-    
-    recognitionInstance.onresult = (event) => {
-      let interimTranscriptText = '';
-      let newFinalTranscript = '';
-      
-      for (let i = event.resultIndex; i < event.results.length; i++) {
-        if (event.results[i].isFinal) {
-          newFinalTranscript += event.results[i][0].transcript + ' ';
-        } else {
-          interimTranscriptText += event.results[i][0].transcript;
-        }
-      }
-      
-      // Update with both final and interim results
-      if (newFinalTranscript) {
-        finalTranscript += newFinalTranscript;
-        setTranscript(finalTranscript);
-      }
-      
-      // Show interim results in real-time (optional but useful feedback for user)
-      if (interimTranscriptText) {
-        // Update UI with the combination of final + interim
-        setTranscript(finalTranscript + ' ' + interimTranscriptText);
-      }
-    };
-    
-    recognitionInstance.onstart = () => {
-      // Visual feedback that recording has started
-      setResult("Listening to your speech...");
-    };
-    
-    recognitionInstance.onerror = (event) => {
-      console.error('Speech recognition error:', event.error);
-      setResult("There was an error with speech recognition. Please try again.");
-    };
-    
-    recognitionInstance.onend = () => {
-      // Don't immediately evaluate when recognition ends
-      // This allows user to manually evaluate when they're done
-      setResult("Speech recognition completed. Click 'Evaluate Speech' when ready.");
-    };
-    
-    recognitionInstance.start();
-    setRecognition(recognitionInstance);
-  };
+  // Clear previous transcript when starting new recognition
+  setTranscript('');
+  
+  const recognitionInstance = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+  recognitionInstance.lang = 'en-US';
+  recognitionInstance.interimResults = true;
+  recognitionInstance.continuous = true;
+  recognitionInstance.maxAlternatives = 1;
 
+  // Add silence detection
+  let silenceTimer;
+  const silenceTimeout = 3000; // 3 seconds of silence
+  
+  // Transcript handling with both interim and final results
+  let finalTranscript = '';
+  let hasSpeech = false;
+  
+  recognitionInstance.onresult = (event) => {
+    clearTimeout(silenceTimer); // Clear previous silence timer
+    hasSpeech = true; // Mark that we've received speech
+    
+    silenceTimer = setTimeout(() => {
+      if (hasSpeech) {
+        recognitionInstance.stop();
+      }
+    }, silenceTimeout);
+    
+    let interimTranscriptText = '';
+    let newFinalTranscript = '';
+    
+    for (let i = event.resultIndex; i < event.results.length; i++) {
+      if (event.results[i].isFinal) {
+        newFinalTranscript += event.results[i][0].transcript + ' ';
+      } else {
+        interimTranscriptText += event.results[i][0].transcript;
+      }
+    }
+    
+    // Update with both final and interim results
+    if (newFinalTranscript) {
+      finalTranscript += newFinalTranscript;
+      setTranscript(finalTranscript);
+    }
+    
+    // Show interim results
+    if (interimTranscriptText) {
+      setTranscript(finalTranscript + ' ' + interimTranscriptText);
+    }
+  };
+  
+  recognitionInstance.onstart = () => {
+    hasSpeech = false; // Reset speech detection when restarting
+    setResult("Listening to your speech...");
+  };
+  
+  recognitionInstance.onerror = (event) => {
+    console.error('Speech recognition error:', event.error);
+    setResult("There was an error with speech recognition. Please try again.");
+    clearTimeout(silenceTimer);
+  };
+  
+  recognitionInstance.onend = () => {
+    clearTimeout(silenceTimer);
+    setResult("Speech recognition completed. Click 'Evaluate Speech' when ready.");
+  };
+  
+  recognitionInstance.start();
+  setRecognition(recognitionInstance);
+  
+  // Return cleanup function
+  return () => {
+    clearTimeout(silenceTimer);
+    recognitionInstance.stop();
+  };
+};
   // Handle answer submission for Technical, Listening, and Logical rounds
   const handleSubmitAnswer = () => {
     if (!currentQuestion) return;
@@ -925,14 +1005,24 @@ const evaluateExtempore = useCallback(
             <div className="transcript-container">
               <p>Your speech: {transcript}</p>
             </div>
-            <button onClick={() => evaluateExtempore(transcript)}>I'm Done - Evaluate My Speech</button>
-          </div>
-        );
+            <button onClick={() => {
+          if (!transcript.trim() || transcript.trim().split(/\s+/).length < 18) {
+            setResult("Please speak more before evaluating. Your response was too short.");
+          } else {
+            evaluateExtempore(transcript);
+          }
+        }}
+        disabled={!transcript.trim()}
+      >
+        I'm Done - Evaluate My Speech
+      </button>
+    </div>
+  );
       case 'diction':
         if (dictionStoryActive) {
           return (
             <div className="round-section">
-              <h3>Listen carefully to this short story. You'll answer questions about it afterward.</h3>
+              <h3>Listen carefully to this short story. You'll answer questions afterwards.</h3>
               <button onClick={() => speakText(currentQuestion.story)} disabled={isSpeaking}>
                 {isSpeaking ? 'Story Playing...' : 'Play the Story'}
               </button>
