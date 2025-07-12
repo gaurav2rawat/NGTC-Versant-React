@@ -1,0 +1,322 @@
+{
+  "technical": [
+    {
+      "id": 1,
+      "question": "What does CPU stand for in computing?",
+      "answer": "Central Processing Unit",
+      "alternativeAnswers": [
+        "Computer Processing Unit",
+        "Core Processing Unit"
+      ],
+      "time": 30
+    },
+    {
+      "id": 2,
+      "question": "What is the main purpose of an operating system?",
+      "answer": "To manage hardware and software resources",
+      "alternativeAnswers": [
+        "To run applications on a computer",
+        "To control computer operations"
+      ],
+      "time": 30
+    },
+    {
+      "id": 3,
+      "question": "What does 'HTML' stand for?",
+      "answer": "HyperText Markup Language",
+      "alternativeAnswers": [
+        "Hyperlink Text Management Language",
+        "High-Level Text Markup Language"
+      ],
+      "time": 30
+    },
+    {
+      "id": 4,
+      "question": "What is the function of a router in networking?",
+      "answer": "To direct data packets between networks",
+      "alternativeAnswers": [
+        "To connect devices to the internet",
+        "To manage network traffic"
+      ],
+      "time": 30
+    },
+    {
+      "id": 5,
+      "question": "What is cloud storage?",
+      "answer": "Online file storage accessible from anywhere",
+      "alternativeAnswers": [
+        "Remote data storage on internet servers",
+        "Web-based file saving system"
+      ],
+      "time": 30
+    },
+    {
+      "id": 6,
+      "question": "What does 'URL' stand for?",
+      "answer": "Uniform Resource Locator",
+      "alternativeAnswers": [
+        "Universal Resource Link",
+        "Unified Resource Locator"
+      ],
+      "time": 30
+    },
+    {
+      "id": 7,
+      "question": "What is a smartphone's 'RAM' used for?",
+      "answer": "Temporary storage for running apps",
+      "alternativeAnswers": [
+        "Memory for active applications",
+        "Short-term data storage"
+      ],
+      "time": 30
+    },
+    {
+      "id": 8,
+      "question": "What does 'Wi-Fi' stand for?",
+      "answer": "Wireless Fidelity",
+      "alternativeAnswers": [
+        "Wireless Internet Frequency",
+        "Wireless Fiber"
+      ],
+      "time": 30
+    },
+    {
+      "id": 9,
+      "question": "What is a 'firewall' in computing?",
+      "answer": "Security system that blocks unauthorized access",
+      "alternativeAnswers": [
+        "Network protection barrier",
+        "Internet traffic filter"
+      ],
+      "time": 30
+    },
+    {
+      "id": 10,
+      "question": "What does 'PDF' stand for?",
+      "answer": "Portable Document Format",
+      "alternativeAnswers": [
+        "Printable Document File",
+        "Published Document Format"
+      ],
+      "time": 30
+    }
+  ],
+  "listening": [
+    { "id": 1, "text": "Please remember to submit your timesheets by Friday afternoon.", "time": 30 },
+    { "id": 2, "text": "The office will be closed next Monday for maintenance.", "time": 30 },
+    { "id": 3, "text": "Team lunch is scheduled for Wednesday at 1 PM.", "time": 30 },
+    { "id": 4, "text": "New safety protocols begin next week - check your email.", "time": 30 },
+    { "id": 5, "text": "The printer on the second floor is out of order.", "time": 30 },
+    { "id": 6, "text": "Don't forget to back up your files before the update.", "time": 30 },
+    { "id": 7, "text": "Parking spaces will be limited next month due to construction.", "time": 30 },
+    { "id": 8, "text": "The company picnic has been moved to September 15th.", "time": 30 },
+    { "id": 9, "text": "Please mute your microphones during the conference call.", "time": 30 },
+    { "id": 10, "text": "Annual performance reviews start next Monday.", "time": 30 }
+  ],
+  "logical": [
+    { "id": 1, "question": "What is the opposite of 'ancient'?", "answer": "Modern", "time": 45 },
+    { "id": 2, "question": "What is a baby cow called?", "answer": "Calf", "time": 45 },
+    { "id": 3, "question": "If all birds have feathers, and a penguin is a bird, does a penguin have feathers?", "answer": "Yes", "time": 45 },
+    { "id": 4, "question": "What is the past tense of 'run'?", "answer": "Ran", "time": 45 },
+    { "id": 5, "question": "What is the collective noun for a group of fish?", "answer": "School", "time": 45 },
+    { "id": 6, "question": "What is the capital of France?", "answer": "Paris", "time": 45 },
+    { "id": 7, "question": "What is 3 multiplied by 7?", "answer": "21", "time": 45 },
+    { "id": 8, "question": "What is the largest planet in our solar system?", "answer": "Jupiter", "time": 45 },
+    { "id": 9, "question": "What is the boiling point of water in Celsius?", "answer": "100", "time": 45 },
+    { "id": 10, "question": "What is the chemical symbol for gold?", "answer": "Au", "time": 45 }
+  ],
+  "grammar": [
+    {
+      "id": 1,
+      "question": "Rearrange: 'to the store went she yesterday.'",
+      "answer": "She went to the store yesterday.",
+      "alternativeAnswers": [
+        "Yesterday, she went to the store.",
+        "To the store she went yesterday."
+      ],
+      "time": 60
+    },
+    {
+      "id": 2,
+      "question": "Correct: 'Me and my friend is going to the movies.'",
+      "answer": "My friend and I are going to the movies.",
+      "alternativeAnswers": [
+        "I and my friend are going to the movies.",
+        "We are going to the movies."
+      ],
+      "time": 60
+    },
+    {
+      "id": 3,
+      "question": "Rearrange: 'the cat on the mat is sleeping.'",
+      "answer": "The cat is sleeping on the mat.",
+      "alternativeAnswers": [
+        "On the mat, the cat is sleeping.",
+        "Is the cat sleeping on the mat?"
+      ],
+      "time": 60
+    },
+    {
+      "id": 4,
+      "question": "Correct: 'She don't like broccoli.'",
+      "answer": "She doesn't like broccoli.",
+      "alternativeAnswers": [
+        "She does not like broccoli.",
+        "Broccoli is not liked by her."
+      ],
+      "time": 60
+    },
+    {
+      "id": 5,
+      "question": "Rearrange: 'blue the sky is today.'",
+      "answer": "The sky is blue today.",
+      "alternativeAnswers": [
+        "Today, the sky is blue.",
+        "Blue is the sky today."
+      ],
+      "time": 60
+    },
+    {
+      "id": 6,
+      "question": "Correct: 'There is many books on the shelf.'",
+      "answer": "There are many books on the shelf.",
+      "alternativeAnswers": [
+        "Many books are on the shelf.",
+        "The shelf holds many books."
+      ],
+      "time": 60
+    },
+    {
+      "id": 7,
+      "question": "Rearrange: 'her homework finished Sarah quickly.'",
+      "answer": "Sarah finished her homework quickly.",
+      "alternativeAnswers": [
+        "Quickly, Sarah finished her homework.",
+        "Her homework was quickly finished by Sarah."
+      ],
+      "time": 60
+    },
+    {
+      "id": 8,
+      "question": "Correct: 'The dog wagged it's tail.'",
+      "answer": "The dog wagged its tail.",
+      "alternativeAnswers": [
+        "Its tail was wagged by the dog.",
+        "The tail of the dog wagged."
+      ],
+      "time": 60
+    },
+    {
+      "id": 9,
+      "question": "Rearrange: 'at the park playing children are.'",
+      "answer": "Children are playing at the park.",
+      "alternativeAnswers": [
+        "At the park, children are playing.",
+        "Playing at the park are children."
+      ],
+      "time": 60
+    },
+    {
+      "id": 10,
+      "question": "Correct: 'He goed to school yesterday.'",
+      "answer": "He went to school yesterday.",
+      "alternativeAnswers": [
+        "Yesterday, he went to school.",
+        "School was where he went yesterday."
+      ],
+      "time": 60
+    }
+  ],
+  "extempore": [
+    { "id": 1, "topic": "The importance of eating healthy food", "time": 60 },
+    { "id": 2, "topic": "Why exercise is good for your body", "time": 60 }
+  ],
+  "diction": [
+    {
+      "id": 1,
+      "story": "Liam was excited for his first day at a new school. He packed his backpack with notebooks and pencils the night before. In the morning, his mom made his favorite pancakes for breakfast. When he arrived at school, his teacher introduced him to the class, and a boy named Ethan showed him where to sit.",
+      "time": 45,
+      "questions": [
+        {
+          "question": "Why was Liam excited?",
+          "answer": "It was his first day at a new school.",
+          "alternativeAnswers": [
+            "Because he was starting at a new school.",
+            "He was beginning school somewhere new."
+          ],
+          "points": 2
+        },
+        {
+          "question": "What did Liam pack in his backpack?",
+          "answer": "Notebooks and pencils.",
+          "alternativeAnswers": [
+            "School supplies like notebooks and pencils.",
+            "Writing materials and notebooks."
+          ],
+          "points": 2
+        },
+        {
+          "question": "What did Liam's mom make for breakfast?",
+          "answer": "His favorite pancakes.",
+          "alternativeAnswers": [
+            "Pancakes that he liked.",
+            "Special pancakes for him."
+          ],
+          "points": 2
+        },
+        {
+          "question": "Who helped Liam at school?",
+          "answer": "A boy named Ethan.",
+          "alternativeAnswers": [
+            "His classmate Ethan.",
+            "Another student called Ethan."
+          ],
+          "points": 2
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "story": "Sophia was helping her mom bake cookies. They mixed flour, sugar, and eggs in a big bowl. Sophia carefully dropped spoonfuls of dough onto the baking tray. When the cookies came out of the oven, they were golden brown and smelled delicious. Sophia's little brother Max kept trying to sneak cookies before they cooled down.",
+      "time": 45,
+      "questions": [
+        {
+          "question": "What was Sophia helping her mom do?",
+          "answer": "Bake cookies.",
+          "alternativeAnswers": [
+            "Make cookies.",
+            "Prepare cookie dough."
+          ],
+          "points": 2
+        },
+        {
+          "question": "What ingredients did they use?",
+          "answer": "Flour, sugar, and eggs.",
+          "alternativeAnswers": [
+            "They mixed flour with sugar and eggs.",
+            "Basic baking ingredients."
+          ],
+          "points": 2
+        },
+        {
+          "question": "How did the cookies look when done?",
+          "answer": "Golden brown.",
+          "alternativeAnswers": [
+            "Nicely browned.",
+            "Perfectly cooked color."
+          ],
+          "points": 2
+        },
+        {
+          "question": "What was Max trying to do?",
+          "answer": "Sneak cookies before they cooled.",
+          "alternativeAnswers": [
+            "Take cookies too early.",
+            "Eat warm cookies secretly."
+          ],
+          "points": 2
+        }
+      ]
+    }
+  ]
+}

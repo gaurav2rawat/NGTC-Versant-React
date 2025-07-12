@@ -1,0 +1,342 @@
+{
+  "technical": [
+    {
+      "id": 1,
+      "question": "What is the primary function of an operating system?",
+      "answer": "An operating system manages hardware and software resources for computer programs.",
+      "alternativeAnswers": [
+        "It manages computer hardware and software resources effectively.",
+        "The OS provides essential services for computer programs."
+      ],
+      "time": 30
+    },
+    {
+      "id": 2,
+      "question": "Explain the role of a CPU in a computer system.",
+      "answer": "The CPU executes instructions and performs calculations for the computer.",
+      "alternativeAnswers": [
+        "It performs calculations and executes computer instructions.",
+        "The central processing unit acts as the computer's brain."
+      ],
+      "time": 30
+    },
+    {
+      "id": 3,
+      "question": "What is the difference between RAM and ROM?",
+      "answer": "RAM offers volatile, temporary storage; ROM provides non-volatile, permanent storage.",
+      "alternativeAnswers": [
+        "RAM holds temporary data; ROM stores permanent system instructions.",
+        "Volatile RAM is temporary; non-volatile ROM is permanent."
+      ],
+      "time": 30
+    },
+    {
+      "id": 4,
+      "question": "Describe the purpose of a router in a network.",
+      "answer": "A router connects different networks and forwards data packets between them.",
+      "alternativeAnswers": [
+        "It directs data packets between various network segments.",
+        "Routers connect distinct networks and manage data flow."
+      ],
+      "time": 30
+    },
+    {
+      "id": 5,
+      "question": "What is a network switch used for?",
+      "answer": "A network switch connects multiple devices on a local area network.",
+      "alternativeAnswers": [
+        "It connects various devices within a local network.",
+        "Switches facilitate communication among LAN-connected devices."
+      ],
+      "time": 30
+    },
+    {
+      "id": 6,
+      "question": "Explain what an IP address is.",
+      "answer": "An IP address identifies each device connected to a computer network.",
+      "alternativeAnswers": [
+        "It is a unique numerical label for networked devices.",
+        "Every network device receives an identifying IP address."
+      ],
+      "time": 30
+    },
+    {
+      "id": 7,
+      "question": "What is the function of a firewall in network security?",
+      "answer": "A firewall filters network traffic to protect against unauthorized access.",
+      "alternativeAnswers": [
+        "It prevents unauthorized access by filtering network data.",
+        "Firewalls protect networks from various cyber threats."
+      ],
+      "time": 30
+    },
+    {
+      "id": 8,
+      "question": "What does DHCP stand for and what is its role?",
+      "answer": "DHCP (Dynamic Host Configuration Protocol) automatically assigns IP addresses.",
+      "alternativeAnswers": [
+        "Dynamic Host Configuration Protocol automatically provides IP addresses.",
+        "It dynamically configures network parameters for devices."
+      ],
+      "time": 30
+    },
+    {
+      "id": 9,
+      "question": "Why is 'ping' command used in networking?",
+      "answer": "The 'ping' command tests network host reachability and measures message time.",
+      "alternativeAnswers": [
+        "It checks if a network host is reachable and measures latency.",
+        "The command measures the round-trip time for network messages."
+      ],
+      "time": 30
+    },
+    {
+      "id": 10,
+      "question": "Briefly describe what bandwidth means in networking.",
+      "answer": "Bandwidth indicates the maximum data amount transmitted over a connection.",
+      "alternativeAnswers": [
+        "It represents the network's data transfer capacity over time.",
+        "Bandwidth defines how much data can pass simultaneously."
+      ],
+      "time": 30
+    }
+  ],
+  "listening": [
+    { "id": 1, "text": "Can we schedule a meeting for next Tuesday afternoon?", "time": 30 },
+    { "id": 2, "text": "Please confirm your availability for the project review.", "time": 30 },
+    { "id": 3, "text": "The report is due by end of day Friday.", "time": 30 },
+    { "id": 4, "text": "Could you send me the updated budget spreadsheet?", "time": 30 },
+    { "id": 5, "text": "I'll be presenting the new strategy at 10 AM.", "time": 30 },
+    { "id": 6, "text": "Let's discuss this further during our next call.", "time": 30 },
+    { "id": 7, "text": "Please ensure all documents are submitted promptly.", "time": 30 },
+    { "id": 8, "text": "I need your feedback on the proposal by tomorrow.", "time": 30 },
+    { "id": 9, "text": "We'll proceed with the plan as discussed.", "time": 30 },
+    { "id": 10, "text": "Kindly approve the final draft by noon today.", "time": 30 }
+  ],
+
+"logical": [
+    { "id": 1, "question": "Is 'ameliorate' the antonym of 'worsen'?", "answer": "Yes", "time": 45 },
+    { "id": 2, "question": "Which is correct: 'The data is' or 'The data are' in formal writing?", "answer": "Are", "time": 45 },
+    { "id": 3, "question": "Is a 'synecdoche' a figure of speech where a part represents the whole?", "answer": "Yes", "time": 45 },
+    { "id": 4, "question": "Which word is misspelled: 'accommodate', 'embarrass', 'seperate'?", "answer": "Seperate", "time": 45 },
+    { "id": 5, "question": "Is 'ephemeral' synonymous with 'everlasting'?", "answer": "No", "time": 45 },
+    { "id": 6, "question": "In grammar, does 'whom' function as an object pronoun?", "answer": "Yes", "time": 45 },
+    { "id": 7, "question": "Is 'nonplussed' correctly defined as 'unfazed' in modern usage?", "answer": "No", "time": 45 },
+    { "id": 8, "question": "Which is the correct plural: 'crises' or 'crisises'?", "answer": "Crises", "time": 45 },
+    { "id": 9, "question": "Is 'enormity' synonymous with 'large size'?", "answer": "No", "time": 45 },
+    { "id": 10, "question": "Does 'literally' now officially include its figurative meaning in dictionaries?", "answer": "Yes", "time": 45 }
+],
+
+  "grammar": [
+    {
+      "id": 1,
+      "question": "Rearrange the words to form a correct sentence: 'had he known the truth, he would have acted differently.'",
+      "answer": "Had he known the truth, he would have acted differently.",
+      "alternativeAnswers": [
+        "If he had known the truth, he would have acted differently.",
+        "He would have acted differently if he possessed that truth."
+      ],
+      "time": 60
+    },
+    {
+      "id": 2,
+      "question": "Rearrange the words to form a correct sentence: 'not only did she pass the exam but also got a scholarship.'",
+      "answer": "Not only did she pass the exam but also got a scholarship.",
+      "alternativeAnswers": [
+        "She not only passed her exam but also received a scholarship.",
+        "She passed the exam and additionally secured a scholarship."
+      ],
+      "time": 60
+    },
+    {
+      "id": 3,
+      "question": "Rearrange the words to form a correct sentence: 'nowhere else in the world will you find such beauty.'",
+      "answer": "Nowhere else in the world will you find such beauty.",
+      "alternativeAnswers": [
+        "You will find such beauty nowhere else globally.",
+        "Such beauty exists nowhere else on Earth."
+      ],
+      "time": 60
+    },
+    {
+      "id": 4,
+      "question": "Correct the subject-verb agreement in this sentence: 'The news are very disturbing.'",
+      "answer": "The news is very disturbing.",
+      "alternativeAnswers": [
+        "This news proves to be very disturbing.",
+        "Indeed, the news appears quite disturbing."
+      ],
+      "time": 60
+    },
+    {
+      "id": 5,
+      "question": "Correct the subject-verb agreement in this sentence: 'Mathematics are a difficult subject for many.'",
+      "answer": "Mathematics is a difficult subject for many.",
+      "alternativeAnswers": [
+        "Mathematics often proves challenging for many individuals.",
+        "For many, mathematics presents a significant academic challenge."
+      ],
+      "time": 60
+    },
+    {
+      "id": 6,
+      "question": "Correct the subject-verb agreement in this sentence: 'Each of the participants have their own unique ideas.'",
+      "answer": "Each of the participants has their own unique ideas.",
+      "alternativeAnswers": [
+        "Every participant possesses unique individual ideas.",
+        "All participants individually have distinct concepts."
+      ],
+      "time": 60
+    },
+    {
+      "id": 7,
+      "question": "Correct the subject-verb agreement in this sentence: 'The majority of students prefers online classes.'",
+      "answer": "The majority of students prefer online classes.",
+      "alternativeAnswers": [
+        "Most students show a preference for online classes.",
+        "A large number of students favor online instruction."
+      ],
+      "time": 60
+    },
+    {
+      "id": 8,
+      "question": "Replace the incorrect word in this sentence: 'He had a good advise for me.'",
+      "answer": "He had good advice for me.",
+      "alternativeAnswers": [
+        "He offered me sound counsel.",
+        "His guidance to me was beneficial."
+      ],
+      "time": 60
+    },
+    {
+      "id": 9,
+      "question": "Replace the incorrect word in this sentence: 'The principle of the school announced the holiday.'",
+      "answer": "The principal of the school announced the holiday.",
+      "alternativeAnswers": [
+        "The school's head announced the holiday.",
+        "The headmaster announced the school holiday."
+      ],
+      "time": 60
+    },
+    {
+      "id": 10,
+      "question": "Replace the incorrect word in this sentence: 'They accepted the invitation accept for John.'",
+      "answer": "They accepted the invitation except for John.",
+      "alternativeAnswers": [
+        "Everyone accepted the invitation, excluding John.",
+        "All accepted the invitation, save for John."
+      ],
+      "time": 60
+    }
+  ],
+  "extempore": [
+    { "id": 1, "topic": "The role of cybersecurity in modern businesses.", "time": 60 },
+    { "id": 2, "topic": "The future of remote work and its implications for office culture.", "time": 60 }
+  ],
+  "diction": [
+    {
+      "id": 1,
+      "story": "The ancient library was a treasure trove of knowledge, its towering shelves filled with countless books. A faint scent of aged paper and leather permeated the air. Sunlight streamed through tall arched windows, illuminating dust particles dancing in the quiet. Scholars often spent hours immersed in profound studies, seeking wisdom within its silent halls.",
+      "time": 45,
+      "questions": [
+        {
+          "question": "What filled the library's shelves?",
+          "answer": "Countless books filled the library's towering shelves.",
+          "alternativeAnswers": [
+            "Tall shelves were filled with numerous books.",
+            "Many books filled the library's shelves."
+          ],
+          "points": 2
+        },
+        {
+          "question": "What scent permeated the air?",
+          "answer": "A faint scent of aged paper and leather filled the air.",
+          "alternativeAnswers": [
+            "Aged paper and leather created a faint scent.",
+            "The air smelled faintly of old paper and leather."
+          ],
+          "points": 2
+        },
+        {
+          "question": "What streamed through the windows?",
+          "answer": "Sunlight streamed through the tall arched windows softly.",
+          "alternativeAnswers": [
+            "Tall arched windows allowed sunlight to stream in.",
+            "Through tall windows, sunlight gently streamed."
+          ],
+          "points": 2
+        },
+        {
+          "question": "Who spent hours in the library?",
+          "answer": "Scholars frequently spent many hours immersed in the library.",
+          "alternativeAnswers": [
+            "Often, scholars would spend hours studying there.",
+            "Many scholars spent long hours in the library."
+          ],
+          "points": 2
+        },
+        {
+          "question": "What were they seeking?",
+          "answer": "They were seeking profound wisdom within the library's silent halls.",
+          "alternativeAnswers": [
+            "They were looking for deep wisdom there.",
+            "Wisdom was what they sought."
+          ],
+          "points": 2
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "story": "The bustling city market was alive with activity. Vendors called out their prices, and shoppers skillfully navigated the narrow aisles. Brightly colored fruits and vegetables were piled high, next to stalls selling handmade crafts and intricate jewelry. The air vibrated with a mix of languages and laughter, creating a vibrant, energetic atmosphere that drew people in.",
+      "time": 45,
+      "questions": [
+        {
+          "question": "What was alive with activity?",
+          "answer": "The bustling city market was alive with vibrant activity.",
+          "alternativeAnswers": [
+            "The city market buzzed with activity.",
+            "The busy market was full of life."
+          ],
+          "points": 2
+        },
+        {
+          "question": "Who called out their prices?",
+          "answer": "Vendors loudly called out their prices to attract customers.",
+          "alternativeAnswers": [
+            "The vendors announced their prices loudly.",
+            "Vendors shouted their prices at shoppers."
+          ],
+          "points": 2
+        },
+        {
+          "question": "What was piled high in the stalls?",
+          "answer": "Brightly colored fruits and vegetables were piled high in stalls.",
+          "alternativeAnswers": [
+            "Colorful fruits and vegetables were stacked high.",
+            "Stalls displayed high piles of vibrant produce."
+          ],
+          "points": 2
+        },
+        {
+          "question": "What vibrated in the air?",
+          "answer": "A vibrant mix of languages and laughter vibrated in the air.",
+          "alternativeAnswers": [
+            "The air hummed with languages and laughter.",
+            "Languages and laughter filled the vibrating air."
+          ],
+          "points": 2
+        },
+        {
+          "question": "What kind of atmosphere did it create?",
+          "answer": "It created a vibrant, energetic atmosphere that attracted people.",
+          "alternativeAnswers": [
+            "It fostered a lively, energetic, and inviting atmosphere.",
+            "The market had a vibrant and energetic feel."
+          ],
+          "points": 2
+        }
+      ]
+    }
+  ]
+}
