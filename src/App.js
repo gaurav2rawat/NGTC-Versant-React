@@ -86,6 +86,13 @@ const App = () => {
       './questions_set2.json',
       './questions_set3.json',
       './questions_set4.json',
+      './questions_set5.json',
+      './questions_set6.json',
+      './questions_set7.json',
+      './questions_set8.json',
+      './questions_set9.json',
+      './questions_set10.json',
+
     ];
     const randomIndex = Math.floor(Math.random() * questionFiles.length);
     return questionFiles[randomIndex];
@@ -971,6 +978,7 @@ const speakText = (text) => {
       case 'logical':
         return (
           <div className="round-section">
+             <h3>Logical round merely has one word answers:</h3>         
             <h3>{currentQuestion.question}</h3>
             <input
               type="text"

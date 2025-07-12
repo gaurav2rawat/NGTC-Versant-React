@@ -1,0 +1,340 @@
+{
+  "technical": [
+    {
+      "id": 1,
+      "question": "What is the primary function of a web server?",
+      "answer": "A web server stores and delivers website content to users.",
+      "alternativeAnswers": [
+        "It provides web pages to client browsers.",
+        "Web servers host and serve website files."
+      ],
+      "time": 30
+    },
+    {
+      "id": 2,
+      "question": "Explain the concept of 'latency' in networking.",
+      "answer": "Latency is the time delay for data to travel across a network.",
+      "alternativeAnswers": [
+        "It measures data transmission delay in networks.",
+        "Latency represents signal travel time."
+      ],
+      "time": 30
+    },
+    {
+      "id": 3,
+      "question": "What is the purpose of a VPN?",
+      "answer": "A VPN (Virtual Private Network) creates a secure, encrypted connection.",
+      "alternativeAnswers": [
+        "It provides a secure tunnel over public networks.",
+        "VPNs encrypt internet traffic for privacy."
+      ],
+      "time": 30
+    },
+    {
+      "id": 4,
+      "question": "Describe the function of a hard drive (HDD/SSD).",
+      "answer": "A hard drive stores digital data persistently for computer systems.",
+      "alternativeAnswers": [
+        "It provides long-term storage for all computer files.",
+        "Hard drives save digital information permanently."
+      ],
+      "time": 30
+    },
+    {
+      "id": 5,
+      "question": "What is a 'port' in the context of networking?",
+      "answer": "A port identifies specific processes or services on a network device.",
+      "alternativeAnswers": [
+        "It designates a unique endpoint for network communication.",
+        "Ports allow different services to run simultaneously."
+      ],
+      "time": 30
+    },
+    {
+      "id": 6,
+      "question": "In Windows OS, what is 'Safe Mode'?",
+      "answer": "Safe Mode starts Windows with minimal drivers for troubleshooting.",
+      "alternativeAnswers": [
+        "It loads only essential system components for diagnostics.",
+        "Windows Safe Mode helps diagnose system problems."
+      ],
+      "time": 30
+    },
+    {
+      "id": 7,
+      "question": "What is 'SaaS' in cloud computing?",
+      "answer": "SaaS (Software as a Service) delivers software applications over the internet.",
+      "alternativeAnswers": [
+        "It provides software applications as an online service.",
+        "SaaS allows users to access software via web browsers."
+      ],
+      "time": 30
+    },
+    {
+      "id": 8,
+      "question": "Explain the concept of 'bandwidth throttling'.",
+      "answer": "Bandwidth throttling intentionally slows down internet service speed.",
+      "alternativeAnswers": [
+        "It reduces network speed deliberately for specific traffic.",
+        "Throttling limits data transfer rates on a network."
+      ],
+      "time": 30
+    },
+    {
+      "id": 9,
+      "question": "What is 'malware'?",
+      "answer": "Malware is malicious software designed to harm computer systems.",
+      "alternativeAnswers": [
+        "It includes viruses, worms, and other harmful programs.",
+        "Malware aims to disrupt, damage, or gain unauthorized access."
+      ],
+      "time": 30
+    },
+    {
+      "id": 10,
+      "question": "What is a 'kernel' in an operating system?",
+      "answer": "The kernel is the core component of an operating system.",
+      "alternativeAnswers": [
+        "It manages system resources and hardware interactions.",
+        "The kernel acts as the central part of the OS."
+      ],
+      "time": 30
+    }
+  ],
+  "listening": [
+    { "id": 1, "text": "Please submit your final report by end of day.", "time": 30 },
+    { "id": 2, "text": "The team meeting is rescheduled for Wednesday morning.", "time": 30 },
+    { "id": 3, "text": "Could you prepare the presentation for the stakeholders?", "time": 30 },
+    { "id": 4, "text": "Remember to log your hours accurately this week.", "time": 30 },
+    { "id": 5, "text": "The new security protocols are now in effect.", "time": 30 },
+    { "id": 6, "text": "Let's review the budget forecast during our call.", "time": 30 },
+    { "id": 7, "text": "Ensure all client communications are documented.", "time": 30 },
+    { "id": 8, "text": "I need your feedback on the new software feature.", "time": 30 },
+    { "id": 9, "text": "We will implement the changes as planned.", "time": 30 },
+    { "id": 10, "text": "Kindly send the updated project timeline soon.", "time": 30 }
+  ],
+  "logical": [
+    { "id": 1, "question": "What is a synonym for 'diligent'?", "answer": "Industrious", "time": 45 },
+    { "id": 2, "question": "What is the opposite of 'optimistic'?", "answer": "Pessimistic", "time": 45 },
+    { "id": 3, "question": "What word means 'to make something less severe'?", "answer": "Mitigate", "time": 45 },
+    { "id": 4, "question": "What is a person who sells flowers?", "answer": "Florist", "time": 45 },
+    { "id": 5, "question": "What word describes 'a short journey for pleasure'?", "answer": "Excursion", "time": 45 },
+    { "id": 6, "question": "If all birds have wings, and a robin is a bird, does a robin have wings?", "answer": "Yes", "time": 45 },
+    { "id": 7, "question": "Can a triangle have four angles?", "answer": "No", "time": 45 },
+    { "id": 8, "question": "If all cats are animals, and this is a cat, is this an animal?", "answer": "Yes", "time": 45 },
+    { "id": 9, "question": "Is 'OR' a logical connector?", "answer": "Yes", "time": 45 },
+    { "id": 10, "question": "If a statement is false, is its negation true?", "answer": "Yes", "time": 45 }
+  ],
+  "grammar": [
+    {
+      "id": 1,
+      "question": "Rearrange the words to form a correct sentence: 'only then did the truth begin to emerge.'",
+      "answer": "Only then did the truth begin to emerge.",
+      "alternativeAnswers": [
+        "The truth began to emerge only then.",
+        "Not until then did the truth start to appear."
+      ],
+      "time": 60
+    },
+    {
+      "id": 2,
+      "question": "Rearrange the words to form a correct sentence: 'rarely have I encountered such a challenging problem.'",
+      "answer": "Rarely have I encountered such a challenging problem.",
+      "alternativeAnswers": [
+        "I have rarely encountered such a challenging problem.",
+        "Such a challenging problem I have rarely encountered."
+      ],
+      "time": 60
+    },
+    {
+      "id": 3,
+      "question": "Rearrange the words to form a correct sentence: 'no sooner had they finished dinner than the guests arrived.'",
+      "answer": "No sooner had they finished dinner than the guests arrived.",
+      "alternativeAnswers": [
+        "They had no sooner finished dinner than the guests arrived.",
+        "The guests arrived immediately after dinner."
+      ],
+      "time": 60
+    },
+    {
+      "id": 4,
+      "question": "Rearrange the words to form a correct sentence: 'little did he realize the consequences of his actions.'",
+      "answer": "Little did he realize the consequences of his actions.",
+      "alternativeAnswers": [
+        "He little realized the consequences of his actions.",
+        "He was unaware of his actions' consequences."
+      ],
+      "time": 60
+    },
+    {
+      "id": 5,
+      "question": "Rearrange the words to form a correct sentence: 'so beautiful was the scenery that everyone stopped to admire it.'",
+      "answer": "So beautiful was the scenery that everyone stopped to admire it.",
+      "alternativeAnswers": [
+        "The scenery was so beautiful that everyone stopped to admire it.",
+        "Everyone paused to admire the beautiful scenery."
+      ],
+      "time": 60
+    },
+    {
+      "id": 6,
+      "question": "Correct the subject-verb agreement in this sentence: 'The committee are meeting tomorrow.'",
+      "answer": "The committee is meeting tomorrow.",
+      "alternativeAnswers": [
+        "The committee members are meeting tomorrow.",
+        "The committee plans to meet tomorrow."
+      ],
+      "time": 60
+    },
+    {
+      "id": 7,
+      "question": "Correct the subject-verb agreement in this sentence: 'Neither the students nor the teacher were ready.'",
+      "answer": "Neither the students nor the teacher was ready.",
+      "alternativeAnswers": [
+        "Neither the teacher nor the students were ready.",
+        "The students and teacher were not ready."
+      ],
+      "time": 60
+    },
+    {
+      "id": 8,
+      "question": "Correct the word usage in this sentence: 'He is disinterested in politics.'",
+      "answer": "He is uninterested in politics.",
+      "alternativeAnswers": [
+        "He lacks interest in politics.",
+        "Politics does not interest him."
+      ],
+      "time": 60
+    },
+    {
+      "id": 9,
+      "question": "Correct the word usage in this sentence: 'She felt badly about the mistake.'",
+      "answer": "She felt bad about the mistake.",
+      "alternativeAnswers": [
+        "She felt remorseful about the error.",
+        "The mistake made her feel regretful."
+      ],
+      "time": 60
+    },
+    {
+      "id": 10,
+      "question": "Correct the verb tense in this sentence: 'If I would have known, I would have helped.'",
+      "answer": "If I had known, I would have helped.",
+      "alternativeAnswers": [
+        "Had I known, I would have helped.",
+        "Knowing that, I would have offered assistance."
+      ],
+      "time": 60
+    }
+  ],
+  "extempore": [
+    { "id": 1, "topic": "The future of space exploration and its benefits.", "time": 60 },
+    { "id": 2, "topic": "The impact of globalization on local cultures.", "time": 60 }
+  ],
+  "diction": [
+    {
+      "id": 1,
+      "story": "The quiet village was nestled beside a winding river, surrounded by lush green meadows. Old stone bridges arched gracefully over the water, connecting ancient paths. The air carried the sweet scent of wildflowers and the distant bleating of sheep. Villagers often gathered by the riverbanks, sharing stories and enjoying the tranquil scenery.",
+      "time": 45,
+      "questions": [
+        {
+          "question": "Where was the village nestled?",
+          "answer": "The village was nestled beside a winding river.",
+          "alternativeAnswers": [
+            "It was located next to a winding river.",
+            "A winding river ran beside the village."
+          ],
+          "points": 2
+        },
+        {
+          "question": "What arched over the water?",
+          "answer": "Old stone bridges arched gracefully over the water.",
+          "alternativeAnswers": [
+            "Graceful stone bridges spanned the water.",
+            "Ancient bridges arched over the river."
+          ],
+          "points": 2
+        },
+        {
+          "question": "What scent did the air carry?",
+          "answer": "The air carried the sweet scent of wildflowers.",
+          "alternativeAnswers": [
+            "Sweet wildflowers scented the air.",
+            "The air smelled of wildflowers."
+          ],
+          "points": 2
+        },
+        {
+          "question": "Who gathered by the riverbanks?",
+          "answer": "Villagers often gathered by the riverbanks.",
+          "alternativeAnswers": [
+            "The villagers frequently met by the river.",
+            "People from the village gathered by the river."
+          ],
+          "points": 2
+        },
+        {
+          "question": "What did they share?",
+          "answer": "They shared stories and enjoyed the tranquil scenery.",
+          "alternativeAnswers": [
+            "Stories were shared, and scenery was enjoyed.",
+            "They exchanged tales and admired the view."
+          ],
+          "points": 2
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "story": "A curious squirrel scampered up a tall oak tree, its bushy tail twitching excitedly. It meticulously searched for hidden acorns among the rough bark and green leaves. Nearby, a gentle breeze rustled through the branches, creating a soft, whispering sound. The forest floor was covered in fallen leaves, forming a colorful carpet. The squirrel eventually found its treasure.",
+      "time": 45,
+      "questions": [
+        {
+          "question": "What scampered up the oak tree?",
+          "answer": "A curious squirrel scampered up the tall oak tree.",
+          "alternativeAnswers": [
+            "The curious squirrel climbed the oak tree.",
+            "A squirrel went up the tall tree."
+          ],
+          "points": 2
+        },
+        {
+          "question": "What was its tail doing?",
+          "answer": "Its bushy tail was twitching excitedly.",
+          "alternativeAnswers": [
+            "The bushy tail twitched with excitement.",
+            "Its tail twitched excitedly."
+          ],
+          "points": 2
+        },
+        {
+          "question": "What did it search for?",
+          "answer": "It meticulously searched for hidden acorns.",
+          "alternativeAnswers": [
+            "Hidden acorns were meticulously sought.",
+            "It looked carefully for concealed acorns."
+          ],
+          "points": 2
+        },
+        {
+          "question": "What covered the forest floor?",
+          "answer": "Fallen leaves covered the forest floor, forming a carpet.",
+          "alternativeAnswers": [
+            "The forest floor was covered in leaves.",
+            "Leaves formed a carpet on the ground."
+          ],
+          "points": 2
+        },
+        {
+          "question": "What did the squirrel eventually find?",
+          "answer": "The squirrel eventually found its hidden treasure.",
+          "alternativeAnswers": [
+            "It eventually located its treasure.",
+            "Its treasure was finally discovered."
+          ],
+          "points": 2
+        }
+      ]
+    }
+  ]
+}

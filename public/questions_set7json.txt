@@ -1,0 +1,341 @@
+
+{
+  "technical": [
+    {
+      "id": 1,
+      "question": "What is the primary purpose of a firewall?",
+      "answer": "A firewall monitors and filters network traffic for security.",
+      "alternativeAnswers": [
+        "It controls incoming and outgoing network traffic.",
+        "Firewalls block unauthorized access to a network."
+      ],
+      "time": 30
+    },
+    {
+      "id": 2,
+      "question": "Explain what RAM stands for and its function.",
+      "answer": "RAM (Random Access Memory) provides volatile, temporary data storage.",
+      "alternativeAnswers": [
+        "It stores data temporarily for active programs.",
+        "RAM offers fast, short-term data access."
+      ],
+      "time": 30
+    },
+    {
+      "id": 3,
+      "question": "What is the role of an IP address in networking?",
+      "answer": "An IP address uniquely identifies a device on a network.",
+      "alternativeAnswers": [
+        "It provides a unique numerical label for devices.",
+        "An IP address locates devices within a network."
+      ],
+      "time": 30
+    },
+    {
+      "id": 4,
+      "question": "Describe the function of a CPU in a computer.",
+      "answer": "The CPU executes instructions and performs calculations for the computer.",
+      "alternativeAnswers": [
+        "It acts as the central processing unit of a computer.",
+        "The CPU processes all computer instructions."
+      ],
+      "time": 30
+    },
+    {
+      "id": 5,
+      "question": "What is the main difference between HTTP and HTTPS?",
+      "answer": "HTTPS uses encryption for secure data transfer, unlike HTTP.",
+      "alternativeAnswers": [
+        "HTTPS provides secure, encrypted web communication.",
+        "HTTP is unsecured; HTTPS uses SSL/TLS encryption."
+      ],
+      "time": 30
+    },
+    {
+      "id": 6,
+      "question": "In Windows OS, what is the purpose of the Registry?",
+      "answer": "The Registry stores system configurations and application settings for Windows.",
+      "alternativeAnswers": [
+        "It contains crucial settings for Windows operations.",
+        "Windows stores all configuration data in the Registry."
+      ],
+      "time": 30
+    },
+    {
+      "id": 7,
+      "question": "What is cloud computing?",
+      "answer": "Cloud computing delivers on-demand computing services over the Internet.",
+      "alternativeAnswers": [
+        "It involves delivering computing services online.",
+        "Cloud computing provides scalable IT resources virtually."
+      ],
+      "time": 30
+    },
+    {
+      "id": 8,
+      "question": "Explain the concept of virtualization.",
+      "answer": "Virtualization creates a virtual version of hardware or resources.",
+      "alternativeAnswers": [
+        "It allows multiple virtual machines on one physical server.",
+        "Virtualization abstracts computing resources for flexibility."
+      ],
+      "time": 30
+    },
+    {
+      "id": 9,
+      "question": "What is phishing in cybersecurity?",
+      "answer": "Phishing is a cyber attack attempting to steal sensitive information.",
+      "alternativeAnswers": [
+        "It involves deceptive attempts to acquire personal data.",
+        "Phishing tricks users into revealing credentials."
+      ],
+      "time": 30
+    },
+    {
+      "id": 10,
+      "question": "What is a GUI in computer systems?",
+      "answer": "GUI (Graphical User Interface) enables user interaction with visuals.",
+      "alternativeAnswers": [
+        "It uses graphical icons for user interaction.",
+        "A GUI provides a visual way to interact with software."
+      ],
+      "time": 30
+    }
+  ],
+  "listening": [
+    { "id": 1, "text": "Please review the revised proposal before submitting.", "time": 30 },
+    { "id": 2, "text": "The quarterly review meeting is scheduled for next Tuesday.", "time": 30 },
+    { "id": 3, "text": "Ensure all project milestones are met by Friday.", "time": 30 },
+    { "id": 4, "text": "Could you send me the updated contact list?", "time": 30 },
+    { "id": 5, "text": "The new software update requires immediate attention.", "time": 30 },
+    { "id": 6, "text": "Let's finalize the presentation content this afternoon.", "time": 30 },
+    { "id": 7, "text": "Confirm the client appointment for tomorrow morning.", "time": 30 },
+    { "id": 8, "text": "I need your input on the marketing campaign strategy.", "time": 30 },
+    { "id": 9, "text": "All team members should complete the safety training.", "time": 30 },
+    { "id": 10, "text": "The annual report will be published next month.", "time": 30 }
+  ],
+  "logical": [
+    { "id": 1, "question": "What is the opposite of 'expand'?", "answer": "Contract", "time": 45 },
+    { "id": 2, "question": "What is a synonym for 'commence'?", "answer": "Start", "time": 45 },
+    { "id": 3, "question": "What word describes something that is 'very old or ancient'?", "answer": "Archaic", "time": 45 },
+    { "id": 4, "question": "What is the study of language?", "answer": "Linguistics", "time": 45 },
+    { "id": 5, "question": "What word describes a 'person who studies rocks'?", "answer": "Geologist", "time": 45 },
+    { "id": 6, "question": "If all circles are round, and this object is a circle, is this object round?", "answer": "Yes", "time": 45 },
+    { "id": 7, "question": "Can a square have five sides?", "answer": "No", "time": 45 },
+    { "id": 8, "question": "If today is Monday, what day was yesterday?", "answer": "Sunday", "time": 45 },
+    { "id": 9, "question": "Which number comes next in the sequence: 2, 4, 6, 8, ...?", "answer": "Ten", "time": 45 },
+    { "id": 10, "question": "Is an animal always a mammal?", "answer": "No", "time": 45 }
+  ],
+  "grammar": [
+    {
+      "id": 1,
+      "question": "Rearrange the words to form a correct sentence: 'hardly had I closed my eyes when the alarm rang.'",
+      "answer": "Hardly had I closed my eyes when the alarm rang.",
+      "alternativeAnswers": [
+        "I had hardly closed my eyes when the alarm rang.",
+        "Scarcely had I closed my eyes before the alarm sounded."
+      ],
+      "time": 60
+    },
+    {
+      "id": 2,
+      "question": "Rearrange the words to form a correct sentence: 'not until later did we understand the full impact.'",
+      "answer": "Not until later did we understand the full impact.",
+      "alternativeAnswers": [
+        "We did not understand the full impact until later.",
+        "Only later did we comprehend the full impact."
+      ],
+      "time": 60
+    },
+    {
+      "id": 3,
+      "question": "Rearrange the words to form a correct sentence: 'never in my life have I seen such dedication.'",
+      "answer": "Never in my life have I seen such dedication.",
+      "alternativeAnswers": [
+        "I have never seen such dedication in my life.",
+        "Such dedication I have never witnessed before."
+      ],
+      "time": 60
+    },
+    {
+      "id": 4,
+      "question": "Rearrange the words to form a correct sentence: 'scarcely had the movie begun when the power went out.'",
+      "answer": "Scarcely had the movie begun when the power went out.",
+      "alternativeAnswers": [
+        "The movie had scarcely begun when the power went out.",
+        "Hardly had the film started before the power failed."
+      ],
+      "time": 60
+    },
+    {
+      "id": 5,
+      "question": "Rearrange the words to form a correct sentence: 'so quickly did he run that he broke the record.'",
+      "answer": "So quickly did he run that he broke the record.",
+      "alternativeAnswers": [
+        "He ran so quickly that he broke the record.",
+        "His rapid running led to breaking the record."
+      ],
+      "time": 60
+    },
+    {
+      "id": 6,
+      "question": "Correct the subject-verb agreement in this sentence: 'The news of his promotion were surprising.'",
+      "answer": "The news of his promotion was surprising.",
+      "alternativeAnswers": [
+        "His promotion news was surprising.",
+        "The announcement of his promotion was surprising."
+      ],
+      "time": 60
+    },
+    {
+      "id": 7,
+      "question": "Correct the subject-verb agreement in this sentence: 'Either John or Mary are responsible.'",
+      "answer": "Either John or Mary is responsible.",
+      "alternativeAnswers": [
+        "One of John or Mary is responsible.",
+        "Responsibility lies with either John or Mary."
+      ],
+      "time": 60
+    },
+    {
+      "id": 8,
+      "question": "Correct the pronoun usage in this sentence: 'Everyone is entitled to their own opinion.'",
+      "answer": "Everyone is entitled to his or her own opinion.",
+      "alternativeAnswers": [
+        "Each person is entitled to an opinion.",
+        "Every individual has a right to an opinion."
+      ],
+      "time": 60
+    },
+    {
+      "id": 9,
+      "question": "Correct the verb tense in this sentence: 'He has laid in bed all morning.'",
+      "answer": "He has lain in bed all morning.",
+      "alternativeAnswers": [
+        "He has rested in bed all morning.",
+        "He remained in bed all morning."
+      ],
+      "time": 60
+    },
+    {
+      "id": 10,
+      "question": "Correct the word choice in this sentence: 'The affect of the decision was significant.'",
+      "answer": "The effect of the decision was significant.",
+      "alternativeAnswers": [
+        "The outcome of the decision was significant.",
+        "The decision's impact was significant."
+      ],
+      "time": 60
+    }
+  ],
+  "extempore": [
+    { "id": 1, "topic": "The impact of social media on communication.", "time": 60 },
+    { "id": 2, "topic": "The importance of critical thinking in the digital age.", "time": 60 }
+  ],
+  "diction": [
+    {
+      "id": 1,
+      "story": "The bustling market square was filled with vibrant colors and sounds. Artisans displayed their intricate crafts, while merchants loudly advertised fresh produce. The air buzzed with lively chatter and the distant strumming of a street musician's guitar. Children chased pigeons, their laughter adding to the cheerful cacophony. It was a place of vibrant energy.",
+      "time": 45,
+      "questions": [
+        {
+          "question": "What was filled with colors and sounds?",
+          "answer": "The bustling market square was filled with colors and sounds.",
+          "alternativeAnswers": [
+            "The market square buzzed with colors and sounds.",
+            "Vibrant colors and sounds filled the market."
+          ],
+          "points": 2
+        },
+        {
+          "question": "Who displayed their intricate crafts?",
+          "answer": "Artisans displayed their intricate crafts for sale.",
+          "alternativeAnswers": [
+            "Craftsmen showcased their intricate work.",
+            "Intricate crafts were displayed by artisans."
+          ],
+          "points": 2
+        },
+        {
+          "question": "What filled the air?",
+          "answer": "Lively chatter and guitar strumming filled the air.",
+          "alternativeAnswers": [
+            "Chatter and guitar sounds filled the air.",
+            "The air contained chatter and strumming."
+          ],
+          "points": 2
+        },
+        {
+          "question": "Who chased pigeons?",
+          "answer": "Children chased pigeons in the market square.",
+          "alternativeAnswers": [
+            "Pigeons were chased by children.",
+            "Kids ran after pigeons there."
+          ],
+          "points": 2
+        },
+        {
+          "question": "What kind of place was it?",
+          "answer": "It was a place of vibrant, cheerful energy.",
+          "alternativeAnswers": [
+            "The place had vibrant, cheerful energy.",
+            "It was a lively and energetic place."
+          ],
+          "points": 2
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "story": "High on the windswept mountain peak, an ancient fortress stood silent guard. Its massive stone walls bore the marks of centuries of weather and conflict. From its battlements, a breathtaking panorama of valleys and distant forests unfolded. Eagles soared majestically overhead, their shadows gliding across the rugged terrain. It was a testament to enduring strength.",
+      "time": 45,
+      "questions": [
+        {
+          "question": "What stood silent guard on the peak?",
+          "answer": "An ancient fortress stood silent guard on the peak.",
+          "alternativeAnswers": [
+            "A fortress stood guard on the peak.",
+            "The ancient fortress guarded the mountain."
+          ],
+          "points": 2
+        },
+        {
+          "question": "What bore marks of centuries?",
+          "answer": "Its massive stone walls bore marks of centuries.",
+          "alternativeAnswers": [
+            "The massive walls showed centuries of marks.",
+            "Centuries left marks on its stone walls."
+          ],
+          "points": 2
+        },
+        {
+          "question": "What unfolded from its battlements?",
+          "answer": "A breathtaking panorama of valleys unfolded from its battlements.",
+          "alternativeAnswers": [
+            "Valleys and forests unfolded from its battlements.",
+            "A vast panorama appeared from its battlements."
+          ],
+          "points": 2
+        },
+        {
+          "question": "Who soared majestically overhead?",
+          "answer": "Eagles soared majestically overhead, casting shadows.",
+          "alternativeAnswers": [
+            "Majestic eagles flew overhead.",
+            "Overhead, eagles soared grandly."
+          ],
+          "points": 2
+        },
+        {
+          "question": "What was it a testament to?",
+          "answer": "It was a testament to enduring strength.",
+          "alternativeAnswers": [
+            "It demonstrated enduring strength.",
+            "The fortress symbolized lasting strength."
+          ],
+          "points": 2
+        }
+      ]
+    }
+  ]
+}

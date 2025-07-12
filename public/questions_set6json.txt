@@ -1,0 +1,341 @@
+
+{
+  "technical": [
+    {
+      "id": 1,
+      "question": "What is Active Directory?",
+      "answer": "Active Directory provides centralized network management for Windows environments.",
+      "alternativeAnswers": [
+        "It centralizes network management for Windows environments.",
+        "AD manages network resources and user identities."
+      ],
+      "time": 40
+    },
+    {
+      "id": 2,
+      "question": "What is a Domain Controller?",
+      "answer": "A Domain Controller stores Active Directory database copies and handles authentication.",
+      "alternativeAnswers": [
+        "It stores AD data and processes authentication requests.",
+        "Domain Controllers manage user authentication securely."
+      ],
+      "time": 30
+    },
+    {
+      "id": 3,
+      "question": "What are OUs (Organizational Units)?",
+      "answer": "Organizational Units logically organize Active Directory objects for management.",
+      "alternativeAnswers": [
+        "OUs structure AD objects for easier administration.",
+        "They arrange users, groups, and computers logically."
+      ],
+      "time": 30
+    },
+    {
+      "id": 4,
+      "question": "What is a Group Policy Object (GPO)?",
+      "answer": "A GPO defines security settings and applies configurations to users or computers.",
+      "alternativeAnswers": [
+        "It applies various configurations to users or computers.",
+        "GPOs manage settings and security policies centrally."
+      ],
+      "time": 40
+    },
+    {
+      "id": 5,
+      "question": "What is the Global Catalog?",
+      "answer": "The Global Catalog stores partial replicas of all domain objects for fast searches.",
+      "alternativeAnswers": [
+        "It allows quick searches for objects across all domains.",
+        "Global Catalog facilitates efficient object searching campus-wide."
+      ],
+      "time": 30
+    },
+    {
+      "id": 6,
+      "question": "Explain DNS's role in AD.",
+      "answer": "DNS provides name resolution services crucial for Active Directory operations.",
+      "alternativeAnswers": [
+        "It resolves names essential for Active Directory functionality.",
+        "DNS enables clients to locate domain controllers effectively."
+      ],
+      "time": 30
+    },
+    {
+      "id": 7,
+      "question": "What is the FSMO role Schema Master?",
+      "answer": "The Schema Master controls updates and modifications to the Active Directory schema.",
+      "alternativeAnswers": [
+        "It manages all modifications to the Active Directory schema.",
+        "Schema Master oversees all changes in the AD schema."
+      ],
+      "time": 40
+    },
+    {
+      "id": 8,
+      "question": "What is the purpose of Active Directory Users and Computers?",
+      "answer": "ADUC manages user accounts, groups, and computer objects within Active Directory.",
+      "alternativeAnswers": [
+        "It administers user accounts, groups, and computer objects.",
+        "This tool helps manage AD users and computers."
+      ],
+      "time": 30
+    },
+    {
+      "id": 9,
+      "question": "How does Kerberos authentication work in AD?",
+      "answer": "Kerberos provides secure network authentication using tickets between clients and servers.",
+      "alternativeAnswers": [
+        "It authenticates users with secure tickets between components.",
+        "Kerberos ensures secure authentication for network resources."
+      ],
+      "time": 40
+    },
+    {
+      "id": 10,
+      "question": "What is a Trust relationship in AD?",
+      "answer": "A trust enables users in one domain to access resources in another domain.",
+      "alternativeAnswers": [
+        "It allows users from one domain to access another's resources.",
+        "Trusts facilitate resource access between different domains."
+      ],
+      "time": 30
+    }
+  ],
+  "listening": [
+    { "id": 1, "text": "Did you finalize the project presentation slides?", "time": 30 },
+    { "id": 2, "text": "Confirm the meeting room booking for Tuesday.", "time": 30 },
+    { "id": 3, "text": "The client feedback arrived this morning, please review.", "time": 30 },
+    { "id": 4, "text": "Could you update the progress report by midday?", "time": 30 },
+    { "id": 5, "text": "The new policy takes effect next Monday, inform all.", "time": 30 },
+    { "id": 6, "text": "Please submit your expense reports by month-end.", "time": 30 },
+    { "id": 7, "text": "I need the sales figures from last quarter urgently.", "time": 30 },
+    { "id": 8, "text": "Let's revisit the budget allocations next week.", "time": 30 },
+    { "id": 9, "text": "Ensure timely submission of all necessary paperwork.", "time": 30 },
+    { "id": 10, "text": "The vendor agreement requires immediate attention.", "time": 30 }
+  ],
+  "logical": [
+    { "id": 1, "question": "If all A are B, and all B are C, then are all A necessarily C?", "answer": "Yes", "time": 45 },
+    { "id": 2, "question": "Is the statement 'The sky is blue and fire is hot' a conjunction?", "answer": "Yes", "time": 45 },
+    { "id": 3, "question": "Can a proposition be both true and false simultaneously in classical logic?", "answer": "No", "time": 45 },
+    { "id": 4, "question": "Is an 'OR' gate a type of logic gate?", "answer": "Yes", "time": 45 },
+    { "id": 5, "question": "If 'P implies Q' is true, and 'P' is false, must 'Q' be false?", "answer": "No", "time": 45 },
+    { "id": 6, "question": "Is the set {1, 2, 3} a subset of {1, 2, 3, 4, 5}?", "answer": "Yes", "time": 45 },
+    { "id": 7, "question": "Does a valid argument always guarantee a true conclusion?", "answer": "No", "time": 45 },
+    { "id": 8, "question": "Is 'AND' a binary logical operator?", "answer": "Yes", "time": 45 },
+    { "id": 9, "question": "If a statement is a tautology, is it always true?", "answer": "Yes", "time": 45 },
+    { "id": 10, "question": "Is 'If P then Q' logically equivalent to 'Not P or Q'?", "answer": "Yes", "time": 45 }
+  ],
+  "grammar": [
+    {
+      "id": 1,
+      "question": "Rearrange the words to form a correct sentence: 'seldom do they visit their hometown.'",
+      "answer": "Seldom do they visit their hometown.",
+      "alternativeAnswers": [
+        "They seldom visit their hometown.",
+        "Rarely do they visit their hometown."
+      ],
+      "time": 60
+    },
+    {
+      "id": 2,
+      "question": "Rearrange the words to form a correct sentence: 'never before had I seen such a beautiful sunrise.'",
+      "answer": "Never before had I seen such a beautiful sunrise.",
+      "alternativeAnswers": [
+        "I had never before seen such a beautiful sunrise.",
+        "Such a beautiful sunrise I had never seen."
+      ],
+      "time": 60
+    },
+    {
+      "id": 3,
+      "question": "Rearrange the words to form a correct sentence: 'hardly had he left when the phone rang.'",
+      "answer": "Hardly had he left when the phone rang.",
+      "alternativeAnswers": [
+        "He had hardly left when the phone rang.",
+        "Scarcely had he departed when the phone rang."
+      ],
+      "time": 60
+    },
+    {
+      "id": 4,
+      "question": "Rearrange the words to form a correct sentence: 'only after completing the task can you leave.'",
+      "answer": "Only after completing the task can you leave.",
+      "alternativeAnswers": [
+        "You can leave only after completing the task.",
+        "Completion of the task permits your departure."
+      ],
+      "time": 60
+    },
+    {
+      "id": 5,
+      "question": "Rearrange the words to form a correct sentence: 'little did she know about the impending danger.'",
+      "answer": "Little did she know about the impending danger.",
+      "alternativeAnswers": [
+        "She knew little about the impending danger.",
+        "She had minimal awareness of the danger."
+      ],
+      "time": 60
+    },
+    {
+      "id": 6,
+      "question": "Correct the subject-verb agreement in this sentence: 'Neither of the solutions are correct.'",
+      "answer": "Neither of the solutions is correct.",
+      "alternativeAnswers": [
+        "Neither solution is correct here.",
+        "No solution presented is correct."
+      ],
+      "time": 60
+    },
+    {
+      "id": 7,
+      "question": "Correct the subject-verb agreement in this sentence: 'Every one of the students were present.'",
+      "answer": "Every one of the students was present.",
+      "alternativeAnswers": [
+        "All students were individually present.",
+        "Each student was present."
+      ],
+      "time": 60
+    },
+    {
+      "id": 8,
+      "question": "Correct the word usage in this sentence: 'The principle of the school gave a speech.'",
+      "answer": "The principal of the school gave a speech.",
+      "alternativeAnswers": [
+        "The headmaster of the school gave a speech.",
+        "The school leader delivered a speech."
+      ],
+      "time": 60
+    },
+    {
+      "id": 9,
+      "question": "Correct the word usage in this sentence: 'He laid on the couch all afternoon.'",
+      "answer": "He lay on the couch all afternoon.",
+      "alternativeAnswers": [
+        "He rested on the couch all afternoon.",
+        "He reposed upon the couch all afternoon."
+      ],
+      "time": 60
+    },
+    {
+      "id": 10,
+      "question": "Correct the word usage in this sentence: 'Whose going to the party tonight?'",
+      "answer": "Who's going to the party tonight?",
+      "alternativeAnswers": [
+        "Who is going to the party tonight?",
+        "Who attends the party tonight?"
+      ],
+      "time": 60
+    }
+  ],
+  "extempore": [
+    { "id": 1, "topic": "The impact of Artificial Intelligence on daily life.", "time": 60 },
+    { "id": 2, "topic": "Challenges and opportunities in renewable energy.", "time": 60 }
+  ],
+  "diction": [
+    {
+      "id": 1,
+      "story": "The old lighthouse stood sentinel on the craggy coast, its beam piercing the nightly fog. Sailors relied on its consistent light to guide their vessels safely through treacherous waters. Generations of keepers had diligently maintained the powerful lamp, ensuring its unwavering signal. The salty wind perpetually swept across the isolated tower, a silent witness to countless voyages.",
+      "time": 45,
+      "questions": [
+        {
+          "question": "What stood sentinel on the coast?",
+          "answer": "The old lighthouse stood sentinel on the craggy coast.",
+          "alternativeAnswers": [
+            "An old lighthouse guarded the craggy coast.",
+            "The ancient lighthouse guarded the coast."
+          ],
+          "points": 2
+        },
+        {
+          "question": "What pierced the nightly fog?",
+          "answer": "Its powerful beam pierced the nightly fog.",
+          "alternativeAnswers": [
+            "The lighthouse beam pierced the fog.",
+            "A strong light cut through the fog."
+          ],
+          "points": 2
+        },
+        {
+          "question": "Who relied on its light?",
+          "answer": "Sailors relied on its consistent light for navigation.",
+          "alternativeAnswers": [
+            "Navigators relied on its steady light.",
+            "Vessels depended on the guiding light."
+          ],
+          "points": 2
+        },
+        {
+          "question": "Who maintained the lamp?",
+          "answer": "Generations of keepers diligently maintained the powerful lamp.",
+          "alternativeAnswers": [
+            "Keepers diligently cared for the strong lamp.",
+            "Many keepers ensured the lamp's function."
+          ],
+          "points": 2
+        },
+        {
+          "question": "What swept across the tower?",
+          "answer": "The salty wind perpetually swept across the isolated tower.",
+          "alternativeAnswers": [
+            "Salty winds constantly blew across the tower.",
+            "Wind swept perpetually across the isolated structure."
+          ],
+          "points": 2
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "story": "Beneath the whispering canopy of ancient trees, a hidden spring bubbled quietly. Its clear, cool water meandered through moss-covered stones, forming a tiny, winding stream. Forest creatures often gathered there, quenching their thirst in the tranquil setting. Sunlight dappled through the leaves, creating shifting patterns on the forest floor, a truly peaceful sight.",
+      "time": 45,
+      "questions": [
+        {
+          "question": "What bubbled quietly beneath trees?",
+          "answer": "A hidden spring bubbled quietly beneath ancient trees.",
+          "alternativeAnswers": [
+            "A spring bubbled beneath old trees.",
+            "Quietly, a spring bubbled under trees."
+          ],
+          "points": 2
+        },
+        {
+          "question": "What meandered through stones?",
+          "answer": "Its clear, cool water meandered through moss-covered stones.",
+          "alternativeAnswers": [
+            "Cool water flowed through mossy stones.",
+            "The water wound through covered stones."
+          ],
+          "points": 2
+        },
+        {
+          "question": "Who gathered at the spring?",
+          "answer": "Forest creatures often gathered there, quenching their thirst.",
+          "alternativeAnswers": [
+            "Animals gathered there for water.",
+            "Creatures quenched their thirst at the spring."
+          ],
+          "points": 2
+        },
+        {
+          "question": "What dappled through the leaves?",
+          "answer": "Sunlight dappled through the leaves, creating shifting patterns.",
+          "alternativeAnswers": [
+            "Light dappled through leaves, making patterns.",
+            "Sunlight made patterns on the floor."
+          ],
+          "points": 2
+        },
+        {
+          "question": "What kind of setting was it?",
+          "answer": "It was a truly peaceful and tranquil forest setting.",
+          "alternativeAnswers": [
+            "The setting was peaceful and tranquil.",
+            "It was a very peaceful forest place."
+          ],
+          "points": 2
+        }
+      ]
+    }
+  ]
+}

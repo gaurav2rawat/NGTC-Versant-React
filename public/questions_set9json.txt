@@ -1,0 +1,340 @@
+{
+  "technical": [
+    {
+      "id": 1,
+      "question": "What is the purpose of a DNS server?",
+      "answer": "A DNS server translates domain names into IP addresses.",
+      "alternativeAnswers": [
+        "It resolves human-readable URLs to machine-readable IPs.",
+        "DNS converts website names to numerical addresses."
+      ],
+      "time": 30
+    },
+    {
+      "id": 2,
+      "question": "Explain the difference between TCP and UDP protocols.",
+      "answer": "TCP is connection-oriented with error checking, while UDP is connectionless and faster.",
+      "alternativeAnswers": [
+        "TCP guarantees delivery, UDP prioritizes speed.",
+        "TCP establishes connections, UDP sends without verification."
+      ],
+      "time": 45
+    },
+    {
+      "id": 3,
+      "question": "What is virtualization in computing?",
+      "answer": "Virtualization creates virtual versions of hardware, OS, or storage.",
+      "alternativeAnswers": [
+        "It allows multiple OS instances on one physical machine.",
+        "Virtualization abstracts physical computing resources."
+      ],
+      "time": 30
+    },
+    {
+      "id": 4,
+      "question": "Describe RAID technology in storage systems.",
+      "answer": "RAID combines multiple disks for performance, redundancy, or both.",
+      "alternativeAnswers": [
+        "It provides data protection through disk redundancy.",
+        "RAID improves storage reliability and/or speed."
+      ],
+      "time": 40
+    },
+    {
+      "id": 5,
+      "question": "What is the function of a load balancer?",
+      "answer": "A load balancer distributes network traffic across multiple servers.",
+      "alternativeAnswers": [
+        "It optimizes resource use by sharing workload.",
+        "Load balancers prevent server overload."
+      ],
+      "time": 30
+    },
+    {
+      "id": 6,
+      "question": "Explain what a firewall does.",
+      "answer": "A firewall monitors and controls incoming/outgoing network traffic.",
+      "alternativeAnswers": [
+        "It acts as a security barrier between networks.",
+        "Firewalls enforce network security policies."
+      ],
+      "time": 30
+    },
+    {
+      "id": 7,
+      "question": "What is containerization in software development?",
+      "answer": "Containerization packages applications with dependencies in isolated units.",
+      "alternativeAnswers": [
+        "It creates portable, self-contained application environments.",
+        "Containers bundle apps with needed libraries."
+      ],
+      "time": 40
+    },
+    {
+      "id": 8,
+      "question": "Describe the purpose of an API.",
+      "answer": "An API allows different software systems to communicate.",
+      "alternativeAnswers": [
+        "It defines how applications interact with each other.",
+        "APIs enable software integration."
+      ],
+      "time": 30
+    },
+    {
+      "id": 9,
+      "question": "What is multi-factor authentication?",
+      "answer": "MFA requires multiple verification methods for access.",
+      "alternativeAnswers": [
+        "It combines two or more credentials for security.",
+        "MFA uses multiple proofs of identity."
+      ],
+      "time": 30
+    },
+    {
+      "id": 10,
+      "question": "Explain cloud computing.",
+      "answer": "Cloud computing delivers computing services over the internet.",
+      "alternativeAnswers": [
+        "It provides on-demand IT resources via the web.",
+        "Cloud services offer remote computing power."
+      ],
+      "time": 30
+    }
+  ],
+  "listening": [
+    { "id": 1, "text": "The quarterly review will focus on performance metrics.", "time": 30 },
+    { "id": 2, "text": "All department heads must submit their budgets by Friday.", "time": 30 },
+    { "id": 3, "text": "The new compliance training modules are now available online.", "time": 30 },
+    { "id": 4, "text": "Please update your contact information in the HR system.", "time": 30 },
+    { "id": 5, "text": "The server maintenance window begins at midnight tonight.", "time": 30 },
+    { "id": 6, "text": "Team leads should prepare status reports for Monday's meeting.", "time": 30 },
+    { "id": 7, "text": "The company picnic has been rescheduled for next month.", "time": 30 },
+    { "id": 8, "text": "Remember to back up your files before the system upgrade.", "time": 30 },
+    { "id": 9, "text": "The marketing campaign launch date has been moved up.", "time": 30 },
+    { "id": 10, "text": "All employees must complete the security awareness training.", "time": 30 }
+  ],
+  "logical": [
+    { "id": 1, "question": "If all X are Y, and some Y are Z, can we conclude some X are Z?", "answer": "No", "time": 45 },
+    { "id": 2, "question": "What is the term for a word that sounds like its meaning (e.g., 'buzz')?", "answer": "Onomatopoeia", "time": 45 },
+    { "id": 3, "question": "What is the opposite of precede?", "answer": "succeed", "time": 45 },
+    { "id": 4, "question": "What is the plural of 'criterion'?", "answer": "Criteria", "time": 45 },
+    { "id": 5, "question": "If 'bi-' means two, what does 'biennial' mean?", "answer": "Two-Years", "time": 45 },
+    { "id": 6, "question": "What is the term for a word opposite in meaning (e.g., 'hot' and 'cold')?", "answer": "Antonym", "time": 45 },
+    { "id": 7, "question": "If 'tele-' means distant, what does 'telecommunication' mean?", "answer": "Distant-communication", "time": 45 },
+    { "id": 8, "question": "What is the adjective form of 'child'?", "answer": "Childish", "time": 45 },
+    { "id": 9, "question": "If 'post-' means after, what does 'postpone' mean?", "answer": "Delay", "time": 45 },
+    { "id": 10, "question": "What is the term for a word that modifies a noun?", "answer": "Adjective", "time": 45 }
+  ],
+  "grammar": [
+    {
+      "id": 1,
+      "question": "Rearrange: 'were the results so surprising that no one could believe them.'",
+      "answer": "So surprising were the results that no one could believe them.",
+      "alternativeAnswers": [
+        "The results were so surprising that disbelief followed.",
+        "No one believed the extremely surprising results."
+      ],
+      "time": 60
+    },
+    {
+      "id": 2,
+      "question": "Correct: 'The team are working on their individual projects.'",
+      "answer": "The team is working on its individual projects.",
+      "alternativeAnswers": [
+        "Team members are working on individual projects.",
+        "The team works on separate projects."
+      ],
+      "time": 60
+    },
+    {
+      "id": 3,
+      "question": "Rearrange: 'had we known about the issue earlier would we have taken action.'",
+      "answer": "Had we known about the issue earlier, we would have taken action.",
+      "alternativeAnswers": [
+        "We would have acted if we'd known sooner.",
+        "Earlier knowledge would have prompted action."
+      ],
+      "time": 60
+    },
+    {
+      "id": 4,
+      "question": "Correct: 'She performed good on the test.'",
+      "answer": "She performed well on the test.",
+      "alternativeAnswers": [
+        "Her test performance was good.",
+        "She did well on the examination."
+      ],
+      "time": 60
+    },
+    {
+      "id": 5,
+      "question": "Rearrange: 'not only did he finish first but also set a record.'",
+      "answer": "Not only did he finish first, but he also set a record.",
+      "alternativeAnswers": [
+        "He both finished first and set a record.",
+        "First place and a record were his achievements."
+      ],
+      "time": 60
+    },
+    {
+      "id": 6,
+      "question": "Correct: 'Between you and I, the plan won't work.'",
+      "answer": "Between you and me, the plan won't work.",
+      "alternativeAnswers": [
+        "The plan won't work, just between us.",
+        "Confidentially, the plan is flawed."
+      ],
+      "time": 60
+    },
+    {
+      "id": 7,
+      "question": "Rearrange: 'seldom have we seen such dedication.'",
+      "answer": "Seldom have we seen such dedication.",
+      "alternativeAnswers": [
+        "We've rarely witnessed such commitment.",
+        "Such dedication is seldom observed."
+      ],
+      "time": 60
+    },
+    {
+      "id": 8,
+      "question": "Correct: 'The data suggests that the trend are continuing.'",
+      "answer": "The data suggest that the trend is continuing.",
+      "alternativeAnswers": [
+        "Data indicates the ongoing trend.",
+        "The trend continues according to data."
+      ],
+      "time": 60
+    },
+    {
+      "id": 9,
+      "question": "Rearrange: 'on no account should sensitive information be shared.'",
+      "answer": "On no account should sensitive information be shared.",
+      "alternativeAnswers": [
+        "Sensitive information must never be shared.",
+        "Sharing confidential data is strictly prohibited."
+      ],
+      "time": 60
+    },
+    {
+      "id": 10,
+      "question": "Correct: 'He implied from my remarks that I was unhappy.'",
+      "answer": "He inferred from my remarks that I was unhappy.",
+      "alternativeAnswers": [
+        "My remarks led him to conclude I was unhappy.",
+        "He deduced unhappiness from my comments."
+      ],
+      "time": 60
+    }
+  ],
+  "extempore": [
+    { "id": 1, "topic": "The ethical implications of artificial intelligence in hiring processes.", "time": 60 },
+    { "id": 2, "topic": "How remote work is reshaping urban development patterns.", "time": 60 }
+  ],
+  "diction": [
+    {
+      "id": 1,
+      "story": "The historic library stood as a bastion of knowledge, its marble columns weathered by time yet imposing as ever. Within its hallowed halls, scholars pored over ancient manuscripts under the warm glow of reading lamps. The scent of aged paper mixed with polished wood created a distinctive academic atmosphere. A massive oak door at the entrance bore intricate carvings of literary scenes.",
+      "time": 45,
+      "questions": [
+        {
+          "question": "How is the library described architecturally?",
+          "answer": "It has weathered marble columns and an imposing presence.",
+          "alternativeAnswers": [
+            "The building features aged marble pillars.",
+            "Its columns show weathering but remain impressive."
+          ],
+          "points": 2
+        },
+        {
+          "question": "What were scholars doing inside?",
+          "answer": "They studied ancient manuscripts under reading lamps.",
+          "alternativeAnswers": [
+            "Researchers examined old texts in the light.",
+            "Manuscript analysis occupied the scholars."
+          ],
+          "points": 2
+        },
+        {
+          "question": "What scents characterized the space?",
+          "answer": "Aged paper and polished wood created the aroma.",
+          "alternativeAnswers": [
+            "The smell combined old books and wood polish.",
+            "Paper and wood scents defined the atmosphere."
+          ],
+          "points": 2
+        },
+        {
+          "question": "Describe the library's entrance.",
+          "answer": "A massive oak door with literary scene carvings.",
+          "alternativeAnswers": [
+            "An intricately carved wooden entrance door.",
+            "The doorway featured carved depictions from literature."
+          ],
+          "points": 2
+        },
+        {
+          "question": "What overall impression does the description convey?",
+          "answer": "A venerable institution of academic tradition.",
+          "alternativeAnswers": [
+            "A time-honored center of learning.",
+            "An esteemed establishment for scholarship."
+          ],
+          "points": 2
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "story": "The alpine lake shimmered under the midday sun, its crystal-clear waters revealing smooth stones beneath. A family of ducks glided across the surface, leaving gentle ripples in their wake. Pine trees encircled the shore, their reflections perfectly mirrored on the glassy water. Occasionally, a fish would break the surface tension, creating concentric circles that expanded outward.",
+      "time": 45,
+      "questions": [
+        {
+          "question": "How is the lake described?",
+          "answer": "Shimmering and crystal-clear with visible stones.",
+          "alternativeAnswers": [
+            "The water sparkled and was transparent.",
+            "Sunlit and clear enough to see the bottom."
+          ],
+          "points": 2
+        },
+        {
+          "question": "What disrupted the water's surface?",
+          "answer": "Ducks created ripples and fish caused circles.",
+          "alternativeAnswers": [
+            "Waterfowl movement and fish breaking surface.",
+            "Animal activity made patterns on the lake."
+          ],
+          "points": 2
+        },
+        {
+          "question": "What surrounded the lake?",
+          "answer": "Pine trees encircled the shoreline.",
+          "alternativeAnswers": [
+            "A perimeter of coniferous trees.",
+            "The shore was lined with evergreens."
+          ],
+          "points": 2
+        },
+        {
+          "question": "How were the trees reflected?",
+          "answer": "Their images were perfectly mirrored on the water.",
+          "alternativeAnswers": [
+            "The glassy surface showed flawless reflections.",
+            "Pine tree images appeared undisturbed."
+          ],
+          "points": 2
+        },
+        {
+          "question": "What time of day is depicted?",
+          "answer": "Midday with bright sunlight.",
+          "alternativeAnswers": [
+            "Noontime under strong sun.",
+            "The scene occurs at lunchtime."
+          ],
+          "points": 2
+        }
+      ]
+    }
+  ]
+}
