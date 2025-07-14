@@ -240,61 +240,55 @@
     { "id": 2, "topic": "The role of artificial intelligence in healthcare.", "time": 60 }
   ],
   
+  
   "diction": [
     {
       "id": 1,
-      "story": "Michael decided to go hiking in the mountains on Saturday. The weather was clear, and he enjoyed the fresh air and beautiful scenery. Along the way, he encountered a group of fellow hikers and joined them. By the end of the hike, Michael felt invigorated and happy to have made new friends.",
-      "time": 45,
+      "story": "Mr. Robert Davies attended a significant business conference overseas. The event focused on emerging market trends and technological innovations. He engaged in informative sessions and networking opportunities. Discussions were insightful, fostering new perspectives on global commerce. The conference proved highly beneficial for his professional development.",
+      "time": 75,
       "questions": [
         {
-          "question": "Where did Michael decide to go hiking?",
-          "answer": "Michael decided to go hiking in the mountains.",
+          "question": "Who attended a significant business conference?",
+          "answer": "Mr. Robert Davies attended a significant business conference.",
           "alternativeAnswers": [
-            "He decided to hike in the mountains.",
-            "The mountains were his hiking destination.",
-            "Michael chose to hike in the mountains.",
-            "His choice was to hike the mountains.",
-            "He went hiking to the mountains.",
-            "The mountain range was where he hiked."
+            "Robert Davies attended a major business conference.",
+            "A significant conference was attended by Mr. Davies."
           ],
           "points": 2.5
         },
         {
-          "question": "What was the weather like?",
-          "answer": "The weather was clear.",
+          "question": "Where was the conference held?",
+          "answer": "The conference was held overseas.",
           "alternativeAnswers": [
-            "It was clear.",
-            "Clear skies were present.",
-            "The weather was sunny and clear.",
-            "It was a clear day.",
-            "The sky was clear.",
-            "There were clear weather conditions."
+            "It took place in a foreign country.",
+            "Overseas was the location of the conference."
           ],
           "points": 2.5
         },
         {
-          "question": "Who did Michael encounter along the way?",
-          "answer": "Michael encountered a group of fellow hikers along the way.",
+          "question": "What did the event focus on?",
+          "answer": "The event focused on emerging market trends and innovations.",
           "alternativeAnswers": [
-            "He encountered a group of fellow hikers.",
-            "Fellow hikers were encountered by him.",
-            "He met a group of hikers.",
-            "A hiking group was met by Michael.",
-            "Michael came across some hikers.",
-            "A group of people hiking were met by him."
+            "It centered on new market trends and technology.",
+            "Market trends and tech innovations were its focus."
           ],
           "points": 2.5
         },
         {
-          "question": "How did Michael feel by the end of the hike?",
-          "answer": "Michael felt invigorated and happy.",
+          "question": "What did he engage in?",
+          "answer": "He engaged in informative sessions and networking opportunities.",
           "alternativeAnswers": [
-            "He felt invigorated and happy.",
-            "Invigoration and happiness were his feelings.",
-            "He felt happy and full of energy.",
-            "Michael was happy and invigorated.",
-            "He ended the hike feeling happy and refreshed.",
-            "Happiness and refreshment were felt by him."
+            "Informative sessions and networking engaged him.",
+            "He participated in sessions and networking."
+          ],
+          "points": 2.5
+        },
+        {
+          "question": "How did the conference prove for him?",
+          "answer": "The conference proved highly beneficial for his development.",
+          "alternativeAnswers": [
+            "It was very beneficial for his professional growth.",
+            "His development greatly benefited from the conference."
           ],
           "points": 2.5
         }
@@ -302,58 +296,51 @@
     },
     {
       "id": 2,
-      "story": "Sarah, a talented artist, spent her afternoon painting in her garden. She captured the beauty of the blooming flowers and the vibrant colors of the butterflies fluttering around. As the sun began to set, she stepped back to admire her work, feeling a sense of peace and accomplishment.",
-      "time": 45,
+      "story": "Ms. Clara Jenkins maintained a structured daily routine. She began her day with light exercises and a nutritious breakfast. Her morning hours were dedicated to professional work and client communications. In the afternoon, she pursued personal interests and skill development. This routine ensured productivity and personal well-being.",
+      "time": 75,
       "questions": [
         {
-          "question": "What did Sarah spend her afternoon doing?",
-          "answer": "Sarah spent her afternoon painting.",
+          "question": "Who maintained a structured daily routine?",
+          "answer": "Ms. Clara Jenkins maintained a structured daily routine.",
           "alternativeAnswers": [
-            "She spent her afternoon painting.",
-            "Painting was how Sarah spent her afternoon.",
-            "Sarah was painting in the afternoon.",
-            "Her afternoon was spent painting.",
-            "She painted during the afternoon.",
-            "Sarah spent the afternoon painting pictures."
+            "Clara Jenkins kept a disciplined daily routine.",
+            "A structured routine was maintained by Ms. Jenkins."
           ],
           "points": 2.5
         },
         {
-          "question": "Where did Sarah paint?",
-          "answer": "Sarah painted in her garden.",
+          "question": "How did she begin her day?",
+          "answer": "She began her day with light exercises and nutritious breakfast.",
           "alternativeAnswers": [
-            "She painted in the garden.",
-            "Her garden was where Sarah painted.",
-            "The garden was her painting location.",
-            "She was painting in her own garden.",
-            "Sarah did her painting in a garden.",
-            "Her garden was the place she painted."
+            "Light exercise and breakfast started her day.",
+            "Her day commenced with physical activity and food."
           ],
           "points": 2.5
         },
         {
-          "question": "What did Sarah capture in her painting?",
-          "answer": "Sarah captured the beauty of the blooming flowers and the vibrant colors of the butterflies.",
+          "question": "What were her morning hours dedicated to?",
+          "answer": "Her morning hours were dedicated to professional work and communications.",
           "alternativeAnswers": [
-            "She captured the flowers and butterflies.",
-            "The flowers and butterflies were captured by Sarah.",
-            "She painted flowers and butterflies.",
-            "Blooming flowers and butterflies' colors were her subject.",
-            "Sarah painted the beauty of the garden.",
-            "The beauty of the garden was captured in her painting."
+            "Professional work and client communications filled her mornings.",
+            "She dedicated mornings to work and client talks."
           ],
           "points": 2.5
         },
         {
-          "question": "How did Sarah feel as the sun set?",
-          "answer": "Sarah felt a sense of peace and accomplishment.",
+          "question": "What did she pursue in the afternoon?",
+          "answer": "She pursued personal interests and skill development.",
           "alternativeAnswers": [
-            "She felt peace and accomplishment.",
-            "Peace and accomplishment were felt by Sarah.",
-            "She was feeling peaceful and accomplished.",
-            "Sarah felt accomplished and at peace.",
-            "She had a feeling of peace and accomplishment.",
-            "A sense of accomplishment and peace came over her."
+            "Personal interests and new skills were pursued.",
+            "Her afternoons were for hobbies and skill growth."
+          ],
+          "points": 2.5
+        },
+        {
+          "question": "What did this routine ensure?",
+          "answer": "This routine ensured productivity and personal well-being.",
+          "alternativeAnswers": [
+            "It ensured both productivity and her personal welfare.",
+            "The routine guaranteed good work and personal health."
           ],
           "points": 2.5
         }

@@ -232,108 +232,109 @@
     { "id": 1, "topic": "The impact of Artificial Intelligence on daily life.", "time": 60 },
     { "id": 2, "topic": "Challenges and opportunities in renewable energy.", "time": 60 }
   ],
+  
   "diction": [
     {
       "id": 1,
-      "story": "The old lighthouse stood sentinel on the craggy coast, its beam piercing the nightly fog. Sailors relied on its consistent light to guide their vessels safely through treacherous waters. Generations of keepers had diligently maintained the powerful lamp, ensuring its unwavering signal. The salty wind perpetually swept across the isolated tower, a silent witness to countless voyages.",
-      "time": 45,
+      "story": "The city council approved a new urban development project. Its aim was to enhance public green spaces and transportation infrastructure. Architects presented detailed plans for modern parks and improved transit lines. Public feedback was carefully considered during the planning phase. This initiative promised significant benefits for residents.",
+      "time": 75,
       "questions": [
         {
-          "question": "What stood sentinel on the coast?",
-          "answer": "The old lighthouse stood sentinel on the craggy coast.",
+          "question": "What did the city council approve?",
+          "answer": "The city council approved a new urban development project.",
           "alternativeAnswers": [
-            "An old lighthouse guarded the craggy coast.",
-            "The ancient lighthouse guarded the coast."
+            "A new urban development project was approved.",
+            "A project for city development was approved."
           ],
-          "points": 2
+          "points": 2.5
         },
         {
-          "question": "What pierced the nightly fog?",
-          "answer": "Its powerful beam pierced the nightly fog.",
+          "question": "What was the project's aim?",
+          "answer": "Its aim was to enhance public green spaces and transportation.",
           "alternativeAnswers": [
-            "The lighthouse beam pierced the fog.",
-            "A strong light cut through the fog."
+            "It aimed to improve public green areas and transport.",
+            "To enhance green spaces and transport was its aim."
           ],
-          "points": 2
+          "points": 2.5
         },
         {
-          "question": "Who relied on its light?",
-          "answer": "Sailors relied on its consistent light for navigation.",
+          "question": "What did architects present?",
+          "answer": "Architects presented detailed plans for parks and transit lines.",
           "alternativeAnswers": [
-            "Navigators relied on its steady light.",
-            "Vessels depended on the guiding light."
+            "Detailed plans for parks and transit were presented.",
+            "They showed designs for parks and transport."
           ],
-          "points": 2
+          "points": 2.5
         },
         {
-          "question": "Who maintained the lamp?",
-          "answer": "Generations of keepers diligently maintained the powerful lamp.",
+          "question": "What was considered during planning?",
+          "answer": "Public feedback was carefully considered during the planning phase.",
           "alternativeAnswers": [
-            "Keepers diligently cared for the strong lamp.",
-            "Many keepers ensured the lamp's function."
+            "Careful consideration was given to public feedback.",
+            "Public opinion factored into the planning phase."
           ],
-          "points": 2
+          "points": 2.5
         },
         {
-          "question": "What swept across the tower?",
-          "answer": "The salty wind perpetually swept across the isolated tower.",
+          "question": "What did this initiative promise?",
+          "answer": "This initiative promised significant benefits for residents.",
           "alternativeAnswers": [
-            "Salty winds constantly blew across the tower.",
-            "Wind swept perpetually across the isolated structure."
+            "Significant benefits were promised to city residents.",
+            "It offered substantial advantages for inhabitants."
           ],
-          "points": 2
+          "points": 2.5
         }
       ]
     },
     {
       "id": 2,
-      "story": "Beneath the whispering canopy of ancient trees, a hidden spring bubbled quietly. Its clear, cool water meandered through moss-covered stones, forming a tiny, winding stream. Forest creatures often gathered there, quenching their thirst in the tranquil setting. Sunlight dappled through the leaves, creating shifting patterns on the forest floor, a truly peaceful sight.",
-      "time": 45,
+      "story": "Ms. Sarah Chen attended a professional training session on advanced data analytics. The instructor provided clear explanations and practical examples. Participants engaged in hands-on exercises to reinforce their learning. Discussions focused on real-world applications and problem-solving strategies. The session enhanced her analytical skills considerably.",
+      "time": 75,
       "questions": [
         {
-          "question": "What bubbled quietly beneath trees?",
-          "answer": "A hidden spring bubbled quietly beneath ancient trees.",
+          "question": "Who attended a professional training session?",
+          "answer": "Ms. Sarah Chen attended a professional training session.",
           "alternativeAnswers": [
-            "A spring bubbled beneath old trees.",
-            "Quietly, a spring bubbled under trees."
+            "Sarah Chen attended a professional training event.",
+            "A professional training session was attended by Ms. Chen."
           ],
-          "points": 2
+          "points": 2.5
         },
         {
-          "question": "What meandered through stones?",
-          "answer": "Its clear, cool water meandered through moss-covered stones.",
+          "question": "What was the session about?",
+          "answer": "The session was about advanced data analytics.",
           "alternativeAnswers": [
-            "Cool water flowed through mossy stones.",
-            "The water wound through covered stones."
+            "It concerned advanced data analysis techniques.",
+            "Advanced data analytics was the topic."
           ],
-          "points": 2
+          "points": 2.5
         },
         {
-          "question": "Who gathered at the spring?",
-          "answer": "Forest creatures often gathered there, quenching their thirst.",
+          "question": "What did the instructor provide?",
+          "answer": "The instructor provided clear explanations and practical examples.",
           "alternativeAnswers": [
-            "Animals gathered there for water.",
-            "Creatures quenched their thirst at the spring."
+            "Clear explanations and practical examples were given.",
+            "He gave understandable explanations and examples."
           ],
-          "points": 2
+          "points": 2.5
         },
         {
-          "question": "What dappled through the leaves?",
-          "answer": "Sunlight dappled through the leaves, creating shifting patterns.",
+          "question": "What did participants engage in?",
+          "answer": "Participants engaged in hands-on exercises to reinforce learning.",
           "alternativeAnswers": [
-            "Light dappled through leaves, making patterns.",
-            "Sunlight made patterns on the floor."
+            "Hands-on exercises engaged the participants for learning.",
+            "They performed practical exercises for better learning."
           ],
-          "points": 2
+          "points": 2.5
         },
         {
-          "question": "What kind of setting was it?",
-          "answer": "It was a truly peaceful and tranquil forest setting.",
+          "question": "What did the session enhance?",
+          "answer": "The session enhanced her analytical skills considerably.",
           "alternativeAnswers": [
-            "The setting was peaceful and tranquil.",
-            "It was a very peaceful forest place."
+            "Her analytical skills were considerably enhanced.",
+            "It significantly improved her analytical abilities."
           ],
-          "points": 2
+          "points": 2.5
         }
       ]
     }

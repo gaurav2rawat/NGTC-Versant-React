@@ -232,108 +232,109 @@
     { "id": 1, "topic": "The impact of social media on communication.", "time": 60 },
     { "id": 2, "topic": "The importance of critical thinking in the digital age.", "time": 60 }
   ],
+  
   "diction": [
     {
       "id": 1,
-      "story": "The bustling market square was filled with vibrant colors and sounds. Artisans displayed their intricate crafts, while merchants loudly advertised fresh produce. The air buzzed with lively chatter and the distant strumming of a street musician's guitar. Children chased pigeons, their laughter adding to the cheerful cacophony. It was a place of vibrant energy.",
-      "time": 45,
+      "story": "Professor David Lee presented an engaging lecture on historical economics. The lecture hall was filled with diligent undergraduate students. He outlined key theories and significant historical economic events. Visual aids complemented his detailed explanations effectively. The presentation offered a comprehensive overview of the subject.",
+      "time": 75,
       "questions": [
         {
-          "question": "What was filled with colors and sounds?",
-          "answer": "The bustling market square was filled with colors and sounds.",
+          "question": "Who presented an engaging lecture?",
+          "answer": "Professor David Lee presented an engaging lecture.",
           "alternativeAnswers": [
-            "The market square buzzed with colors and sounds.",
-            "Vibrant colors and sounds filled the market."
+            "An engaging lecture was given by Professor Lee.",
+            "David Lee gave an interesting lecture."
           ],
-          "points": 2
+          "points": 2.5
         },
         {
-          "question": "Who displayed their intricate crafts?",
-          "answer": "Artisans displayed their intricate crafts for sale.",
+          "question": "What was the lecture about?",
+          "answer": "The lecture was about historical economics.",
           "alternativeAnswers": [
-            "Craftsmen showcased their intricate work.",
-            "Intricate crafts were displayed by artisans."
+            "It concerned the subject of historical economics.",
+            "Historical economics was the topic."
           ],
-          "points": 2
+          "points": 2.5
         },
         {
-          "question": "What filled the air?",
-          "answer": "Lively chatter and guitar strumming filled the air.",
+          "question": "Who filled the lecture hall?",
+          "answer": "Diligent undergraduate students filled the lecture hall.",
           "alternativeAnswers": [
-            "Chatter and guitar sounds filled the air.",
-            "The air contained chatter and strumming."
+            "The lecture hall was filled by diligent students.",
+            "Attentive undergraduate students filled the room."
           ],
-          "points": 2
+          "points": 2.5
         },
         {
-          "question": "Who chased pigeons?",
-          "answer": "Children chased pigeons in the market square.",
+          "question": "What did he outline?",
+          "answer": "He outlined key theories and significant economic events.",
           "alternativeAnswers": [
-            "Pigeons were chased by children.",
-            "Kids ran after pigeons there."
+            "Significant economic events and key theories were outlined.",
+            "He described major theories and events."
           ],
-          "points": 2
+          "points": 2.5
         },
         {
-          "question": "What kind of place was it?",
-          "answer": "It was a place of vibrant, cheerful energy.",
+          "question": "What did the presentation offer?",
+          "answer": "The presentation offered a comprehensive overview of the subject.",
           "alternativeAnswers": [
-            "The place had vibrant, cheerful energy.",
-            "It was a lively and energetic place."
+            "A full overview of the subject was offered.",
+            "It provided a complete subject understanding."
           ],
-          "points": 2
+          "points": 2.5
         }
       ]
     },
     {
       "id": 2,
-      "story": "High on the windswept mountain peak, an ancient fortress stood silent guard. Its massive stone walls bore the marks of centuries of weather and conflict. From its battlements, a breathtaking panorama of valleys and distant forests unfolded. Eagles soared majestically overhead, their shadows gliding across the rugged terrain. It was a testament to enduring strength.",
-      "time": 45,
+      "story": "Mr. Andrew Clarke attended the opening of a new art exhibition. The gallery showcased contemporary paintings and sculptures. He observed the unique artistic interpretations and creative techniques. Conversations with various artists provided valuable insights into their inspirations. The event was a cultural highlight of the season.",
+      "time": 75,
       "questions": [
         {
-          "question": "What stood silent guard on the peak?",
-          "answer": "An ancient fortress stood silent guard on the peak.",
+          "question": "Who attended the art exhibition opening?",
+          "answer": "Mr. Andrew Clarke attended the opening of a new art exhibition.",
           "alternativeAnswers": [
-            "A fortress stood guard on the peak.",
-            "The ancient fortress guarded the mountain."
+            "Andrew Clarke went to the new art exhibition.",
+            "The art exhibition opening was attended by Mr. Clarke."
           ],
-          "points": 2
+          "points": 2.5
         },
         {
-          "question": "What bore marks of centuries?",
-          "answer": "Its massive stone walls bore marks of centuries.",
+          "question": "What did the gallery showcase?",
+          "answer": "The gallery showcased contemporary paintings and sculptures.",
           "alternativeAnswers": [
-            "The massive walls showed centuries of marks.",
-            "Centuries left marks on its stone walls."
+            "Contemporary paintings and sculptures were displayed.",
+            "It exhibited modern paintings and sculptures."
           ],
-          "points": 2
+          "points": 2.5
         },
         {
-          "question": "What unfolded from its battlements?",
-          "answer": "A breathtaking panorama of valleys unfolded from its battlements.",
+          "question": "What did he observe?",
+          "answer": "He observed unique artistic interpretations and creative techniques.",
           "alternativeAnswers": [
-            "Valleys and forests unfolded from its battlements.",
-            "A vast panorama appeared from its battlements."
+            "Creative techniques and unique interpretations were observed.",
+            "He saw artistic interpretations and creative methods."
           ],
-          "points": 2
+          "points": 2.5
         },
         {
-          "question": "Who soared majestically overhead?",
-          "answer": "Eagles soared majestically overhead, casting shadows.",
+          "question": "What did conversations with artists provide?",
+          "answer": "Conversations with artists provided valuable insights into their inspirations.",
           "alternativeAnswers": [
-            "Majestic eagles flew overhead.",
-            "Overhead, eagles soared grandly."
+            "Valuable insights into inspirations came from artist talks.",
+            "Talking to artists gave him great insights."
           ],
-          "points": 2
+          "points": 2.5
         },
         {
-          "question": "What was it a testament to?",
-          "answer": "It was a testament to enduring strength.",
+          "question": "How was the event described?",
+          "answer": "The event was a cultural highlight of the season.",
           "alternativeAnswers": [
-            "It demonstrated enduring strength.",
-            "The fortress symbolized lasting strength."
+            "It was considered a cultural highlight for the season.",
+            "The season's cultural peak was the event."
           ],
-          "points": 2
+          "points": 2.5
         }
       ]
     }

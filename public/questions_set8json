@@ -231,108 +231,109 @@
     { "id": 1, "topic": "The future of space exploration and its benefits.", "time": 60 },
     { "id": 2, "topic": "The impact of globalization on local cultures.", "time": 60 }
   ],
+  
   "diction": [
     {
       "id": 1,
-      "story": "The quiet village was nestled beside a winding river, surrounded by lush green meadows. Old stone bridges arched gracefully over the water, connecting ancient paths. The air carried the sweet scent of wildflowers and the distant bleating of sheep. Villagers often gathered by the riverbanks, sharing stories and enjoying the tranquil scenery.",
-      "time": 45,
+      "story": "Mr. Alan Miller watched a compelling wildlife documentary. It explored the diverse ecosystems of the Amazon rainforest. The film featured incredible footage of rare animal species and vibrant plant life. Narration provided detailed information about their behaviors and habitats. The documentary offered a fascinating glimpse into nature's wonders.",
+      "time": 75,
       "questions": [
         {
-          "question": "Where was the village nestled?",
-          "answer": "The village was nestled beside a winding river.",
+          "question": "Who watched a compelling wildlife documentary?",
+          "answer": "Mr. Alan Miller watched a compelling wildlife documentary.",
           "alternativeAnswers": [
-            "It was located next to a winding river.",
-            "A winding river ran beside the village."
+            "Alan Miller watched an engaging wildlife documentary.",
+            "A compelling documentary was watched by Mr. Miller."
           ],
-          "points": 2
+          "points": 2.5
         },
         {
-          "question": "What arched over the water?",
-          "answer": "Old stone bridges arched gracefully over the water.",
+          "question": "What did the documentary explore?",
+          "answer": "It explored the diverse ecosystems of the Amazon rainforest.",
           "alternativeAnswers": [
-            "Graceful stone bridges spanned the water.",
-            "Ancient bridges arched over the river."
+            "The diverse Amazon rainforest ecosystems were explored.",
+            "It investigated Amazon's varied natural systems."
           ],
-          "points": 2
+          "points": 2.5
         },
         {
-          "question": "What scent did the air carry?",
-          "answer": "The air carried the sweet scent of wildflowers.",
+          "question": "What did the film feature?",
+          "answer": "The film featured incredible footage of rare animal species.",
           "alternativeAnswers": [
-            "Sweet wildflowers scented the air.",
-            "The air smelled of wildflowers."
+            "Rare animal species and plants were featured.",
+            "It displayed amazing footage of animals."
           ],
-          "points": 2
+          "points": 2.5
         },
         {
-          "question": "Who gathered by the riverbanks?",
-          "answer": "Villagers often gathered by the riverbanks.",
+          "question": "What did narration provide?",
+          "answer": "Narration provided detailed information about behaviors and habitats.",
           "alternativeAnswers": [
-            "The villagers frequently met by the river.",
-            "People from the village gathered by the river."
+            "Detailed information on behaviors and habitats was provided.",
+            "It offered facts on animal behaviors and homes."
           ],
-          "points": 2
+          "points": 2.5
         },
         {
-          "question": "What did they share?",
-          "answer": "They shared stories and enjoyed the tranquil scenery.",
+          "question": "What did the documentary offer?",
+          "answer": "The documentary offered a fascinating glimpse into nature's wonders.",
           "alternativeAnswers": [
-            "Stories were shared, and scenery was enjoyed.",
-            "They exchanged tales and admired the view."
+            "A fascinating look into nature's wonders was offered.",
+            "It provided an intriguing view of natural wonders."
           ],
-          "points": 2
+          "points": 2.5
         }
       ]
     },
     {
       "id": 2,
-      "story": "A curious squirrel scampered up a tall oak tree, its bushy tail twitching excitedly. It meticulously searched for hidden acorns among the rough bark and green leaves. Nearby, a gentle breeze rustled through the branches, creating a soft, whispering sound. The forest floor was covered in fallen leaves, forming a colorful carpet. The squirrel eventually found its treasure.",
-      "time": 45,
+      "story": "The local community initiated a new recycling program. Its objective was to reduce waste and promote environmental responsibility. Residents participated enthusiastically, separating various recyclable materials. Volunteers collected items regularly for proper disposal. The program significantly improved local environmental health.",
+      "time": 75,
       "questions": [
         {
-          "question": "What scampered up the oak tree?",
-          "answer": "A curious squirrel scampered up the tall oak tree.",
+          "question": "What did the local community initiate?",
+          "answer": "The local community initiated a new recycling program.",
           "alternativeAnswers": [
-            "The curious squirrel climbed the oak tree.",
-            "A squirrel went up the tall tree."
+            "A new recycling program was started locally.",
+            "The community began a new recycling effort."
           ],
-          "points": 2
+          "points": 2.5
         },
         {
-          "question": "What was its tail doing?",
-          "answer": "Its bushy tail was twitching excitedly.",
+          "question": "What was its objective?",
+          "answer": "Its objective was to reduce waste and promote responsibility.",
           "alternativeAnswers": [
-            "The bushy tail twitched with excitement.",
-            "Its tail twitched excitedly."
+            "Reducing waste and promoting environmental duty was its aim.",
+            "It aimed to lessen waste and foster eco-care."
           ],
-          "points": 2
+          "points": 2.5
         },
         {
-          "question": "What did it search for?",
-          "answer": "It meticulously searched for hidden acorns.",
+          "question": "How did residents participate?",
+          "answer": "Residents participated enthusiastically, separating various recyclable materials.",
           "alternativeAnswers": [
-            "Hidden acorns were meticulously sought.",
-            "It looked carefully for concealed acorns."
+            "Enthusiastic residents separated various recyclable materials.",
+            "They keenly separated materials for recycling."
           ],
-          "points": 2
+          "points": 2.5
         },
         {
-          "question": "What covered the forest floor?",
-          "answer": "Fallen leaves covered the forest floor, forming a carpet.",
+          "question": "Who collected items regularly?",
+          "answer": "Volunteers collected items regularly for proper disposal.",
           "alternativeAnswers": [
-            "The forest floor was covered in leaves.",
-            "Leaves formed a carpet on the ground."
+            "Items were regularly collected by volunteers for disposal.",
+            "Regular collection for disposal was done by volunteers."
           ],
-          "points": 2
+          "points": 2.5
         },
         {
-          "question": "What did the squirrel eventually find?",
-          "answer": "The squirrel eventually found its hidden treasure.",
+          "question": "What did the program significantly improve?",
+          "answer": "The program significantly improved local environmental health.",
           "alternativeAnswers": [
-            "It eventually located its treasure.",
-            "Its treasure was finally discovered."
+            "Local environmental health was greatly improved by the program.",
+            "It much improved the local environment's health."
           ],
-          "points": 2
+          "points": 2.5
         }
       ]
     }

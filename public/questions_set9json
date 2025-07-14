@@ -231,108 +231,109 @@
     { "id": 1, "topic": "The ethical implications of artificial intelligence in hiring processes.", "time": 60 },
     { "id": 2, "topic": "How remote work is reshaping urban development patterns.", "time": 60 }
   ],
+  
   "diction": [
     {
       "id": 1,
-      "story": "The historic library stood as a bastion of knowledge, its marble columns weathered by time yet imposing as ever. Within its hallowed halls, scholars pored over ancient manuscripts under the warm glow of reading lamps. The scent of aged paper mixed with polished wood created a distinctive academic atmosphere. A massive oak door at the entrance bore intricate carvings of literary scenes.",
-      "time": 45,
+      "story": "Mrs. Evelyn Reed enjoyed a peaceful morning walk along the riverbank. The sun gently rose, casting a warm glow over the water. She observed various birds beginning their day with cheerful songs. The fresh air and quiet surroundings provided a sense of calm. This daily ritual brought her great tranquility.",
+      "time": 75,
       "questions": [
         {
-          "question": "How is the library described architecturally?",
-          "answer": "It has weathered marble columns and an imposing presence.",
+          "question": "Who enjoyed a peaceful morning walk?",
+          "answer": "Mrs. Evelyn Reed enjoyed a peaceful morning walk.",
           "alternativeAnswers": [
-            "The building features aged marble pillars.",
-            "Its columns show weathering but remain impressive."
+            "Evelyn Reed enjoyed her peaceful morning walk.",
+            "A peaceful walk was enjoyed by Mrs. Reed."
           ],
-          "points": 2
+          "points": 2.5
         },
         {
-          "question": "What were scholars doing inside?",
-          "answer": "They studied ancient manuscripts under reading lamps.",
+          "question": "Where did she walk?",
+          "answer": "She walked along the riverbank.",
           "alternativeAnswers": [
-            "Researchers examined old texts in the light.",
-            "Manuscript analysis occupied the scholars."
+            "The riverbank was where she walked.",
+            "She strolled beside the river's edge."
           ],
-          "points": 2
+          "points": 2.5
         },
         {
-          "question": "What scents characterized the space?",
-          "answer": "Aged paper and polished wood created the aroma.",
+          "question": "What did the sun do?",
+          "answer": "The sun gently rose, casting a warm glow.",
           "alternativeAnswers": [
-            "The smell combined old books and wood polish.",
-            "Paper and wood scents defined the atmosphere."
+            "A warm glow was cast by the rising sun.",
+            "The sun created a gentle, warm light."
           ],
-          "points": 2
+          "points": 2.5
         },
         {
-          "question": "Describe the library's entrance.",
-          "answer": "A massive oak door with literary scene carvings.",
+          "question": "What did she observe?",
+          "answer": "She observed various birds beginning their day with songs.",
           "alternativeAnswers": [
-            "An intricately carved wooden entrance door.",
-            "The doorway featured carved depictions from literature."
+            "Various birds singing their morning songs were observed.",
+            "She watched birds start their day singing."
           ],
-          "points": 2
+          "points": 2.5
         },
         {
-          "question": "What overall impression does the description convey?",
-          "answer": "A venerable institution of academic tradition.",
+          "question": "What did this daily ritual bring her?",
+          "answer": "This daily ritual brought her great tranquility.",
           "alternativeAnswers": [
-            "A time-honored center of learning.",
-            "An esteemed establishment for scholarship."
+            "Great tranquility was brought by this ritual.",
+            "The ritual provided her immense peace."
           ],
-          "points": 2
+          "points": 2.5
         }
       ]
     },
     {
       "id": 2,
-      "story": "The alpine lake shimmered under the midday sun, its crystal-clear waters revealing smooth stones beneath. A family of ducks glided across the surface, leaving gentle ripples in their wake. Pine trees encircled the shore, their reflections perfectly mirrored on the glassy water. Occasionally, a fish would break the surface tension, creating concentric circles that expanded outward.",
-      "time": 45,
+      "story": "Mr. Thomas Graham chaired an important official meeting. The agenda focused on policy revisions and budget allocations. Participants presented their proposals with clarity and professionalism. Discussions were orderly, leading to unanimous decisions on key matters. The meeting concluded successfully, achieving all objectives.",
+      "time": 75,
       "questions": [
         {
-          "question": "How is the lake described?",
-          "answer": "Shimmering and crystal-clear with visible stones.",
+          "question": "Who chaired an important official meeting?",
+          "answer": "Mr. Thomas Graham chaired an important official meeting.",
           "alternativeAnswers": [
-            "The water sparkled and was transparent.",
-            "Sunlit and clear enough to see the bottom."
+            "Thomas Graham chaired an important official meeting.",
+            "An official meeting was chaired by Mr. Graham."
           ],
-          "points": 2
+          "points": 2.5
         },
         {
-          "question": "What disrupted the water's surface?",
-          "answer": "Ducks created ripples and fish caused circles.",
+          "question": "What did the agenda focus on?",
+          "answer": "The agenda focused on policy revisions and budget allocations.",
           "alternativeAnswers": [
-            "Waterfowl movement and fish breaking surface.",
-            "Animal activity made patterns on the lake."
+            "It focused on budget allocations and policy changes.",
+            "Policy changes and budget were the focus."
           ],
-          "points": 2
+          "points": 2.5
         },
         {
-          "question": "What surrounded the lake?",
-          "answer": "Pine trees encircled the shoreline.",
+          "question": "How did participants present proposals?",
+          "answer": "Participants presented their proposals with clarity and professionalism.",
           "alternativeAnswers": [
-            "A perimeter of coniferous trees.",
-            "The shore was lined with evergreens."
+            "Proposals were presented with clarity and professionalism.",
+            "They showed their proposals clearly and professionally."
           ],
-          "points": 2
+          "points": 2.5
         },
         {
-          "question": "How were the trees reflected?",
-          "answer": "Their images were perfectly mirrored on the water.",
+          "question": "What kind of decisions were made?",
+          "answer": "Unanimous decisions were made on key matters.",
           "alternativeAnswers": [
-            "The glassy surface showed flawless reflections.",
-            "Pine tree images appeared undisturbed."
+            "Key matters resulted in unanimous decisions.",
+            "All essential matters received unanimous approval."
           ],
-          "points": 2
+          "points": 2.5
         },
         {
-          "question": "What time of day is depicted?",
-          "answer": "Midday with bright sunlight.",
+          "question": "How did the meeting conclude?",
+          "answer": "The meeting concluded successfully, achieving all objectives.",
           "alternativeAnswers": [
-            "Noontime under strong sun.",
-            "The scene occurs at lunchtime."
+            "Successfully, the meeting achieved all its objectives.",
+            "All objectives were met by the successful meeting."
           ],
-          "points": 2
+          "points": 2.5
         }
       ]
     }

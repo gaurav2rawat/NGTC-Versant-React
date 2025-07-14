@@ -447,7 +447,7 @@ useEffect(() => {
          } 
       else if (currentRound === 'diction' && !dictionStoryActive) {
       // Increased answer time from 30 to 45 seconds
-      setTimeLeft(45); // Was 30
+      setTimeLeft(75); 
       setTimerActive(true);
 
       } else if (currentRound !== 'diction') {
@@ -675,7 +675,7 @@ const speakText = (text) => {
         setTimeout(() => {
           setDictionStoryActive(false);
           setResult("Story playback complete. Please answer the questions below.");
-          setTimeLeft(45); // Set timer for questions
+          setTimeLeft(75); // Set timer for questions
           setTimerActive(true);
         }, 1500);
       }
@@ -1034,7 +1034,7 @@ const speakText = (text) => {
               <button onClick={() => speakText(currentQuestion.story)} disabled={isSpeaking}>
                 {isSpeaking ? 'Story Playing...' : 'Play the Story'}
               </button>
-              <p className="instruction">Feel free to listen as many times as needed before the timer runs out.</p>
+              <p className="instruction">Feel free to play many times, but answers must be given before the timer runs out.</p>
             </div>
           );
         } else {
