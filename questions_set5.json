@@ -233,108 +233,109 @@
     { "id": 1, "topic": "The role of cybersecurity in modern businesses.", "time": 60 },
     { "id": 2, "topic": "The future of remote work and its implications for office culture.", "time": 60 }
   ],
+  
   "diction": [
     {
       "id": 1,
-      "story": "The ancient library was a treasure trove of knowledge, its towering shelves filled with countless books. A faint scent of aged paper and leather permeated the air. Sunlight streamed through tall arched windows, illuminating dust particles dancing in the quiet. Scholars often spent hours immersed in profound studies, seeking wisdom within its silent halls.",
-      "time": 45,
+      "story": "The project team convened for an important collaborative session. Their objective was to strategize for the upcoming product launch. Each member contributed valuable insights and innovative ideas. Discussions were constructive, fostering a cohesive working environment. The session concluded with a clear action plan for success.",
+      "time": 75,
       "questions": [
         {
-          "question": "What filled the library's shelves?",
-          "answer": "Countless books filled the library's towering shelves.",
+          "question": "Who convened for a collaborative session?",
+          "answer": "The project team convened for an important collaborative session.",
           "alternativeAnswers": [
-            "Tall shelves were filled with numerous books.",
-            "Many books filled the library's shelves."
+            "An important session was convened by the project team.",
+            "The team gathered for a collaborative meeting."
           ],
-          "points": 2
+          "points": 2.5
         },
         {
-          "question": "What scent permeated the air?",
-          "answer": "A faint scent of aged paper and leather filled the air.",
+          "question": "What was their objective?",
+          "answer": "Their objective was to strategize for the upcoming product launch.",
           "alternativeAnswers": [
-            "Aged paper and leather created a faint scent.",
-            "The air smelled faintly of old paper and leather."
+            "Strategizing for the product launch was their aim.",
+            "They aimed to plan for the new product."
           ],
-          "points": 2
+          "points": 2.5
         },
         {
-          "question": "What streamed through the windows?",
-          "answer": "Sunlight streamed through the tall arched windows softly.",
+          "question": "What did each member contribute?",
+          "answer": "Each member contributed valuable insights and innovative ideas.",
           "alternativeAnswers": [
-            "Tall arched windows allowed sunlight to stream in.",
-            "Through tall windows, sunlight gently streamed."
+            "Valuable insights and innovative ideas were contributed.",
+            "Each person offered useful ideas and thoughts."
           ],
-          "points": 2
+          "points": 2.5
         },
         {
-          "question": "Who spent hours in the library?",
-          "answer": "Scholars frequently spent many hours immersed in the library.",
+          "question": "How were the discussions?",
+          "answer": "Discussions were constructive, fostering a cohesive environment.",
           "alternativeAnswers": [
-            "Often, scholars would spend hours studying there.",
-            "Many scholars spent long hours in the library."
+            "The discussions were helpful, promoting unity.",
+            "They were building discussions, aiding teamwork."
           ],
-          "points": 2
+          "points": 2.5
         },
         {
-          "question": "What were they seeking?",
-          "answer": "They were seeking profound wisdom within the library's silent halls.",
+          "question": "What did the session conclude with?",
+          "answer": "The session concluded with a clear action plan for success.",
           "alternativeAnswers": [
-            "They were looking for deep wisdom there.",
-            "Wisdom was what they sought."
+            "A clear action plan for success ended the session.",
+            "It finished with a successful action plan."
           ],
-          "points": 2
+          "points": 2.5
         }
       ]
     },
     {
       "id": 2,
-      "story": "The bustling city market was alive with activity. Vendors called out their prices, and shoppers skillfully navigated the narrow aisles. Brightly colored fruits and vegetables were piled high, next to stalls selling handmade crafts and intricate jewelry. The air vibrated with a mix of languages and laughter, creating a vibrant, energetic atmosphere that drew people in.",
-      "time": 45,
+      "story": "Professor Anya Sharma delivered an evening lecture on renewable energy sources. The auditorium was filled with attentive students and researchers. She presented complex concepts using clear and accessible language. A question-and-answer session followed, encouraging active participation. The lecture proved highly informative for all attendees.",
+      "time": 75,
       "questions": [
         {
-          "question": "What was alive with activity?",
-          "answer": "The bustling city market was alive with vibrant activity.",
+          "question": "Who delivered an evening lecture?",
+          "answer": "Professor Anya Sharma delivered an evening lecture.",
           "alternativeAnswers": [
-            "The city market buzzed with activity.",
-            "The busy market was full of life."
+            "An evening lecture was delivered by Professor Sharma.",
+            "Professor Sharma gave an evening talk."
           ],
-          "points": 2
+          "points": 2.5
         },
         {
-          "question": "Who called out their prices?",
-          "answer": "Vendors loudly called out their prices to attract customers.",
+          "question": "What was the lecture about?",
+          "answer": "The lecture was about renewable energy sources.",
           "alternativeAnswers": [
-            "The vendors announced their prices loudly.",
-            "Vendors shouted their prices at shoppers."
+            "It concerned energy from renewable sources.",
+            "Renewable energy sources were the topic."
           ],
-          "points": 2
+          "points": 2.5
         },
         {
-          "question": "What was piled high in the stalls?",
-          "answer": "Brightly colored fruits and vegetables were piled high in stalls.",
+          "question": "Who filled the auditorium?",
+          "answer": "Attentive students and researchers filled the auditorium.",
           "alternativeAnswers": [
-            "Colorful fruits and vegetables were stacked high.",
-            "Stalls displayed high piles of vibrant produce."
+            "The auditorium was filled by students and researchers.",
+            "Students and researchers occupied the hall."
           ],
-          "points": 2
+          "points": 2.5
         },
         {
-          "question": "What vibrated in the air?",
-          "answer": "A vibrant mix of languages and laughter vibrated in the air.",
+          "question": "How did she present concepts?",
+          "answer": "She presented complex concepts using clear and accessible language.",
           "alternativeAnswers": [
-            "The air hummed with languages and laughter.",
-            "Languages and laughter filled the vibrating air."
+            "Clear and accessible language was used for concepts.",
+            "Complex ideas were presented simply and clearly."
           ],
-          "points": 2
+          "points": 2.5
         },
         {
-          "question": "What kind of atmosphere did it create?",
-          "answer": "It created a vibrant, energetic atmosphere that attracted people.",
+          "question": "What followed the lecture?",
+          "answer": "A question-and-answer session followed, encouraging participation.",
           "alternativeAnswers": [
-            "It fostered a lively, energetic, and inviting atmosphere.",
-            "The market had a vibrant and energetic feel."
+            "A Q&A session happened afterwards, promoting involvement.",
+            "Active participation was encouraged by a Q&A."
           ],
-          "points": 2
+          "points": 2.5
         }
       ]
     }

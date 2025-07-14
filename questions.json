@@ -242,148 +242,108 @@
   ],
   
   
-    "diction": [
+  "diction": [
     {
       "id": 1,
-      "story": "The quick brown fox jumps over the lazy dog. Near the river bank, several animals gathered to watch the spectacle. A rabbit hopped nervously, while birds chirped from nearby trees. The scene was quite amusing to all the forest creatures who had never seen such acrobatics before. The fox landed gracefully and took a bow as the animals applauded.",
-      "time": 45,
+      "story": "Mr. Henry Thompson observed the cityscape from his office window. Tall buildings pierced the skyline, reflecting the morning sun. Busy streets below teemed with commuters and vehicles. The rhythmic hum of urban life filled the air. This daily panorama offered a constant source of fascination.",
+      "time": 75,
       "questions": [
         {
-          "question": "What animal jumped over the dog?",
-          "answer": "The fox jumped over the dog.",
+          "question": "Who observed the cityscape?",
+          "answer": "Mr. Henry Thompson observed the cityscape from his office window.",
           "alternativeAnswers": [
-            "A fox jumped over the dog.",
-            "That fox jumped over the dog.",
-            "A brown fox jumped over the dog.",
-            "The quick fox jumped over the dog.",
-            "The brown fox leapt over the dog.",
-            "It was the fox that jumped over the dog."
+            "Henry Thompson observed the cityscape from his window.",
+            "The cityscape was observed by Mr. Thompson."
           ],
-          "points": 2
+          "points": 2.5
         },
         {
-          "question": "Where did the animals gather?",
-          "answer": "The animals gathered at the river bank.",
+          "question": "What pierced the skyline?",
+          "answer": "Tall buildings pierced the skyline, reflecting the morning sun.",
           "alternativeAnswers": [
-            "The animals gathered near the river.",
-            "They gathered at the river bank.",
-            "The animals assembled by the river.",
-            "They were gathering at the river's edge.",
-            "The animals met near the river.",
-            "They congregated at the bank of the river."
+            "The skyline was pierced by tall buildings.",
+            "Buildings rose tall, reflecting morning sun."
           ],
-          "points": 2
+          "points": 2.5
         },
         {
-          "question": "How did the rabbit move?",
-          "answer": "The rabbit hopped nervously.",
+          "question": "What teemed in the streets below?",
+          "answer": "Busy streets below teemed with commuters and vehicles.",
           "alternativeAnswers": [
-            "The rabbit nervously hopped.",
-            "It moved nervously.",
-            "The rabbit jumped about nervously.",
-            "It nervously jumped.",
-            "The rabbit hopped in a nervous manner.",
-            "Nervously the rabbit hopped."
+            "Commuters and vehicles teemed in the busy streets.",
+            "The streets were busy with commuters and cars."
           ],
-          "points": 2
+          "points": 2.5
         },
         {
-          "question": "What did the birds do?",
-          "answer": "The birds chirped.",
+          "question": "What filled the air?",
+          "answer": "The rhythmic hum of urban life filled the air.",
           "alternativeAnswers": [
-            "They chirped.",
-            "The birds made chirping sounds.",
-            "The birds were chirping.",
-            "They were making chirping noises.",
-            "The birds produced chirps.",
-            "Chirping was done by the birds."
+            "The air was filled by the hum of urban life.",
+            "Urban life's rhythmic hum permeated the air."
           ],
-          "points": 2
+          "points": 2.5
         },
         {
-          "question": "What did the fox do after landing?",
-          "answer": "The fox took a bow.",
+          "question": "What did this daily panorama offer?",
+          "answer": "This daily panorama offered a constant source of fascination.",
           "alternativeAnswers": [
-            "It took a bow.",
-            "The fox gave a bow.",
-            "The fox bowed.",
-            "It made a bow.",
-            "The fox performed a bow.",
-            "A bow was taken by the fox."
+            "A constant source of fascination was offered.",
+            "It provided an ongoing source of intrigue."
           ],
-          "points": 2
+          "points": 2.5
         }
       ]
     },
     {
       "id": 2,
-      "story": "Emily visited a bustling market on a sunny morning. She browsed through the stalls filled with colorful fruits, fresh vegetables, and handmade crafts. The lively atmosphere was filled with the sounds of vendors calling out their wares and customers chatting. Emily bought a basket of strawberries and a unique piece of pottery before heading home.",
-      "time": 45,
+      "story": "The research institute announced a significant scientific breakthrough. It concerned a novel approach to disease prevention. Scientists presented compelling evidence supporting their findings. The discovery promised profound implications for global public health. This achievement marked a new era in medical science.",
+      "time": 75,
       "questions": [
         {
-          "question": "Where did Emily visit?",
-          "answer": "Emily visited a bustling market.",
+          "question": "What did the research institute announce?",
+          "answer": "The research institute announced a significant scientific breakthrough.",
           "alternativeAnswers": [
-            "She visited a market.",
-            "A bustling market was visited by Emily.",
-            "Emily went to a busy market.",
-            "A lively market was where she went.",
-            "She paid a visit to the market.",
-            "The bustling marketplace was visited by her."
+            "A significant scientific breakthrough was announced.",
+            "A major scientific discovery was declared."
           ],
-          "points": 2
+          "points": 2.5
         },
         {
-          "question": "What did she browse through?",
-          "answer": "She browsed through the stalls.",
+          "question": "What did it concern?",
+          "answer": "It concerned a novel approach to disease prevention.",
           "alternativeAnswers": [
-            "Emily browsed through the stalls.",
-            "The stalls were browsed by her.",
-            "She looked through the stalls.",
-            "Emily went through the stalls.",
-            "The stalls were what she browsed.",
-            "She checked out the market stalls."
+            "A new approach to disease prevention was concerned.",
+            "It was about a new disease prevention method."
           ],
-          "points": 2
+          "points": 2.5
         },
         {
-          "question": "What filled the atmosphere?",
-          "answer": "The lively atmosphere was filled with the sounds.",
+          "question": "What did scientists present?",
+          "answer": "Scientists presented compelling evidence supporting their findings.",
           "alternativeAnswers": [
-            "The sounds filled the atmosphere.",
-            "Sounds filled the lively atmosphere.",
-            "Sounds were filling the atmosphere.",
-            "The atmosphere was filled with sounds.",
-            "Market sounds filled the air.",
-            "Sounds of the market filled the atmosphere."
+            "Compelling evidence supporting their findings was presented.",
+            "They showed strong evidence for their discoveries."
           ],
-          "points": 2
+          "points": 2.5
         },
         {
-          "question": "What did Emily buy?",
-          "answer": "Emily bought a basket of strawberries and a unique piece of pottery.",
+          "question": "What did the discovery promise?",
+          "answer": "The discovery promised profound implications for global public health.",
           "alternativeAnswers": [
-            "She bought strawberries and pottery.",
-            "Strawberries and pottery were bought by Emily.",
-            "A strawberry basket and pottery were bought.",
-            "She purchased strawberries and pottery.",
-            "Emily purchased a basket and pottery.",
-            "Pottery and strawberries were her purchases."
+            "Profound implications for global health were promised.",
+            "It promised major impacts on world health."
           ],
-          "points": 2
+          "points": 2.5
         },
         {
-          "question": "Where did Emily go after her visit?",
-          "answer": "Emily went home.",
+          "question": "What did this achievement mark?",
+          "answer": "This achievement marked a new era in medical science.",
           "alternativeAnswers": [
-            "She headed home.",
-            "Home was where Emily went.",
-            "She went back home.",
-            "Emily returned home.",
-            "Her destination was home.",
-            "She made her way home."
+            "A new era in medical science was marked.",
+            "It signified a new time for medical science."
           ],
-          "points": 2
+          "points": 2.5
         }
       ]
     }

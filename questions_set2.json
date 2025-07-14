@@ -236,61 +236,55 @@
     { "id": 1, "topic": "The role of technology in modern education", "time": 60 },
     { "id": 2, "topic": "Sustainable development and its importance", "time": 60 }
   ],
+
   "diction": [
     {
       "id": 1,
-      "story": "John decided to take a walk through the park on a sunny afternoon. He enjoyed the chirping of birds and the rustling of leaves. As he strolled along the path, he saw children playing and families having picnics. The fresh air and the vibrant atmosphere lifted his spirits.",
-      "time": 45,
+      "story": "Ms. Eleanor Vance decided to spend her morning at the municipal library. She sought information on classical literature for her studies. The library offered a vast collection of books and digital resources. She spent several quiet hours reading and taking notes. The peaceful environment greatly facilitated her research.",
+      "time": 75,
       "questions": [
         {
-          "question": "Where did John decide to walk?",
-          "answer": "John decided to take a walk through the park.",
+          "question": "Who spent her morning at the library?",
+          "answer": "Ms. Eleanor Vance spent her morning at the library.",
           "alternativeAnswers": [
-            "He decided to take a walk through the park.",
-            "A walk through the park was his decision.",
-            "John chose to walk in the park.",
-            "His decision was a park walk.",
-            "He opted for a walk in the park.",
-            "The park was John's chosen walking location."
+            "Eleanor Vance spent her morning there.",
+            "The library was visited by Ms. Vance."
           ],
           "points": 2.5
         },
         {
-          "question": "What did John enjoy hearing?",
-          "answer": "John enjoyed hearing the chirping of birds and the rustling of leaves.",
+          "question": "Which library did she visit?",
+          "answer": "She visited the municipal library for her research.",
           "alternativeAnswers": [
-            "He enjoyed hearing the chirping of birds and the rustling leaves.",
-            "The sounds of birds chirping and leaves rustling were pleasing to him.",
-            "He liked the sounds of birds and leaves.",
-            "The bird chirps and leaf rustles were enjoyed by him.",
-            "John relished the birds' chirps and leaves' rustling.",
-            "The rustling leaves and chirping birds were what he enjoyed."
+            "The municipal library was her destination.",
+            "She went to the local city library."
           ],
           "points": 2.5
         },
         {
-          "question": "Who did John see in the park?",
-          "answer": "John saw children playing and families having picnics.",
+          "question": "What information did she seek?",
+          "answer": "She sought information on classical literature.",
           "alternativeAnswers": [
-            "He saw children playing and families having picnics.",
-            "Children at play and picnicking families were what he saw.",
-            "He saw playing children and picnic families.",
-            "John observed families picnicking and children playing.",
-            "Picnicking families and playing children were seen by him.",
-            "He noticed children playing and families having a picnic."
+            "Information on classical literature was her quest.",
+            "She looked for classical literary details."
           ],
           "points": 2.5
         },
         {
-          "question": "How did the atmosphere affect John?",
-          "answer": "The atmosphere lifted his spirits.",
+          "question": "What did the library offer?",
+          "answer": "The library offered a vast collection of books and digital resources.",
           "alternativeAnswers": [
-            "His spirits were lifted by the atmosphere.",
-            "He felt uplifted by the atmosphere.",
-            "The atmosphere made him feel better.",
-            "He was uplifted by the park's atmosphere.",
-            "John felt a lift in his spirits due to the atmosphere.",
-            "The park's ambiance improved his mood."
+            "A vast collection of books and digital items was offered.",
+            "It provided numerous books and digital assets."
+          ],
+          "points": 2.5
+        },
+        {
+          "question": "How did the environment affect her research?",
+          "answer": "The peaceful environment greatly facilitated her research.",
+          "alternativeAnswers": [
+            "Her research was much helped by the peaceful environment.",
+            "The environment made her research easier."
           ],
           "points": 2.5
         }
@@ -298,58 +292,51 @@
     },
     {
       "id": 2,
-      "story": "Emily spent her weekend exploring the city. She visited the Tate museum, which had fascinating exhibits about the history of the area. Later, she had lunch at a cozy café and enjoyed a delicious meal. In the evening, she went to a concert, which was the highlight of her day.",
-      "time": 45,
+      "story": "Mr. Julian Hayes took a leisurely walk through the botanical gardens. He observed a variety of indigenous and exotic plant species. The well-maintained pathways guided him past vibrant flowerbeds and tall trees. A gentle breeze carried the sweet fragrance of blossoms. This refreshing outing provided a pleasant escape.",
+      "time": 75,
       "questions": [
         {
-          "question": "What did Emily explore?",
-          "answer": "Emily explored the city.",
+          "question": "Who took a leisurely walk?",
+          "answer": "Mr. Julian Hayes took a leisurely walk.",
           "alternativeAnswers": [
-            "She explored the city.",
-            "The city was explored by her.",
-            "Emily went exploring the city.",
-            "She did city exploration.",
-            "Emily did some city exploring.",
-            "The urban area was explored by Emily."
+            "Julian Hayes took a slow walk.",
+            "A leisurely walk was taken by Mr. Hayes."
           ],
           "points": 2.5
         },
         {
-          "question": "Where did Emily visit?",
-          "answer": "Emily visited the Tate museum.",
+          "question": "Where did he walk?",
+          "answer": "He walked through the botanical gardens.",
           "alternativeAnswers": [
-            "She visited the Tate museum.",
-            "The Tate museum was where she visited.",
-            "Emily went to the Tate museum.",
-            "She made a visit to the Tate museum.",
-            "The Tate museum was her destination.",
-            "Her visit was to the Tate museum."
+            "The botanical gardens were his walking place.",
+            "He strolled within the botanical gardens."
           ],
           "points": 2.5
         },
         {
-          "question": "What did Emily do for lunch?",
-          "answer": "Emily had lunch at a cozy café.",
+          "question": "What did he observe?",
+          "answer": "He observed a variety of indigenous and exotic plant species.",
           "alternativeAnswers": [
-            "She had lunch at a cozy café.",
-            "Lunch at a cozy café was what she did.",
-            "She ate lunch at a cozy café.",
-            "Emily lunched at a cozy café.",
-            "Her lunch was at a cozy café.",
-            "A cozy café was where she ate lunch."
+            "Various plant species were observed by him.",
+            "He saw diverse types of plants."
           ],
           "points": 2.5
         },
         {
-          "question": "What was the highlight of Emily's day?",
-          "answer": "The concert was the highlight of Emily's day.",
+          "question": "What guided him?",
+          "answer": "The well-maintained pathways guided him past flowerbeds.",
           "alternativeAnswers": [
-            "The concert was the highlight of her day.",
-            "Her day's highlight was the concert.",
-            "Emily's day was highlighted by the concert.",
-            "The concert was her day's best part.",
-            "The concert was the best part of her day.",
-            "Her day peaked with the concert."
+            "Pathways guided him past flowers.",
+            "He was guided by the clear pathways."
+          ],
+          "points": 2.5
+        },
+        {
+          "question": "What did the outing provide?",
+          "answer": "This refreshing outing provided a pleasant escape.",
+          "alternativeAnswers": [
+            "A pleasant escape was provided by the outing.",
+            "The outing gave a nice break."
           ],
           "points": 2.5
         }

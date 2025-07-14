@@ -231,90 +231,109 @@
     { "id": 1, "topic": "The importance of eating healthy food", "time": 60 },
     { "id": 2, "topic": "Why exercise is good for your body", "time": 60 }
   ],
+  
   "diction": [
     {
       "id": 1,
-      "story": "Liam was excited for his first day at a new school. He packed his backpack with notebooks and pencils the night before. In the morning, his mom made his favorite pancakes for breakfast. When he arrived at school, his teacher introduced him to the class, and a boy named Ethan showed him where to sit.",
-      "time": 45,
+      "story": "Dr. Emily White published her latest academic book. It explored contemporary sociological theories and their practical applications. The book received critical acclaim from leading scholars worldwide. Its clear arguments and extensive research were highly praised. This publication contributed significantly to her field.",
+      "time": 75,
       "questions": [
         {
-          "question": "Why was Liam excited?",
-          "answer": "It was his first day at a new school.",
+          "question": "Who published her latest academic book?",
+          "answer": "Dr. Emily White published her latest academic book.",
           "alternativeAnswers": [
-            "Because he was starting at a new school.",
-            "He was beginning school somewhere new."
+            "Emily White released her latest academic book.",
+            "Her new academic book was published by Dr. White."
           ],
-          "points": 2
+          "points": 2.5
         },
         {
-          "question": "What did Liam pack in his backpack?",
-          "answer": "Notebooks and pencils.",
+          "question": "What did the book explore?",
+          "answer": "The book explored contemporary sociological theories and applications.",
           "alternativeAnswers": [
-            "School supplies like notebooks and pencils.",
-            "Writing materials and notebooks."
+            "It explored modern sociological theories and their uses.",
+            "Contemporary sociological theories and uses were explored."
           ],
-          "points": 2
+          "points": 2.5
         },
         {
-          "question": "What did Liam's mom make for breakfast?",
-          "answer": "His favorite pancakes.",
+          "question": "What kind of acclaim did it receive?",
+          "answer": "It received critical acclaim from leading scholars worldwide.",
           "alternativeAnswers": [
-            "Pancakes that he liked.",
-            "Special pancakes for him."
+            "Leading scholars worldwide gave it critical acclaim.",
+            "Worldwide, critical praise was given by scholars."
           ],
-          "points": 2
+          "points": 2.5
         },
         {
-          "question": "Who helped Liam at school?",
-          "answer": "A boy named Ethan.",
+          "question": "What aspects were highly praised?",
+          "answer": "Its clear arguments and extensive research were highly praised.",
           "alternativeAnswers": [
-            "His classmate Ethan.",
-            "Another student called Ethan."
+            "Highly praised were its clear arguments and research.",
+            "Clear arguments and thorough research were lauded."
           ],
-          "points": 2
+          "points": 2.5
+        },
+        {
+          "question": "How did this publication contribute?",
+          "answer": "This publication contributed significantly to her field.",
+          "alternativeAnswers": [
+            "Significantly, this publication contributed to her field.",
+            "Her field greatly benefited from this publication."
+          ],
+          "points": 2.5
         }
       ]
     },
     {
       "id": 2,
-      "story": "Sophia was helping her mom bake cookies. They mixed flour, sugar, and eggs in a big bowl. Sophia carefully dropped spoonfuls of dough onto the baking tray. When the cookies came out of the oven, they were golden brown and smelled delicious. Sophia's little brother Max kept trying to sneak cookies before they cooled down.",
-      "time": 45,
+      "story": "The local council established a new community garden. Its purpose was to provide fresh produce and foster neighborhood connections. Residents collaborated diligently, cultivating various fruits and vegetables. Children participated enthusiastically, learning about sustainable agriculture. The garden became a vibrant hub for the community.",
+      "time": 75,
       "questions": [
         {
-          "question": "What was Sophia helping her mom do?",
-          "answer": "Bake cookies.",
+          "question": "What did the local council establish?",
+          "answer": "The local council established a new community garden.",
           "alternativeAnswers": [
-            "Make cookies.",
-            "Prepare cookie dough."
+            "A new community garden was established locally.",
+            "The council created a new neighborhood garden."
           ],
-          "points": 2
+          "points": 2.5
         },
         {
-          "question": "What ingredients did they use?",
-          "answer": "Flour, sugar, and eggs.",
+          "question": "What was its purpose?",
+          "answer": "Its purpose was to provide fresh produce and foster connections.",
           "alternativeAnswers": [
-            "They mixed flour with sugar and eggs.",
-            "Basic baking ingredients."
+            "Providing fresh produce and building connections was its aim.",
+            "It aimed to offer fresh food and community bonds."
           ],
-          "points": 2
+          "points": 2.5
         },
         {
-          "question": "How did the cookies look when done?",
-          "answer": "Golden brown.",
+          "question": "How did residents collaborate?",
+          "answer": "Residents collaborated diligently, cultivating various fruits and vegetables.",
           "alternativeAnswers": [
-            "Nicely browned.",
-            "Perfectly cooked color."
+            "Diligently, residents grew various fruits and vegetables.",
+            "They worked hard cultivating fruits and vegetables."
           ],
-          "points": 2
+          "points": 2.5
         },
         {
-          "question": "What was Max trying to do?",
-          "answer": "Sneak cookies before they cooled.",
+          "question": "Who participated enthusiastically?",
+          "answer": "Children participated enthusiastically, learning about agriculture.",
           "alternativeAnswers": [
-            "Take cookies too early.",
-            "Eat warm cookies secretly."
+            "Enthusiastic children learned about sustainable agriculture.",
+            "Learning agriculture, children participated eagerly."
           ],
-          "points": 2
+          "points": 2.5
+        },
+        {
+          "question": "What did the garden become?",
+          "answer": "The garden became a vibrant hub for the community.",
+          "alternativeAnswers": [
+            "A vibrant community hub was created by the garden.",
+            "It transformed into a lively community center."
+          ],
+          "points": 2.5
         }
       ]
     }

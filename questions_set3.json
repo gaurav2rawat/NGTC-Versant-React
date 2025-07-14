@@ -239,65 +239,108 @@
     { "id": 1, "topic": "The impact of social media on mental health", "time": 60 },
     { "id": 2, "topic": "The future of renewable energy", "time": 60 }
   ],  
-    "diction": [
+    
+  "diction": [
     {
       "id": 1,
-      "story": "Tom decided to go for a run in the morning. The sun was just rising, casting a golden glow over the landscape. He enjoyed the solitude and the sound of his footsteps on the path. After his run, he felt refreshed and ready to tackle the day's challenges.",
-      "time": 45,
+      "story": "Ms. Olivia Bennett visited a renowned historical landmark. The ancient structure stood majestically, showcasing intricate architectural details. She learned about its significance and the historical events associated with it. A knowledgeable guide provided interesting anecdotes and facts. The visit offered a profound insight into past eras.",
+      "time": 75,
       "questions": [
         {
-          "question": "When did Tom decide to run?",
-          "answer": "Tom decided to go for a run in the morning.",
-          "alternativeAnswers": ["He decided to run in the morning.", "A morning run was his decision.", "Tom opted for a morning run.", "His choice was a morning jog.", "He made the decision to run in the morning.", "The morning was when he chose to run."],
+          "question": "Who visited a historical landmark?",
+          "answer": "Ms. Olivia Bennett visited a renowned historical landmark.",
+          "alternativeAnswers": [
+            "Olivia Bennett visited a famous historical landmark.",
+            "The landmark was visited by Ms. Bennett."
+          ],
           "points": 2.5
         },
         {
-          "question": "What was the sun doing?",
-          "answer": "The sun was rising.",
-          "alternativeAnswers": ["It was rising.", "Rising was what the sun was doing.", "The sun was coming up.", "It was climbing into the sky.", "The sun began to ascend.", "Ascending was the sun's action."],
+          "question": "How did the structure appear?",
+          "answer": "The ancient structure stood majestically, showcasing intricate details.",
+          "alternativeAnswers": [
+            "It appeared majestic with intricate architectural details.",
+            "The structure showed intricate majestic details."
+          ],
           "points": 2.5
         },
         {
-          "question": "What did Tom enjoy during his run?",
-          "answer": "Tom enjoyed the solitude and the sound of his footsteps.",
-          "alternativeAnswers": ["He enjoyed the solitude and the sound of his footsteps.", "The quiet and the sound of his steps were enjoyable to him.", "He liked the quiet and the sound of his feet.", "The sound of his steps and the quiet were enjoyed by him.", "Tom relished the solitude and his footstep sounds.", "His footsteps and the quiet were what he enjoyed."],
+          "question": "What did she learn about?",
+          "answer": "She learned about its significance and associated historical events.",
+          "alternativeAnswers": [
+            "Its importance and history were what she learned.",
+            "She acquired knowledge of its past significance."
+          ],
           "points": 2.5
         },
         {
-          "question": "How did Tom feel after his run?",
-          "answer": "Tom felt refreshed after his run.",
-          "alternativeAnswers": ["He felt refreshed after his run.", "A feeling of refreshment came over him after his run.", "He felt invigorated after running.", "Tom was refreshed after the run.", "He ended his run feeling refreshed.", "Refreshment was felt by Tom after running."],
+          "question": "Who provided anecdotes and facts?",
+          "answer": "A knowledgeable guide provided interesting anecdotes and facts.",
+          "alternativeAnswers": [
+            "Interesting facts and anecdotes were given by a guide.",
+            "A guide offered facts and captivating stories."
+          ],
+          "points": 2.5
+        },
+        {
+          "question": "What did the visit offer?",
+          "answer": "The visit offered a profound insight into past eras.",
+          "alternativeAnswers": [
+            "A deep insight into bygone eras was offered.",
+            "It provided great understanding of previous times."
+          ],
           "points": 2.5
         }
       ]
     },
     {
       "id": 2,
-      "story": "Lisa spent her afternoon gardening in her backyard. She planted new flowers and watered her plants. The weather was perfect, with a gentle breeze and clear skies. After finishing her gardening, she sat on her porch with a cup of tea, feeling accomplished.",
-      "time": 45,
+      "story": "Dr. Benjamin Carter conducted a new scientific experiment in his laboratory. His objective was to observe the reaction of certain chemical compounds. He carefully measured all ingredients and recorded observations precisely. The experiment yielded promising results for future research. This outcome could impact various scientific applications.",
+      "time": 75,
       "questions": [
         {
-          "question": "What did Lisa do in the afternoon?",
-          "answer": "Lisa did some gardening.",
-          "alternativeAnswers": ["Lisa did gardening.", "She engaged in gardening activities.", "Gardening was what she did.", "She spent her afternoon gardening.", "Lisa gardened in her backyard.", "Her afternoon activity was gardening."],
+          "question": "Who conducted a new scientific experiment?",
+          "answer": "Dr. Benjamin Carter conducted a new scientific experiment.",
+          "alternativeAnswers": [
+            "Benjamin Carter performed a new scientific experiment.",
+            "A new experiment was conducted by Dr. Carter."
+          ],
           "points": 2.5
         },
         {
-          "question": "What did Lisa plant?",
-          "answer": "Lisa planted new flowers.",
-          "alternativeAnswers": ["She planted new flowers.", "New flowers were planted by her.", "She put in new flowers.", "Lisa added new flowers to her garden.", "New blossoms were planted by Lisa.", "She planted fresh flowers."],
+          "question": "Where did he conduct the experiment?",
+          "answer": "He conducted the experiment in his laboratory.",
+          "alternativeAnswers": [
+            "His laboratory was where the experiment occurred.",
+            "The experiment was performed inside his lab."
+          ],
           "points": 2.5
         },
         {
-          "question": "What was the weather like?",
-          "answer": "The weather was perfect with a gentle breeze and clear skies.",
-          "alternativeAnswers": ["It was perfect with a gentle breeze and clear skies.", "A gentle breeze and clear skies made the weather perfect.", "The weather was ideal with a light breeze and clear skies.", "It was a perfect day with a breeze and clear skies.", "The skies were clear and there was a gentle breeze.", "Clear skies and a light breeze made it perfect weather."],
+          "question": "What was his objective?",
+          "answer": "His objective was to observe reactions of certain chemical compounds.",
+          "alternativeAnswers": [
+            "Observing chemical compound reactions was his objective.",
+            "He aimed to see chemical compound interactions."
+          ],
           "points": 2.5
         },
         {
-          "question": "How did Lisa feel after gardening?",
-          "answer": "Lisa felt accomplished.",
-          "alternativeAnswers": ["She felt accomplished.", "An accomplishment was felt by her.", "She felt a sense of accomplishment.", "Lisa was feeling accomplished.", "She felt a feeling of achievement.", "Accomplishment was her feeling."],
+          "question": "How did he record observations?",
+          "answer": "He carefully measured ingredients and recorded observations precisely.",
+          "alternativeAnswers": [
+            "Observations were recorded precisely after careful measurements.",
+            "He precisely recorded his careful observations."
+          ],
+          "points": 2.5
+        },
+        {
+          "question": "What did the experiment yield?",
+          "answer": "The experiment yielded promising results for future research.",
+          "alternativeAnswers": [
+            "Promising results for future research were yielded.",
+            "It produced hopeful results for upcoming studies."
+          ],
           "points": 2.5
         }
       ]
