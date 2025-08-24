@@ -235,12 +235,12 @@
   "diction": [
     {
       "id": 1,
-      "story": "Dr. Emily White published her latest academic book. It explored contemporary sociological theories and their practical applications. The book received critical acclaim from leading scholars worldwide. Its clear arguments and extensive research were highly praised. This publication contributed significantly to her field.",
+      "story": "Dr. White published her latest academic book. It explored contemporary economic theories and their applications. The book received critical acclaim from scholars worldwide. Its clear arguments and extensive research were highly praised. This publication contributed significantly to her field.",
       "time": 75,
       "questions": [
         {
           "question": "Who published her latest academic book?",
-          "answer": "Dr. Emily White published her latest academic book.",
+          "answer": "Dr. White published her latest academic book.",
           "alternativeAnswers": [
             "Emily White released her latest academic book.",
             "Her new academic book was published by Dr. White."
@@ -249,19 +249,19 @@
         },
         {
           "question": "What did the book explore?",
-          "answer": "The book explored contemporary sociological theories and applications.",
+          "answer": "The book explored contemporary economic theories and their applications.",
           "alternativeAnswers": [
-            "It explored modern sociological theories and their uses.",
+            "It explored modern economic theories and their uses.",
             "Contemporary sociological theories and uses were explored."
           ],
           "points": 2.5
         },
         {
           "question": "What kind of acclaim did it receive?",
-          "answer": "It received critical acclaim from leading scholars worldwide.",
+          "answer": "It received critical acclaim from the scholars worldwide.",
           "alternativeAnswers": [
-            "Leading scholars worldwide gave it critical acclaim.",
-            "Worldwide, critical praise was given by scholars."
+            "Worldwide scholars gave it critical acclaim.",
+            "It was critically acclaimed by worldwide scholars."
           ],
           "points": 2.5
         },
@@ -287,7 +287,7 @@
     },
     {
       "id": 2,
-      "story": "The local council established a new community garden. Its purpose was to provide fresh produce and foster neighborhood connections. Residents collaborated diligently, cultivating various fruits and vegetables. Children participated enthusiastically, learning about sustainable agriculture. The garden became a vibrant hub for the community.",
+      "story": "The local council established a new community garden. Its purpose was to provide fresh produce and build neighborhood connections. Residents collaborated heartily, cultivating various fruits and vegetables. Children participated enthusiastically, learning about sustainable agriculture. The garden became a vibrant hub for the community.",
       "time": 75,
       "questions": [
         {
@@ -301,28 +301,28 @@
         },
         {
           "question": "What was its purpose?",
-          "answer": "Its purpose was to provide fresh produce and foster connections.",
+          "answer": "Its purpose was to provide fresh produce and build connections.",
           "alternativeAnswers": [
-            "Providing fresh produce and building connections was its aim.",
+            "Providing fresh produce and building connections was its purpose.",
             "It aimed to offer fresh food and community bonds."
           ],
           "points": 2.5
         },
         {
           "question": "How did residents collaborate?",
-          "answer": "Residents collaborated diligently, cultivating various fruits and vegetables.",
+          "answer": "Residents collaborated heartily.",
           "alternativeAnswers": [
-            "Diligently, residents grew various fruits and vegetables.",
-            "They worked hard cultivating fruits and vegetables."
+            "The residents collaborated heartily.",
+            "They worked heartily, cultivating fruits and vegetables."
           ],
           "points": 2.5
         },
         {
           "question": "Who participated enthusiastically?",
-          "answer": "Children participated enthusiastically, learning about agriculture.",
+          "answer": "Children participated enthusiastically.",
           "alternativeAnswers": [
-            "Enthusiastic children learned about sustainable agriculture.",
-            "Learning agriculture, children participated eagerly."
+            "Children participated enthusiastically, learning sustainable agriculture.",
+            "Learning agriculture, children participated enthusiastically."
           ],
           "points": 2.5
         },
