@@ -243,7 +243,7 @@
           "answer": "Dr. White published her latest academic book.",
           "alternativeAnswers": [
             "Emily White released her latest academic book.",
-            "Her new academic book was published by Dr. White."
+            "A new academic book was published by Dr. White."
           ],
           "points": 2.5
         },
@@ -252,16 +252,16 @@
           "answer": "The book explored contemporary economic theories and their applications.",
           "alternativeAnswers": [
             "It explored modern economic theories and their uses.",
-            "Contemporary sociological theories and uses were explored."
+            "Contemporary economic theories and uses were explored."
           ],
           "points": 2.5
         },
         {
           "question": "What kind of acclaim did it receive?",
-          "answer": "It received critical acclaim from the scholars worldwide.",
+          "answer": "It received critical acclaim from scholars worldwide.",
           "alternativeAnswers": [
             "Worldwide scholars gave it critical acclaim.",
-            "It was critically acclaimed by worldwide scholars."
+            "It was critically acclaimed by scholars worldwide."
           ],
           "points": 2.5
         },
@@ -269,7 +269,7 @@
           "question": "What aspects were highly praised?",
           "answer": "Its clear arguments and extensive research were highly praised.",
           "alternativeAnswers": [
-            "Highly praised were its clear arguments and research.",
+            "Clear arguments and research were highly praised.",
             "Clear arguments and thorough research were lauded."
           ],
           "points": 2.5
