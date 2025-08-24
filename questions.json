@@ -245,7 +245,7 @@
   "diction": [
     {
       "id": 1,
-      "story": "Henry saw the cityscape from his office window. Tall buildings pierced the skyline, reflecting the morning sun. Busy streets below teemed with commuters and vehicles. The rhythmic hum of urban life filled the air. This daily panorama offered a constant source of fascination.",
+      "story": "Henry saw the cityscape from his office window. Tall buildings pierced the skyline, reflecting the morning sun. Busy streets below were filled with commuters and vehicles. The rhythmic hum of urban life filled the air. This daily panorama offered a constant source of fascination.",
       "time": 75,
       "questions": [
         {
@@ -267,11 +267,11 @@
           "points": 2.5
         },
         {
-          "question": "What teemed in the streets below?",
-          "answer": "Busy streets below teemed with commuters and vehicles.",
+          "question": "What filled the streets?",
+          "answer": "The streets below were filled with commuters and vehicles.",
           "alternativeAnswers": [
-            "Commuters and vehicles teemed in the busy streets.",
-            "The streets were busy with commuters and cars."
+            "Commuters and vehicles filled the busy streets.",
+            "The streets were busy with commuters and vehicles."
           ],
           "points": 2.5
         },
@@ -279,7 +279,7 @@
           "question": "What filled the air?",
           "answer": "The rhythmic hum of urban life filled the air.",
           "alternativeAnswers": [
-            "The air was filled by the hum of urban life.",
+            "The air was filled with the hum of urban life.",
             "Urban life's rhythmic hum permeated the air."
           ],
           "points": 2.5
