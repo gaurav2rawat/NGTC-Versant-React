@@ -245,14 +245,14 @@
   "diction": [
     {
       "id": 1,
-      "story": "Mr. Henry Thompson saw the cityscape from his office window. Tall buildings pierced the skyline, reflecting the morning sun. Busy streets below teemed with commuters and vehicles. The rhythmic hum of urban life filled the air. This daily panorama offered a constant source of fascination.",
+      "story": "Henry saw the cityscape from his office window. Tall buildings pierced the skyline, reflecting the morning sun. Busy streets below teemed with commuters and vehicles. The rhythmic hum of urban life filled the air. This daily panorama offered a constant source of fascination.",
       "time": 75,
       "questions": [
         {
           "question": "Who observed the cityscape?",
-          "answer": "Mr. Henry Thompson observed the cityscape.",
+          "answer": "Henry observed the cityscape.",
           "alternativeAnswers": [
-            "Henry Thompson observed the cityscape.",
+            "Henry observed the cityscape from his office window.",
             "Henry observed the cityscape."
           ],
           "points": 2.5
@@ -262,7 +262,7 @@
           "answer": "Tall buildings pierced the skyline, reflecting the morning sun.",
           "alternativeAnswers": [
             "The skyline was pierced by tall buildings.",
-            "Buildings rose tall, reflecting morning sun."
+            "Tall buildings pierced the skyline."
           ],
           "points": 2.5
         },
