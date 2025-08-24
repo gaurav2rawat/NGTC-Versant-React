@@ -245,15 +245,15 @@
   "diction": [
     {
       "id": 1,
-      "story": "Mr. Henry Thompson observed the cityscape from his office window. Tall buildings pierced the skyline, reflecting the morning sun. Busy streets below teemed with commuters and vehicles. The rhythmic hum of urban life filled the air. This daily panorama offered a constant source of fascination.",
+      "story": "Mr. Henry Thompson saw the cityscape from his office window. Tall buildings pierced the skyline, reflecting the morning sun. Busy streets below teemed with commuters and vehicles. The rhythmic hum of urban life filled the air. This daily panorama offered a constant source of fascination.",
       "time": 75,
       "questions": [
         {
           "question": "Who observed the cityscape?",
-          "answer": "Mr. Henry Thompson observed the cityscape from his office window.",
+          "answer": "Mr. Henry Thompson observed the cityscape.",
           "alternativeAnswers": [
-            "Henry Thompson observed the cityscape from his window.",
-            "The cityscape was observed by Mr. Thompson."
+            "Henry Thompson observed the cityscape.",
+            "Henry observed the cityscape."
           ],
           "points": 2.5
         },
@@ -313,7 +313,7 @@
           "question": "What did it concern?",
           "answer": "It concerned a novel approach to disease prevention.",
           "alternativeAnswers": [
-            "A new approach to disease prevention was concerned.",
+            "A new approach to disease prevention was created.",
             "It was about a new disease prevention method."
           ],
           "points": 2.5
