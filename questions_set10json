@@ -235,7 +235,7 @@
   "diction": [
     {
       "id": 1,
-      "story": "Dr. White published her latest academic book. It explored contemporary economic theories and their applications. The book received critical acclaim from scholars worldwide. Its clear arguments and extensive research were highly praised. This publication contributed significantly to her field.",
+      "story": "Dr. White published her latest academic book. It explored modern economic theories and their applications. The book received critical acclaim from scholars worldwide. Its clear arguments and extensive research were highly praised. This publication contributed significantly to her field.",
       "time": 75,
       "questions": [
         {
@@ -249,10 +249,10 @@
         },
         {
           "question": "What did the book explore?",
-          "answer": "The book explored contemporary economic theories and their applications.",
+          "answer": "The book explored modern economic theories and their applications.",
           "alternativeAnswers": [
             "It explored modern economic theories and their uses.",
-            "Contemporary economic theories and uses were explored."
+            "Modern economic theories and uses were explored."
           ],
           "points": 2.5
         },
@@ -278,7 +278,7 @@
           "question": "How did this publication contribute?",
           "answer": "This publication contributed significantly to her field.",
           "alternativeAnswers": [
-            "Significantly, this publication contributed to her field.",
+            "This publication contributed to her field significantly.",
             "Her field greatly benefited from this publication."
           ],
           "points": 2.5
@@ -287,7 +287,7 @@
     },
     {
       "id": 2,
-      "story": "The local council established a new community garden. Its purpose was to provide fresh produce and build neighborhood connections. Residents collaborated heartily, cultivating various fruits and vegetables. Children participated enthusiastically, learning about sustainable agriculture. The garden became a vibrant hub for the community.",
+      "story": "The local council established a new community garden. Its purpose was to provide fresh produce. Residents collaborated heartily. They cultivated various fruits and vegetables. Children participated enthusiastically as well. The garden became a vibrant hub for the community.",
       "time": 75,
       "questions": [
         {
@@ -301,10 +301,10 @@
         },
         {
           "question": "What was its purpose?",
-          "answer": "Its purpose was to provide fresh produce and build connections.",
+          "answer": "Its purpose was to provide fresh produce.",
           "alternativeAnswers": [
-            "Providing fresh produce and building connections was its purpose.",
-            "It aimed to offer fresh food and community bonds."
+            "Providing fresh produce was its purpose.",
+            "It aimed to offer fresh food produce."
           ],
           "points": 2.5
         },
@@ -321,8 +321,8 @@
           "question": "Who participated enthusiastically?",
           "answer": "Children participated enthusiastically.",
           "alternativeAnswers": [
-            "Children participated enthusiastically, learning sustainable agriculture.",
-            "Learning agriculture, children participated enthusiastically."
+            "The children participated enthusiastically.",
+            "Children participated enthusiastically."
           ],
           "points": 2.5
         },
