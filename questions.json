@@ -297,7 +297,7 @@
     },
     {
       "id": 2,
-      "story": "The research institute announced a significant scientific breakthrough. It concerned a novel approach to disease prevention. Scientists presented compelling evidence supporting their findings. The discovery promised profound implications for global public health. This achievement marked a new era in medical science.",
+      "story": "The research institute announced a significant scientific breakthrough. It concerned a new approach to disease prevention. Scientists presented compelling evidence supporting their findings. The discovery promised serious implications for global public health. This achievement marked a new era in medical science.",
       "time": 75,
       "questions": [
         {
@@ -311,7 +311,7 @@
         },
         {
           "question": "What did it concern?",
-          "answer": "It concerned a novel approach to disease prevention.",
+          "answer": "It concerned a new approach to disease prevention.",
           "alternativeAnswers": [
             "A new approach to disease prevention was created.",
             "It was about a new disease prevention method."
@@ -329,9 +329,9 @@
         },
         {
           "question": "What did the discovery promise?",
-          "answer": "The discovery promised profound implications for global public health.",
+          "answer": "The discovery promised serious implications for global public health.",
           "alternativeAnswers": [
-            "Profound implications for global health were promised.",
+            "Serious implications for global health were promised.",
             "It promised major impacts on world health."
           ],
           "points": 2.5
