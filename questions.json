@@ -245,51 +245,51 @@
   "diction": [
     {
       "id": 1,
-      "story": "Henry saw the cityscape from his office window. Tall buildings pierced the skyline, reflecting the morning sun. Busy streets below were filled with commuters and vehicles. The rhythmic hum of urban life filled the air. This daily panorama offered a constant source of fascination.",
+      "story": "Henry went to the market with his friends. He met his boss in the market, who was busy buying groceries. Henry didn't interrupt him and went his way. Next day, when his boss asked, why he avoided him? He replied, I didn't want to interrupt your grocery shopping.",
       "time": 75,
       "questions": [
         {
-          "question": "Who observed the cityscape?",
-          "answer": "Henry observed the cityscape.",
+          "question": "With whom did Henry go to the market?",
+          "answer": "Henry went to the market with his friends.",
           "alternativeAnswers": [
-            "Henry observed the cityscape from his office window.",
-            "Henry observed the cityscape."
+            "Henry and his friends went to the market.",
+            "Henry went with his friends."
           ],
           "points": 2.5
         },
         {
-          "question": "What pierced the skyline?",
-          "answer": "Tall buildings pierced the skyline, reflecting the morning sun.",
+          "question": "Whom did Henry meet in the market?",
+          "answer": "Henry met his boss in the market.",
           "alternativeAnswers": [
-            "The skyline was pierced by tall buildings.",
-            "Tall buildings pierced the skyline."
+            "He saw his boss in the market.",
+            "He met his boss in the market."
           ],
           "points": 2.5
         },
         {
-          "question": "What filled the streets?",
-          "answer": "The streets below were filled with commuters and vehicles.",
+          "question": "Why didn't Henry talk with his boss?",
+          "answer": "Henry didn't talk with his boss because his boss was busy.",
           "alternativeAnswers": [
-            "Commuters and vehicles filled the busy streets.",
-            "The streets were busy with commuters and vehicles."
+            "Henry didn't talk with his boss because his boss was busy buying groceries.",
+            "Henry didn't talk with his boss because his boss was busy."
           ],
           "points": 2.5
         },
         {
-          "question": "What filled the air?",
-          "answer": "The rhythmic hum of urban life filled the air.",
+          "question": "What was his boss doing in the market?",
+          "answer": "His boss was buying groceries.",
           "alternativeAnswers": [
-            "The air was filled with the hum of urban life.",
-            "Urban life's rhythmic hum permeated the air."
+            "He was buying groceries.",
+            "His boss was busy purchasing groceries."
           ],
           "points": 2.5
         },
         {
-          "question": "What did this daily panorama offer?",
-          "answer": "This daily panorama offered a constant source of fascination.",
+          "question": "What did Henry answer his boss?",
+          "answer": "Henry answered, I didn't want to interrupt your shopping.",
           "alternativeAnswers": [
-            "A constant source of fascination was offered.",
-            "It provided an ongoing source of intrigue."
+            "Henry said, I didn't want to interrupt you.",
+            "Henry said I didn't want to interrupt your shopping."
           ],
           "points": 2.5
         }
@@ -297,15 +297,15 @@
     },
     {
       "id": 2,
-      "story": "The research institute announced a significant scientific breakthrough. It concerned a new approach to disease prevention. Scientists presented compelling evidence supporting their findings. The discovery promised serious implications for global public health. This achievement marked a new era in medical science.",
+      "story": "The research institute announced a scientific breakthrough. It concerned a new approach to disease prevention. Scientists presented evidence to support their findings. The discovery promised improvements to public health. This achievement marked a new era in medical science.",
       "time": 75,
       "questions": [
         {
           "question": "What did the research institute announce?",
-          "answer": "The research institute announced a significant scientific breakthrough.",
+          "answer": "The research institute announced a scientific breakthrough.",
           "alternativeAnswers": [
-            "A significant scientific breakthrough was announced.",
-            "A major scientific discovery was declared."
+            "A scientific breakthrough was announced.",
+            "A scientific discovery was declared."
           ],
           "points": 2.5
         },
@@ -320,19 +320,19 @@
         },
         {
           "question": "What did scientists present?",
-          "answer": "Scientists presented compelling evidence supporting their findings.",
+          "answer": "Scientists presented evidence to support their findings.",
           "alternativeAnswers": [
-            "Compelling evidence supporting their findings was presented.",
-            "They showed strong evidence for their discoveries."
+            "Evidence was provided to support their findings.",
+            "Scientists provided evidence for their findings."
           ],
           "points": 2.5
         },
         {
           "question": "What did the discovery promise?",
-          "answer": "The discovery promised serious implications for global public health.",
+          "answer": "The discovery promised improvements to public health.",
           "alternativeAnswers": [
-            "Serious implications for global health were promised.",
-            "It promised major impacts on world health."
+            "Improvements were promised to public health.",
+            "It promised improvements to pubic health."
           ],
           "points": 2.5
         },
