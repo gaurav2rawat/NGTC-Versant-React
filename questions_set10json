@@ -235,7 +235,7 @@
   "diction": [
     {
       "id": 1,
-      "story": "Dr. White published her latest novel, which was a science fiction book. The book was loved by readers for its original story and innovative content. Later in the year, the book also received the Booker award in the UK.",
+      "story": "Dr. White published her latest novel, which was a science fiction book. The book was loved by the readers for its original story and innovative content. The book also received critical acclaim from the press for its originality, while later in the year, the book also received the Booker award in the UK.",
       "time": 75,
       "questions": [
         {
@@ -243,43 +243,48 @@
           "answer": "Dr. White published a science fiction book.",
           "alternativeAnswers": [
             "Dr white published his latest novel, a science fiction book.",
+            "Dr white published his latest science fiction novel.",
             "Dr white published a science fiction novel."
           ],
           "points": 2.5
         },
         {
-          "question": "What did the book explore?",
-          "answer": "The book explored modern economic theories and their applications.",
+          "question": "Why was the book loved?",
+          "answer": "The book was loved for its original story and innovative content.",
           "alternativeAnswers": [
-            "It explored modern economic theories and their uses.",
-            "Modern economic theories and uses were explored."
+            "The book was loved by its readers for its original story and innovative content.",
+            "The book was loved by the readers for its original story and innovative content.",
+            "The book was loved by readers for its original story and innovative content."
           ],
           "points": 2.5
         },
         {
           "question": "What kind of acclaim did it receive?",
-          "answer": "It received critical acclaim from scholars worldwide.",
+          "answer": "It received critical acclaim from the press.",
           "alternativeAnswers": [
-            "Worldwide scholars gave it critical acclaim.",
-            "It was critically acclaimed by scholars worldwide."
+            "The press gave it critical acclaim.",
+            "It received critical acclaim."
           ],
           "points": 2.5
         },
         {
-          "question": "What aspects were highly praised?",
-          "answer": "Its clear arguments and extensive research were highly praised.",
+          "question": "What aspect was praised by the press?",
+          "answer": "The originality of the book was praised by the press.",
           "alternativeAnswers": [
-            "Clear arguments and research were highly praised.",
-            "Clear arguments and thorough research were lauded."
+            "The press praised the originality of the book.",
+            "Its originality received critical acclaim from the press.",
+            "The book's originality received critical acclaim from the press."
           ],
           "points": 2.5
         },
         {
-          "question": "How did this publication contribute?",
-          "answer": "This publication contributed significantly to her field.",
+          "question": "Which award did the book recieve?",
+          "answer": "The book received the Booker award.",
           "alternativeAnswers": [
-            "This publication contributed to her field significantly.",
-            "Her field greatly benefited from this publication."
+            "The book received Booker award.",
+            "The book received a Booker award.",
+            "The book received Booker award."
+
           ],
           "points": 2.5
         }
@@ -287,7 +292,7 @@
     },
     {
       "id": 2,
-      "story": "The local council established a new community garden. Its purpose was to provide fresh produce. Residents collaborated heartily. They cultivated various fruits and vegetables. Children participated enthusiastically as well. The garden became a vibrant hub for the community.",
+      "story": "The local council established a new community garden. Its purpose was to provide fresh produce to the community. Residents collaborated heartily, and they cultivated various fruits and vegetables. Children participated enthusiastically as well. The garden became a vibrant hub for the community.",
       "time": 75,
       "questions": [
         {
@@ -295,16 +300,17 @@
           "answer": "The local council established a new community garden.",
           "alternativeAnswers": [
             "A new community garden was established locally.",
-            "The council created a new neighborhood garden."
+            "The local council created a new community garden.",
+            "The local council created a new neighborhood garden."
           ],
           "points": 2.5
         },
         {
           "question": "What was its purpose?",
-          "answer": "Its purpose was to provide fresh produce.",
+          "answer": "Its purpose was to provide fresh produce to the community.",
           "alternativeAnswers": [
-            "Providing fresh produce was its purpose.",
-            "It aimed to offer fresh food produce."
+            "Providing fresh produce to the community was its purpose.",
+            "It aimed to offer fresh produce to the community."
           ],
           "points": 2.5
         },
@@ -313,6 +319,8 @@
           "answer": "Residents collaborated heartily.",
           "alternativeAnswers": [
             "The residents collaborated heartily.",
+            "The residents collaborated heartily to cultivate fruits and vegetables.",
+            "The residents collaborated heartily to produce fruits and vegetables.",
             "They worked heartily, cultivating fruits and vegetables."
           ],
           "points": 2.5
@@ -330,7 +338,7 @@
           "question": "What did the garden become?",
           "answer": "The garden became a vibrant hub for the community.",
           "alternativeAnswers": [
-            "A vibrant community hub was created by the garden.",
+            "The garden became a vibrant hub for community.",
             "It transformed into a lively community center."
           ],
           "points": 2.5
