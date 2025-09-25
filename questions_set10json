@@ -235,15 +235,15 @@
   "diction": [
     {
       "id": 1,
-      "story": "Dr. White published her latest academic book. It explored modern economic theories and their applications. The book received critical acclaim from scholars worldwide. Its clear arguments and extensive research were highly praised. This publication contributed significantly to her field.",
+      "story": "Dr. White published her latest novel, which was a science fiction book. The book was loved by readers for its original story and innovative content. Later in the year, the book also received the Booker award in the UK.",
       "time": 75,
       "questions": [
         {
-          "question": "Who published her latest academic book?",
-          "answer": "Dr. White published her latest academic book.",
+          "question": "What type of book did Dr. White publish?",
+          "answer": "Dr. White published a science fiction book.",
           "alternativeAnswers": [
-            "Emily White released her latest academic book.",
-            "A new academic book was published by Dr. White."
+            "Dr white published his latest novel, a science fiction book.",
+            "Dr white published a science fiction novel."
           ],
           "points": 2.5
         },
