@@ -240,15 +240,15 @@
   "diction": [
     {
       "id": 1,
-      "story": "Ms. Eleanor Vance decided to spend her morning at the municipal library. She sought information on classical literature for her studies. The library offered a vast collection of books and digital resources. She spent several quiet hours reading and taking notes. The peaceful environment greatly facilitated her research.",
+      "story": "Ms. Eleanor Vance decided to spend her morning at the municipal library. She looked for information on classical literature. The library offered a vast collection of books and digital resources. She spent several hours reading and taking notes. The peaceful environment made her work easy.",
       "time": 75,
       "questions": [
         {
           "question": "Who spent her morning at the library?",
           "answer": "Ms. Eleanor Vance spent her morning at the library.",
           "alternativeAnswers": [
-            "Eleanor Vance spent her morning there.",
-            "The library was visited by Ms. Vance."
+            "Ms Eleanor Vance spent her morning there.",
+            "Eleanor Vance spent her morning there."
           ],
           "points": 2.5
         },
@@ -257,7 +257,7 @@
           "answer": "She visited the municipal library for her research.",
           "alternativeAnswers": [
             "The municipal library was her destination.",
-            "She went to the local city library."
+            "She went to the municipal library."
           ],
           "points": 2.5
         },
@@ -265,7 +265,7 @@
           "question": "What information did she seek?",
           "answer": "She sought information on classical literature.",
           "alternativeAnswers": [
-            "Information on classical literature was her quest.",
+            "She looked for information on classical literature.",
             "She looked for classical literary details."
           ],
           "points": 2.5
@@ -274,16 +274,16 @@
           "question": "What did the library offer?",
           "answer": "The library offered a vast collection of books and digital resources.",
           "alternativeAnswers": [
-            "A vast collection of books and digital items was offered.",
-            "It provided numerous books and digital assets."
+            "A vast collection of books and digital items were offered by the library.",
+            "The library provided numerous books and digital assets."
           ],
           "points": 2.5
         },
         {
           "question": "How did the environment affect her research?",
-          "answer": "The peaceful environment greatly facilitated her research.",
+          "answer": "The peaceful environment made her work easy.",
           "alternativeAnswers": [
-            "Her research was much helped by the peaceful environment.",
+            "Her research was greatly helped by the peaceful environment.",
             "The environment made her research easier."
           ],
           "points": 2.5
@@ -292,7 +292,7 @@
     },
     {
       "id": 2,
-      "story": "Mr. Julian Hayes took a leisurely walk through the botanical gardens. He observed a variety of indigenous and exotic plant species. The well-maintained pathways guided him past vibrant flowerbeds and tall trees. A gentle breeze carried the sweet fragrance of blossoms. This refreshing outing provided a pleasant escape.",
+      "story": "Mr. Julian Hayes took a leisurely walk through the botanical gardens. He observed a variety of exotic plant species. The well-maintained pathways guided him past vibrant flowerbeds and tall trees. A gentle breeze carried the sweet fragrance of blossoms. This refreshing outing provided a pleasant escape.",
       "time": 75,
       "questions": [
         {
@@ -315,9 +315,11 @@
         },
         {
           "question": "What did he observe?",
-          "answer": "He observed a variety of indigenous and exotic plant species.",
+          "answer": "He observed a variety of exotic plant species.",
           "alternativeAnswers": [
-            "Various plant species were observed by him.",
+            "He observed a variety of exotic plants.",
+            "He watched a variety of exotic plants.",
+            "He saw a variety of exotic plants.",
             "He saw diverse types of plants."
           ],
           "points": 2.5
