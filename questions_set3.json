@@ -243,51 +243,51 @@
   "diction": [
     {
       "id": 1,
-      "story": "Ms. Olivia Bennett visited a renowned historical landmark. The ancient structure stood majestically, showcasing intricate architectural details. She learned about its significance and the historical events associated with it. A knowledgeable guide provided interesting anecdotes and facts. The visit offered a profound insight into past eras.",
-      "time": 75,
+      "story": "Tom went to the park. The park had a big slide and swings. He played with his friend Sam. They had a lot of fun. Then Tom went home for dinner.",
+      "time": 60,
       "questions": [
         {
-          "question": "Who visited a historical landmark?",
-          "answer": "Ms. Olivia Bennett visited a renowned historical landmark.",
+          "question": "Who went to the park?",
+          "answer": "Tom went to the park.",
           "alternativeAnswers": [
-            "Olivia Bennett visited a famous historical landmark.",
-            "The landmark was visited by Ms. Bennett."
+            "Tom did.",
+            "It was Tom."
           ],
           "points": 2.5
         },
         {
-          "question": "How did the structure appear?",
-          "answer": "The ancient structure stood majestically, showcasing intricate details.",
+          "question": "What was at the park?",
+          "answer": "The park had a big slide and swings.",
           "alternativeAnswers": [
-            "It appeared majestic with intricate architectural details.",
-            "The structure showed intricate majestic details."
+            "A slide and swings were there.",
+            "There was a slide and swings."
           ],
           "points": 2.5
         },
         {
-          "question": "What did she learn about?",
-          "answer": "She learned about its significance and associated historical events.",
+          "question": "Who did he play with?",
+          "answer": "He played with his friend Sam.",
           "alternativeAnswers": [
-            "Its importance and history were what she learned.",
-            "She acquired knowledge of its past significance."
+            "He played with Sam.",
+            "Sam was who he played with."
           ],
           "points": 2.5
         },
         {
-          "question": "Who provided anecdotes and facts?",
-          "answer": "A knowledgeable guide provided interesting anecdotes and facts.",
+          "question": "Did they have fun?",
+          "answer": "They had a lot of fun.",
           "alternativeAnswers": [
-            "Interesting facts and anecdotes were given by a guide.",
-            "A guide offered facts and captivating stories."
+            "Yes, they had fun.",
+            "They did have fun."
           ],
           "points": 2.5
         },
         {
-          "question": "What did the visit offer?",
-          "answer": "The visit offered a profound insight into past eras.",
+          "question": "Where did Tom go after the park?",
+          "answer": "Tom went home for dinner.",
           "alternativeAnswers": [
-            "A deep insight into bygone eras was offered.",
-            "It provided great understanding of previous times."
+            "He went home.",
+            "Tom went home to eat dinner."
           ],
           "points": 2.5
         }
@@ -295,51 +295,51 @@
     },
     {
       "id": 2,
-      "story": "Dr. Benjamin Carter conducted a new scientific experiment in his laboratory. His objective was to observe the reaction of certain chemical compounds. He carefully measured all ingredients and recorded observations precisely. The experiment yielded promising results for future research. This outcome could impact various scientific applications.",
-      "time": 75,
+      "story": "Anna baked a cake. She used flour, eggs, and sugar. She mixed everything in a bowl. The cake baked in the oven. It smelled very good when it was done.",
+      "time": 60,
       "questions": [
         {
-          "question": "Who conducted a new scientific experiment?",
-          "answer": "Dr. Benjamin Carter conducted a new scientific experiment.",
+          "question": "What did Anna bake?",
+          "answer": "Anna baked a cake.",
           "alternativeAnswers": [
-            "Benjamin Carter performed a new scientific experiment.",
-            "A new experiment was conducted by Dr. Carter."
+            "She baked a cake.",
+            "A cake is what Anna baked."
           ],
           "points": 2.5
         },
         {
-          "question": "Where did he conduct the experiment?",
-          "answer": "He conducted the experiment in his laboratory.",
+          "question": "What did she use?",
+          "answer": "She used flour, eggs, and sugar.",
           "alternativeAnswers": [
-            "His laboratory was where the experiment occurred.",
-            "The experiment was performed inside his lab."
+            "Flour, eggs, and sugar were used.",
+            "She used those ingredients."
           ],
           "points": 2.5
         },
         {
-          "question": "What was his objective?",
-          "answer": "His objective was to observe reactions of certain chemical compounds.",
+          "question": "Where did she mix them?",
+          "answer": "She mixed everything in a bowl.",
           "alternativeAnswers": [
-            "Observing chemical compound reactions was his objective.",
-            "He aimed to see chemical compound interactions."
+            "In a bowl.",
+            "She mixed them in a bowl."
           ],
           "points": 2.5
         },
         {
-          "question": "How did he record observations?",
-          "answer": "He carefully measured ingredients and recorded observations precisely.",
+          "question": "Where did the cake bake?",
+          "answer": "The cake baked in the oven.",
           "alternativeAnswers": [
-            "Observations were recorded precisely after careful measurements.",
-            "He precisely recorded his careful observations."
+            "It baked in the oven.",
+            "In the oven."
           ],
           "points": 2.5
         },
         {
-          "question": "What did the experiment yield?",
-          "answer": "The experiment yielded promising results for future research.",
+          "question": "How did it smell?",
+          "answer": "It smelled very good when it was done.",
           "alternativeAnswers": [
-            "Promising results for future research were yielded.",
-            "It produced hopeful results for upcoming studies."
+            "It smelled very good.",
+            "The smell was very good."
           ],
           "points": 2.5
         }
