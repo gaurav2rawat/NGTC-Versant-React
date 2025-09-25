@@ -289,7 +289,8 @@
           "answer": "Henry answered, I didn't want to interrupt your shopping.",
           "alternativeAnswers": [
             "Henry said, I didn't want to interrupt you.",
-            "Henry said I didn't want to interrupt your shopping."
+            "Henry said I didn't want to interrupt your shopping.",
+            "Henry answered I didn't want to interrupt your shopping."
           ],
           "points": 2.5
         }
@@ -297,7 +298,7 @@
     },
     {
       "id": 2,
-      "story": "The research institute announced a scientific breakthrough. It concerned a new approach to disease prevention. Scientists presented evidence to support their findings. The discovery promised improvements to public health. This achievement marked a new era in medical science.",
+      "story": "Indian research institute announced a scientific breakthrough. It came up with a new approach to disease prevention.  Our scientists provided evidence to support their findings, and soon the discovery was accredited by the UNO. This achievement marked a new era for Indian medical science.",
       "time": 75,
       "questions": [
         {
@@ -310,11 +311,11 @@
           "points": 2.5
         },
         {
-          "question": "What did it concern?",
-          "answer": "It concerned a new approach to disease prevention.",
+          "question": "What did it come up with?",
+          "answer": "It came up with a new approach to disease prevention.",
           "alternativeAnswers": [
             "A new approach to disease prevention was created.",
-            "It was about a new disease prevention method."
+            "It came up with a new disease prevention method."
           ],
           "points": 2.5
         },
@@ -328,20 +329,22 @@
           "points": 2.5
         },
         {
-          "question": "What did the discovery promise?",
-          "answer": "The discovery promised improvements to public health.",
+          "question": "Who accredited the discovery?",
+          "answer": "The discovery was accredited by the UNO.",
           "alternativeAnswers": [
-            "Improvements were promised to public health.",
-            "It promised improvements to pubic health."
+            "The UNO accredited the discovery.",
+            "The discovery was accredited by UNO.",
+            "The UNO accredited the discovery."
           ],
           "points": 2.5
         },
         {
           "question": "What did this achievement mark?",
-          "answer": "This achievement marked a new era in medical science.",
+          "answer": "This achievement marked a new era in Indian medical science.",
           "alternativeAnswers": [
-            "A new era in medical science was marked.",
-            "It signified a new time for medical science."
+            "A new era in Indian medical science was marked.",
+            "This achievement marked a new era in the Indian medical science.",
+            "It signified a new time for Indian medical science."
           ],
           "points": 2.5
         }
