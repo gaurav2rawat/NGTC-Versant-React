@@ -292,7 +292,7 @@
     },
     {
       "id": 2,
-      "story": "Mr. Julian Hayes took a leisurely walk through the botanical gardens. He observed a variety of exotic plant species. The well-maintained pathways guided him past vibrant flowerbeds and tall trees. A gentle breeze carried the sweet fragrance of blossoms. This refreshing outing provided a pleasant escape.",
+      "story": "Mr. Julian Hayes took a leisurely walk through the botanical gardens. He observed a variety of exotic plant species. The well-maintained path guided him past the flowers and tall trees. A gentle breeze carried the smell of flowers throughout his walk, providing him a pleasant escape.",
       "time": 75,
       "questions": [
         {
@@ -326,16 +326,16 @@
         },
         {
           "question": "What guided him?",
-          "answer": "The well-maintained pathways guided him past flowerbeds.",
+          "answer": "The well-maintained path guided him.",
           "alternativeAnswers": [
-            "Pathways guided him past flowers.",
-            "He was guided by the clear pathways."
+            "The well maintained path guided him.",
+            "He was guided by the well-maintained path."
           ],
           "points": 2.5
         },
         {
           "question": "What did the outing provide?",
-          "answer": "This refreshing outing provided a pleasant escape.",
+          "answer": "The outing provided a pleasant escape.",
           "alternativeAnswers": [
             "A pleasant escape was provided by the outing.",
             "The outing gave a nice break."
